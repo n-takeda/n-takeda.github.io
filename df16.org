@@ -1,0 +1,87 @@
+#+TITLE: dreamforce 2016
+#+AUTHOR: natsuki.takeda
+#+LANGUAGE: ja
+#+OPTIONS: creator:nil LaTeX:t date:t toc:t H:2
+#+INFOJS_OPT: view:showall toc:t tdepth:2 ltoc:nil mouse:#ffffcc path:./.template/org-info.js
+#+SETUPFILE: ./.template/theme-readtheorg.setup
+
+* Smart Cities Finding Actionable Insights from Big Data
+** Overview
+*** Description
+Join us to learn how Analytics in the cloud are transforming Urban Services, as delivered by both public and private sectors.
+*** Speaker
+- Ammar Alammar: Practice Senior Director Salesforce
+- Dipen Dhruv: Services Sales Director - APAC Salesforce
+- gordon feller: Cisco Systems HQ - consultant; Meeting of the Minds - founder cisco
+* Salesforce & Partners, Blazing Trails to Customer Transformation
+** Overview
+*** Description
+The Salesforce partner ecosystem is a powerful force. As the world's largest, and most connected Cloud ecosystem, we come together to drive customer transformation and innovation in whole new ways. Join Tyler Prince, EVP, WW Alliances & GTM Innovation and gain insights into partner success, market opportunities and other initiatives that empower Salesforce and partners to continue blazing trails of customer transformation and success.
+*** Spekaer
+- Keith Block: ice Chairman, President & COO Salesforce
+- Pam Miller: IDC
+- Tyler Prince: Executive Vice President, Channels and GTM Innovation Salesforce
+- Adam Seligman: EVP, App Cloud Salesforce
+- Todd Surdey: Senior Vice President Salesforce
+- Neeracha Taychakhoonavudh: SVP, Partner Programs & Enablement Salesforc
+* What's Coming from Salesforce and Microsoft
+** Overview
+*** Description
+The Salesforce and Microsoft strategic partnership is ushering in a new era of efficiency and productivity, enabling the creation of over ten new and powerful integrations that seamlessly combine the vast resources of Salesforce, the top CRM, and Microsoft Office. Join us to learn how BMC Software is leveraging our integrations to work and collaborate with more efficiency and intelligence.
+*** Spekaer
+- Philippe Marinier: Salesforce
+- Daniel Zubkoff: Sr. Director BMC Software
+* Building Heroku + Force.com Architectures to Extend Your Salesforce Deployment
+** Overview
+*** Description
+Our Trailblazers build amazing things with the App Cloud. With over 15 million custom apps developed on App Cloud, developers occasionally run into a requirements that seem impossible to solve with Force.com alone. Very often, Heroku is the solution. In this session we will describe real world architecture patterns and show how App Cloud (Heroku + Force.com together) provide robust and scalable solutions for the patterns.
+*** Speaker
+- Dan Mehlman: Salesforce
+- Gopal Patel: CTO GetFeedback
+- Peter Shankar: Chief Technology Officer Equity Multiple
+* "Be a Customer Trailblazer" with Marc Benioff & Special Guests
+** Overview
+*** Description
+Join Marc Benioff and industry giants to see the future of customer engagement. Marc will highlight how innovative companies are using the cloud, mobility, IoT and artificial intelligence to achieve new levels of success with connecting with their customers. Salesforce will showcase new products and technology like Einstein that will dramatically change how employees across sales, service, marketing & IT perform their jobs and engage with customers. Seating in the Main Keynote is limited. Attendees will be seated first-come, first-served. The keynote will be broadcast at locations throughout the Dreamforce Campus.
+* Deep Dive into the New Salesforce Development Experience (DX) Architecture
+** Overview
+*** Description
+The new Developer Experience for Force.com developers required a new way to think about development on the Platform. Join us as we discuss the architectural changes within the Force.com Platform to support the new Developer Experience. Find out what is being changed within the Platform and what is being developed on the client. This is a technical session covering a new way to think about development orgs, source change tracking, team development, test running and other exciting upcoming features.
+* Building Force.com Apps from Source
+** Overview
+*** Description
+Learn about the new features being built out in within the AppCloud Developer Experience. In this session, we will discuss the App Cloud CLI Plugin, Workspace Orgs for development and testing, as well as our Source Synchronization commands to help you better interact with an org and more easily integrate with source control systems.
+* How Salesforce Builds Salesforce using Heroku
+** Overview
+*** Description
+Attend this session and learn how Salesforce development teams build amazing apps using Heroku for greater agility while maintaining the highest level of trust. We use Heroku for internal apps like our Concierge IT portal, external apps like Trailhead, and secure data synchronization between internal Salesforce orgs. You’ll see how we use Heroku to build apps that provide a unified user experience and presentation layer across multiple different Salesforce orgs.
+* Salesforce for Marketing Keynote: The Smartest CRM for 1-to-1 Customer Journeys
+** Overview
+*** Description
+Marketing is the sum of all interactions with your brand. In a world where customer experience is king, relevant and contextual interactions are the keys to the kingdom. Join Bryan Wade, CPO & SVP of Marketing Cloud, and special guests to discover an evolution in marketing that puts the customer at the center of every experience with your brand -- from awareness and acquisition, to retention. Hear how the world's most innovative companies, including Change.org, MasterCard, and Dunkin' Brands, are getting smarter and more predictive about their customers, creating seamless 1-to-1 customer journeys.
+* Salesforce for Developers Keynote
+** Overview
+*** Description
+Apps have never been more critical in our lives and our work, and everything and everyone is connected. This app revolution has given rise to a global renaissance for developers. At the same time, our digital experiences are often disconnected and new apps frequently lag expectations. Join Srini Tallapragada, President, Technology at Salesforce, in this year's Developer Keynote, to learn how to build apps faster, smarter and for the future, today.
+* Salesforce Einstein Keynote: AI for Everyone
+** Overview
+*** Description
+AI is the next great technology disruption transforming how we live and work, and Salesforce Einstein is the first comprehensive AI platform for CRM. Join John Ball, GM of Salesforce Einstein, along with some of Salesforce's most innovative customers, to see how they're getting smarter and more predictive about their customers.
+* Continuous Delivery from Dev to Production with Heroku Flow
+** Overview
+*** Description
+Delivering software in small batches in a continuous manner drastically reduces risk and is one of the core tenets of Agile methodology. Continuous Delivery (CD) takes a disciplined approach to building software, where it's releasable to production at any time. Join us to see how Heroku Flow embeds CD right into the platform, making it easy for teams to iterate rapidly on apps and features customers care about.
+* Salesforce for Admins Keynote
+** Overview
+*** Description
+Every day is an adventure when you're a Salesforce Administrator. You spend your days in the cloud and on the ground in a quest to become more efficient and more effective. You're passionate about productivity and using innovative technology to create positive and lasting impact for your customers, your company and the community. Join Mike Rosenbaum, EVP CRM Applications, Kris Lande, Sr. Director Admin Marketing and Mike Gerholdt, Sr. Manager Admin Evangelism on an adventure with fellow Trailblazers as we discover new ways to use technology to go faster, get smarter and go further.
+* Build Sophisticated App Configurations with Custom Metadata
+** Overview
+*** Description
+At Dreamforce last year we launched custom metadata types. This year we add a heavily requested, powerful new capability: metadata relationships. You can now build complex, hierarchical metadata structures by relating your custom metadata to other custom metadata and even to standard and custom objects and fields! If you are still using custom settings or custom objects for app configurations, attend this session to learn how custom metadata types can save your time and sanity managing app configurations and eliminate the need for sophisticated custom tooling or manual configuration and deployment processes.
+* Template Title
+** Overview
+*** Description
+*** Spekaer
+- hoge
+- fuga
