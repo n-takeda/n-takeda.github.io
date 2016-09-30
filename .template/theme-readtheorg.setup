@@ -1,0 +1,9 @@
+# -*- mode: org; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./.template/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./.template/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="./.template/readtheorg/script/jquery.min.js"></script>
+#+HTML_HEAD: <script src="./.template/readtheorg/script/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="./.template/readtheorg/script/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="./.template/readtheorg/script/readtheorg.js"></script>
