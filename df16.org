@@ -2,8 +2,8 @@
 #+AUTHOR: natsuki.takeda
 #+LANGUAGE: ja
 #+OPTIONS: creator:nil LaTeX:t date:t toc:t H:2
-#+INFOJS_OPT: view:showall toc:t tdepth:2 ltoc:nil mouse:#ffffcc path:./.template/org-info.js
-#+SETUPFILE: ./.template/theme-readtheorg.setup
+#+INFOJS_OPT: view:showall toc:t tdepth:2 ltoc:nil mouse:#ffffcc path:./resource/org-info.js
+#+SETUPFILE: ./resource/theme-readtheorg.setup
 
 * Smart Cities Finding Actionable Insights from Big Data
 ** Overview
