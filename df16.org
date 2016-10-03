@@ -9,6 +9,7 @@
 ** Overview
 *** Description
 Join us to learn how Analytics in the cloud are transforming Urban Services, as delivered by both public and private sectors.
+クラウドで都市サービスの分析をどうやったんか、公開・非公開で（分析情報を）公開していったんか、（このセッション）に参加して学ぼうや。
 *** Speaker
 - Ammar Alammar: Practice Senior Director Salesforce
 - Dipen Dhruv: Services Sales Director - APAC Salesforce
@@ -16,7 +17,15 @@ Join us to learn how Analytics in the cloud are transforming Urban Services, as 
 * Salesforce & Partners, Blazing Trails to Customer Transformation
 ** Overview
 *** Description
-The Salesforce partner ecosystem is a powerful force. As the world's largest, and most connected Cloud ecosystem, we come together to drive customer transformation and innovation in whole new ways. Join Tyler Prince, EVP, WW Alliances & GTM Innovation and gain insights into partner success, market opportunities and other initiatives that empower Salesforce and partners to continue blazing trails of customer transformation and success.
+The Salesforce partner ecosystem is a powerful force.
+Salesforceパートナのエコシステム、つよい。
+
+As the world's largest, and most connected Cloud ecosystem, we come together to drive customer transformation and innovation in whole new ways.
+世界でいっちゃんデカイし、色々連携できるクラウドのエコシステムや。新しいいろんな方法をつこうていっしょに顧客の変化・イノベーションをドライブしていこうや。
+
+Join Tyler Prince, EVP, WW Alliances & GTM Innovation and gain insights into partner success, market opportunities and other initiatives that empower Salesforce and partners to continue blazing trails of customer transformation and success.
+WW AlliancesとGTM( go-to-market? ) Innovationの EVPのTyler Prince、がパートナーの成功の中から得られた洞察やマーケットのオポチュニティ、その他 継続的な顧客の変化と成功の新機軸を切り開く力先導する要素。（について話す?）
+
 *** Spekaer
 - Keith Block: ice Chairman, President & COO Salesforce
 - Pam Miller: IDC
@@ -24,17 +33,70 @@ The Salesforce partner ecosystem is a powerful force. As the world's largest, an
 - Adam Seligman: EVP, App Cloud Salesforce
 - Todd Surdey: Senior Vice President Salesforce
 - Neeracha Taychakhoonavudh: SVP, Partner Programs & Enablement Salesforc
+* Introduction to Git-Based Continuous Delivery with Heroku Pipelines
+** Overview
+*** Description
+Continuous Delivery is the prescription for code quality, product agility, and engineering velocity.
+継続的デリバリはコード品質、プロダクトのアジリティ、開発の速度に寄与する手法や。
+
+In this session, you'll learn how Heroku Flow makes Continuous Delivery simple and flexible.
+このセッションでは、Heroku FlowがCDをごくシンプルに柔軟にしてくれるってところを見せたる。
+
+The Git-based methodology provides for a Pipeline through which code begins as a fully executable pull request, is automatically merged to test and staging apps, and is then deployed to production with a single click.
+Gitベースの方法論によって提供される Pipeline機能っちゅうやつは、コードが実行可能なプルリクを起点にして、自動的にテスト・ステージングアプリ環境にマージして(preview appsのこと？)、
+そして本番環境へのデプロイまでをワンポチで行えるんや。
+
+Some customers are able to deploy features and fixes up to 500+ times a week, with very few rollbacks from production.
+新機能や修正のデプロイを週に500以上もやって、本番環境のごくごく稀なロールバックもやる、そんなことができるお客さんもおるんや。
+*** Speaker
+- Ike DeLorenzo: Salesforce
+- Chris Lonnen: Knight errant mozilla
 * What's Coming from Salesforce and Microsoft
 ** Overview
 *** Description
-The Salesforce and Microsoft strategic partnership is ushering in a new era of efficiency and productivity, enabling the creation of over ten new and powerful integrations that seamlessly combine the vast resources of Salesforce, the top CRM, and Microsoft Office. Join us to learn how BMC Software is leveraging our integrations to work and collaborate with more efficiency and intelligence.
+The Salesforce and Microsoft strategic partnership is ushering in a new era of efficiency and productivity,
+SalesforceとMicrosoftの戦略的パートナシップが導く新時代の効率と生産性.
+
+enabling the creation of over ten new and powerful integrations that seamlessly combine the vast resources of Salesforce, the top CRM, and Microsoft Office.
+Salesforceと the top CRM とMicrosoft Office の莫大なリソースをシームレスに統合し、10を越える新しくパワフルなインテグレーションを行うことを可能にした。
+
+Join us to learn how BMC Software is leveraging our integrations to work and collaborate with more efficiency and intelligence.
+BMC Softwareがこれらのインテグレーションを行うことで可能にした、ごっつ効率的でインテリジェンスな仕事・協調作業を見てってや。
 *** Spekaer
 - Philippe Marinier: Salesforce
 - Daniel Zubkoff: Sr. Director BMC Software
+-- これ？ http://www.bmcsoftware.jp/
+* Salesforce on Salesforce: The Journey to Lightning
+** Overview
+*** Description
+Deploying the Lightning Experience is more than a new skin.
+Lightning Experienceは、ただ見た目がオシャンティなだけやないんや。
+
+Lightning is a full scale change to the experience you offer your users on the platform and should be approached as an opportunity to optimize and renew the entire experience.
+Lightningはもっとごっつい変化をもたらすんや。あんたんとこのお客さんに最適化した全く新しい体験をしてもらうように是非Lightning Experienceにアプローチすべきやな。
+
+In this session we will share with you how Salesforce planned for this change, the approach we took in prioritizing our use cases and the pathway to deploying this major revision to our own internal user-base.
+このセッションではな、Salesforceがこの変更をどうやって計画したんか、ユースケースを優先付けして内部のユーザベースの新しい
+
+This session is an open, honest telling of our own Lightning story from the perspective of our Distribution Business Architect and IT delivery org.
+このセッションは、Distribution Business ArchitectとITデリバリ組織の視点から、ごく腹を割って自分らのLightningのストーリーを話すわ。
+*** Speaker
+-- Caroline Hsieh: Salesforce
+-- Tacy Parker: Director, Go To Market Business Architecture Salesforce
 * Building Heroku + Force.com Architectures to Extend Your Salesforce Deployment
 ** Overview
 *** Description
-Our Trailblazers build amazing things with the App Cloud. With over 15 million custom apps developed on App Cloud, developers occasionally run into a requirements that seem impossible to solve with Force.com alone. Very often, Heroku is the solution. In this session we will describe real world architecture patterns and show how App Cloud (Heroku + Force.com together) provide robust and scalable solutions for the patterns.
+Our Trailblazers build amazing things with the App Cloud.
+App Cloudをつこうてものすんごいもんを作りおる。
+
+With over 15 million custom apps developed on App Cloud, developers occasionally run into a requirements that seem impossible to solve with Force.com alone.
+1500万を越えるアプリがApp Cloudの上で作られとって、開発者はForce.comだけではちょっと実現が難しいような要件を実現したりしとる。
+
+Very often, Heroku is the solution.
+Herokuもよく選ばれる解決策や。
+
+In this session we will describe real world architecture patterns and show how App Cloud (Heroku + Force.com together) provide robust and scalable solutions for the patterns.
+このセッションでは、実際に使われとるアーキテクチャパターンとか、 App Cloudで(HerokuとForce.comを使って）耐久性に優れたスケーラブルなもんを作る方法について紹介するわ。
 *** Speaker
 - Dan Mehlman: Salesforce
 - Gopal Patel: CTO GetFeedback
@@ -42,19 +104,49 @@ Our Trailblazers build amazing things with the App Cloud. With over 15 million c
 * "Be a Customer Trailblazer" with Marc Benioff & Special Guests
 ** Overview
 *** Description
-Join Marc Benioff and industry giants to see the future of customer engagement. Marc will highlight how innovative companies are using the cloud, mobility, IoT and artificial intelligence to achieve new levels of success with connecting with their customers. Salesforce will showcase new products and technology like Einstein that will dramatically change how employees across sales, service, marketing & IT perform their jobs and engage with customers. Seating in the Main Keynote is limited. Attendees will be seated first-come, first-served. The keynote will be broadcast at locations throughout the Dreamforce Campus.
+Join Marc Benioff and industry giants to see the future of customer engagement.
+Marc will highlight how innovative companies are using the cloud, mobility, IoT and artificial intelligence to achieve new levels of success with connecting with their customers.
+Salesforce will showcase new products and technology like Einstein that will dramatically change how employees across sales, service, marketing & IT perform their jobs and engage with customers.
+Seating in the Main Keynote is limited. Attendees will be seated first-come, first-served. The keynote will be broadcast at locations throughout the Dreamforce Campus.
+
+クラウド、動体、IoT、人工知能に注目。新しい製品・技術のショーケース。Einstein。
+
 * Deep Dive into the New Salesforce Development Experience (DX) Architecture
 ** Overview
 *** Description
-The new Developer Experience for Force.com developers required a new way to think about development on the Platform. Join us as we discuss the architectural changes within the Force.com Platform to support the new Developer Experience. Find out what is being changed within the Platform and what is being developed on the client. This is a technical session covering a new way to think about development orgs, source change tracking, team development, test running and other exciting upcoming features.
+The new Developer Experience for Force.com developers required a new way to think about development on the Platform.
+Force.com開発者のための新しいDeveloper Experienceとして、プラットフォーム上での開発の新しい手法が求められとる。
+
+Join us as we discuss the architectural changes within the Force.com Platform to support the new Developer Experience.
+Foce.comプラットフォームのアーキテクチャレベルの変更、新しいDXのサポートについて話す。
+
+Find out what is being changed within the Platform and what is being developed on the client.
+何が変わっていくのか、何を作っていくのか。
+
+This is a technical session covering a new way to think about development orgs, source change tracking, team development, test running and other exciting upcoming features.
+開発組織、コード変更の追跡、チーム開発、テスト実行、とかとか。
+
 * Building Force.com Apps from Source
 ** Overview
 *** Description
-Learn about the new features being built out in within the AppCloud Developer Experience. In this session, we will discuss the App Cloud CLI Plugin, Workspace Orgs for development and testing, as well as our Source Synchronization commands to help you better interact with an org and more easily integrate with source control systems.
+Learn about the new features being built out in within the AppCloud Developer Experience.
+AppCloud Develoepr Experienceの新しい機能について。
+
+In this session, we will discuss the App Cloud CLI Plugin, Workspace Orgs for development and testing, as well as our Source Synchronization commands to help you better interact with an org and more easily integrate with source control systems.
+App Cloud CLI Plugin, 開発・テストのための組織のワークスペース, ソースの動機コマンドで組織の操作を簡単にソース管理システムとの統合をより簡単に。
+
 * How Salesforce Builds Salesforce using Heroku
 ** Overview
 *** Description
-Attend this session and learn how Salesforce development teams build amazing apps using Heroku for greater agility while maintaining the highest level of trust. We use Heroku for internal apps like our Concierge IT portal, external apps like Trailhead, and secure data synchronization between internal Salesforce orgs. You’ll see how we use Heroku to build apps that provide a unified user experience and presentation layer across multiple different Salesforce orgs.
+Attend this session and learn how Salesforce development teams build amazing apps using Heroku for greater agility while maintaining the highest level of trust.
+Herokuでアジリティと信頼性の高い、アプリの作りかたを。
+
+We use Heroku for internal apps like our Concierge IT portal, external apps like Trailhead, and secure data synchronization between internal Salesforce orgs.
+Herokuを使った、内部向けの気の利いたポータルとか、Trailheadみたいな外向けアプリとか、セキュアなデータをSF組織と動機するようなんとか。
+
+You’ll see how we use Heroku to build apps that provide a unified user experience and presentation layer across multiple different Salesforce orgs.
+複数の異なったSF組織を跨いだプレゼンテーションレイヤ・統合されたUXを提供するアプリをHerokuで。
+
 * Salesforce for Marketing Keynote: The Smartest CRM for 1-to-1 Customer Journeys
 ** Overview
 *** Description
