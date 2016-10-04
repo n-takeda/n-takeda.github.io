@@ -13,7 +13,44 @@ Join us to learn how Analytics in the cloud are transforming Urban Services, as 
 *** Speaker
 - Ammar Alammar: Practice Senior Director Salesforce
 - Dipen Dhruv: Services Sales Director - APAC Salesforce
-- gordon feller: Cisco Systems HQ - consultant; Meeting of the Minds - founder cisco
+- Gordon Feller: Cisco Systems HQ - consultant; Meeting of the Minds - founder cisco
+** Memo
+*** Affordable Digitail Infrastructure. 
+ストレージ単価は下がり続けてる、Bandwidth も広く安く
+*** いろんなデバイスが一つの街に沢山、接続してる。急激に広がってる
+50-75 billion smartbojects、人口に対して急増
+*** 新しい essentilal infrastructureが必要あね　
+*** 都市の何を知りどう解決する？
+- 交通量
+- 駐車場の問題
+- iotで？parking spaceにsensor.
+- playerが多い, polici, driver, owner...
+	- data -> <processing> -> people
+	- いろいろなthings, そのdata streaming, player use caseごとのprocessing
+- boost road capacity and efficency
+	- 40%は駐車場を探す人で引き起こされている
+	- 1 b cars onthe road today 4b -> 2050 $100B + lost in congestion
+	- 4.B hours of traffic delays ->> loss of $101B inthe us alone
+	- traffic -> wasted fuel /greenhouses gasses -> increaded warming -> decline in water
+- how
+	- visualization realtime traffic, and parking opportunities
+	- enhancement reliablity network infra
+	-
+- ゴミ収集車はなんでちゃんと全部改修できるの？
+	- 収集対象（ゴミ箱、色分け、巡回
+- 飲料水はなぜきれいに保てるのか
+	- sensor, QA
+- 都市はtypicalな問題のサイロ
+	- digitizing
+		-> smart city
+		- real ex. barcelona
+			- smart water/lighting....hospital
+- QA
+-- Q. コレを広めようとしたら何が必要だ？何をケアしないといけない、
+-- A. めっちゃうかねはかかる。コストセンターはデータセンターになる。
+-- Q. 聞き取れないけど絵に描いた餅感がある的なはなし？
+-- Q. 都市間のデータの所有権とかそういう話？
+-- A. 
 * Salesforce & Partners, Blazing Trails to Customer Transformation
 ** Overview
 *** Description
@@ -32,7 +69,68 @@ WW AlliancesとGTM( go-to-market? ) Innovationの EVPのTyler Prince、がパー
 - Tyler Prince: Executive Vice President, Channels and GTM Innovation Salesforce
 - Adam Seligman: EVP, App Cloud Salesforce
 - Todd Surdey: Senior Vice President Salesforce
-- Neeracha Taychakhoonavudh: SVP, Partner Programs & Enablement Salesforc
+- Neeracha Taychakhoonavudh: SVP, Partner Programs & Enablement Salesforce
+*** typer
+**** what makes our ecosystem amazing
+- ohanaspirit
+-- parner ecosystm
+- innovation
+- customer success
+*** with keith block
+*** tyler
+*** with pam miller
+ISV, appexchange 貢献してる year over yerar 48%.。成長してる。  eliminates custome questions.
+YoY Revenue.
+delopment, delveloperの時間も削減してより高サイクルに
+*** with todd surdey ISV Sales
+isv -> faster easier totime to value
+sf(中心にIot) と app
+rename app innovation partner
+**** adam seligman
+- app exchange 広がってる、利用も、高評価なものも
+- trust , distribution, innovation
+-- Sf自身の全ての機能拡張もこのため
+- einstein
+-- intteligence smarter
+- partner trailblazer
+-- faster
+--- lightning対応進んでる、appも
+--- linghtning certificationを是非。roadmapは引いた
+--- winter17
+--- component有り物含めてつかえ。 lightnig exchangeをもりあげてくれ
+**** joise chase
+---- app exchange homeを使ってみよ
+---- sample-usecase: sage live
+---- 「ね、簡単でしょ」
+---- lightning app builder で d&d customize demop
+---- 「ね、簡単でしょ」
+-- adam seligman
+--- もっと作りやすくしていくつもりだからfeed bacck よろ
+-- Salesforce DX (Deploper experience)
+--- source-driven development (apex meta-data)
+--- なんか Heroku toolbeltみたいなデモ
+--- git selenium eclipseとかとの統合
+--- git flowもいしきしてるっぽい
+*** with wade wegner
+- forcedotcom/dreamhouse-partnerkeynote-sdx
+- cli development
+- json でのconfigのpush, cat
+```
+sfdc force:test
+```
+- force ideに lightning app builder を統合（ブラウザでガワだしてるだけでは....？）
+- jenkins pipelineでbuild test
+- inside heroku pipeline
+- architectの新しいframework
+https://twitter.com/svenkatesan/status/783363089399808000
+- partner ohana framework
+*** tyler
+**** prepackaged- Community & portal with lightning bolt
+- neeracha taychakhoonavudh
+- デリバリを早く、ラーニングを充実
+- parnter community
+- trailhead ( one learning dashboard)
+- build your buisiness like salesforce
 * Introduction to Git-Based Continuous Delivery with Heroku Pipelines
 ** Overview
 *** Description
@@ -40,7 +138,7 @@ Continuous Delivery is the prescription for code quality, product agility, and e
 継続的デリバリはコード品質、プロダクトのアジリティ、開発の速度に寄与する手法や。
 
 In this session, you'll learn how Heroku Flow makes Continuous Delivery simple and flexible.
-このセッションでは、Heroku FlowがCDをごくシンプルに柔軟にしてくれるってところを見せたる。
+sこのセッションでは、*Heroku Flow* がCDをごくシンプルに柔軟にしてくれるってところを見せたる。
 
 The Git-based methodology provides for a Pipeline through which code begins as a fully executable pull request, is automatically merged to test and staging apps, and is then deployed to production with a single click.
 Gitベースの方法論によって提供される Pipeline機能っちゅうやつは、コードが実行可能なプルリクを起点にして、自動的にテスト・ステージングアプリ環境にマージして(preview appsのこと？)、
@@ -51,6 +149,43 @@ Some customers are able to deploy features and fixes up to 500+ times a week, wi
 *** Speaker
 - Ike DeLorenzo: Salesforce
 - Chris Lonnen: Knight errant mozilla
+** Memo
+*** 入りは100人くらい？
+*** CDって？
+*** 何がCDを可能にするのか
+安くて使い捨てできて、configurableな環境
+*** CDにたどり着くまでの歴史
+- individual heroics
+-- mailでパッチ送り合ってローカルでストとしてsshでデプロイい
+- process diagram
+-- dev team vc build/ut auto accpetance test(smoke?), uat release
+-- jez humble cc by sa 1.0
+*** CD On Heroku
+- pipelines
+- github deploys
+- review apps
+-- prごとに作られる使い捨て環境
+-- (creditの統制効くのか・・・？)
+- heroku ci
+-- まだ beta
+*** Demo
+- github画面側へ統合(herokuでのreview app名かつghでのbranch名入れる所ができるx)
+- pr作られるとapp-pr名のreview appsが作られる
+- prをmergeするとなくなり、mergeされたbase branchでstaging appが再ビルド
+- staging appを promote to prod
+*** Heroku Flowとは(Demoのまとめ)
+*** Heroku Pipelinesの恩恵
+- production目線
+-- いろいろ
+-- 簡易デモとしてのカチを持つ
+- development目線
+- pipelineでできるいろいろ
+-- pre-commit checks
+-- pre-commit env
+-- test
+-- *Production Traffic Replay*
+-- *Multi Environment*
+*** Mozillaが使ってるよ
 * What's Coming from Salesforce and Microsoft
 ** Overview
 *** Description
@@ -66,6 +201,7 @@ BMC Softwareがこれらのインテグレーションを行うことで可能�
 - Philippe Marinier: Salesforce
 - Daniel Zubkoff: Sr. Director BMC Software
 -- これ？ http://www.bmcsoftware.jp/
+
 * Salesforce on Salesforce: The Journey to Lightning
 ** Overview
 *** Description
@@ -83,6 +219,41 @@ This session is an open, honest telling of our own Lightning story from the pers
 *** Speaker
 -- Caroline Hsieh: Salesforce
 -- Tacy Parker: Director, Go To Market Business Architecture Salesforce
+** Memo
+*** Mindset
+- Lightning is an Experience.
+- Countinuous improvement
+*** Base the Approach on Persona: For
+- Sales team
+	- Reps, Ses, Specialists
+- business development
+	- Console Users
+- customer succes
+	- Heavy use of custom objectss
+*** High ouch
+- use caseを見直して以下の様に推進
+- Customer facing personasを見直し
+- Beta to a team of MPS in Production
+*** Low Touch
+- Deploy now, adjust later
+
+*** Change Managemnet
+we ran communicate makrenign campaign, building anticipation aomng our user as we approached launch.
+*** Assesment Approach
+*** Enablement Analysis
+Personaごとによく使う機能を整理、プロフファイルを整理
+- ex. Account ExecutiveはOpportunity account, Cotanct, Lead, Forecast, Report/Dashboard Chatterをよく使う、Profile:Field Sales/Inside Sales/Product Specialist など
+*** Pagelayout optimaization
+*** Customization retrofile
+*** Winter'17
+- 新しい機能はLXEの方でだけ出るんだぜ
+- app manager
+- kanban for lead, contracts, campaign
+- inline editing in list view(beta)
+- vido, image, and code snippet in chatter
+*** The sales journey to lightning (まとめ)
+** memo
+まぁ、色々いってLightningを押すぜという強い構え
 * Building Heroku + Force.com Architectures to Extend Your Salesforce Deployment
 ** Overview
 *** Description
@@ -150,11 +321,16 @@ You’ll see how we use Heroku to build apps that provide a unified user experie
 * Salesforce for Marketing Keynote: The Smartest CRM for 1-to-1 Customer Journeys
 ** Overview
 *** Description
-Marketing is the sum of all interactions with your brand. In a world where customer experience is king, relevant and contextual interactions are the keys to the kingdom. Join Bryan Wade, CPO & SVP of Marketing Cloud, and special guests to discover an evolution in marketing that puts the customer at the center of every experience with your brand -- from awareness and acquisition, to retention. Hear how the world's most innovative companies, including Change.org, MasterCard, and Dunkin' Brands, are getting smarter and more predictive about their customers, creating seamless 1-to-1 customer journeys.
+Marketing is the sum of all interactions with your brand.
+In a world where customer experience is king, relevant and contextual interactions are the keys to the kingdom.
+Join Bryan Wade, CPO & SVP of Marketing Cloud, and special guests to discover an evolution in marketing that puts the customer at the center of every experience with your brand -- from awareness and acquisition, to retention. Hear how the world's most innovative companies, including Change.org, MasterCard, and Dunkin' Brands, are getting smarter and more predictive about their customers, creating seamless 1-to-1 customer journeys.
 * Salesforce for Developers Keynote
 ** Overview
 *** Description
-Apps have never been more critical in our lives and our work, and everything and everyone is connected. This app revolution has given rise to a global renaissance for developers. At the same time, our digital experiences are often disconnected and new apps frequently lag expectations. Join Srini Tallapragada, President, Technology at Salesforce, in this year's Developer Keynote, to learn how to build apps faster, smarter and for the future, today.
+Apps have never been more critical in our lives and our work, and everything and everyone is connected.
+This app revolution has given rise to a global renaissance for developers.
+At the same time, our digital experiences are often disconnected and new apps frequently lag expectations.
+Join Srini Tallapragada, President, Technology at Salesforce, in this year's Developer Keynote, to learn how to build apps faster, smarter and for the future, today.
 * Salesforce Einstein Keynote: AI for Everyone
 ** Overview
 *** Description
