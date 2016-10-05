@@ -278,7 +278,6 @@ we ran communicate makrenign campaign, building anticipation aomng our user as w
 - 何をいってるのかわからず。英語の問題とLXEのベース知識の問題と
 - 参加者 80人くらい？
 - LXEを押すぜという強い構えは感じる。
-- class in 36ってなに
 * Japan Customer Summit
 ** agenda
 - facili: nakazawa
@@ -388,10 +387,50 @@ In this session we will describe real world architecture patterns and show how A
 	- 検索可能性を保ったまま
 	- 経済的に
 	- よそにデータをうつす
+*** QA
+- Q.データはわかった。metadataはどうする？
+- A.
+- Q. Heroku Connect高いけど何がいいの？
+- A. ApexとかStreamAPIでもできるけど、やっぱシンプルだよ
+- Q. User authenticationはどうしてる？（って言ってた気がする）
 **** later
-- mission capital.com: demoしたあぷり
-- mailtrap: demoでつかってたやつ
-- 
+- mission capital.com: demoしてたアプリ
+- mailtrap: メール送信demoでつかってた模様。SMTPのプロキシとして振る舞って、実際の送信先とは違うところに送る模様。、 [[https://mailtrap.io/]] ユーザデータみたいなんでテストするときに送信先を開発者アカウントに捻じ曲げるためにつかう？
+* Migrating Lightning Components from Visualforce
+** Overview
+*** Description
+You have an investment in Visualforce Pages but you are ready to make the move to Lightning Components.
+VF Pageはもう詳しいと思うけど、せやけど Lightning Componentsに移行する準備が必要や。
+
+You could rebuild every page from scratch but converting seems like a better idea,
+but what kind of strategies and tactics make for a successful conversion? In this session we will illustrate different strategies and tactics,
+using real world examples on migrating to Lightning Components from Visualforce Pages.
+*** Speaker
+- Chen Deng: Salesforce
+- Anas Jadallah: Salesforce
+- Anastasia Shpurik: Anastasia Shpurik
+** Memo
+- Visualforce vs lightning component
+	- vf: htmlとviewstateで. server rendering. page base.
+	- lightning:  client appとjson, client rendering. app base.
+- roadmap
+	- plan: page base -> app base の設計変更から何が再利用できるか考えような。
+	- dev
+		- Lightning Component Builderがくるで
+		- VFが埋め込めんこともないで. ref. lightning out まだ beta ( [[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/lightning_out.htm]] 一旦外に通信に行くってこと？)
+		- component 1-* standard controller - shared cache - server
+	- test
+		- component の unit testing framework, runner dashboard な UI. coming soonでござい
+	- launch
+		- fallback to visualforce using multiple layouts
+- demo
+	- vf pageのソースをちょろまかして lightning componentsに仕立てて表示
+	- quick actionsを作って配置して、modal dialogに仕立てる
+	- 単独ページでも同じcomponentを配置。どや、reuseやろ。
+** 所感
+- 新しい話が多いわけでもない気がするわりに、意外に人多くて. 列が長い。
+- タイトルキーワードに引っかかる人が多いのか、でも離席が多い.
+
 * "Be a Customer Trailblazer" with Marc Benioff & Special Guests
 ** Overview
 *** Description
