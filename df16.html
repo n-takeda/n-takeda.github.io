@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>dreamforce 2016</title>
-<!-- 2016-10-04 火 21:34 -->
+<!-- 2016-10-04 火 22:21 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="natsuki.takeda" />
@@ -236,6 +236,7 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-3-1">3.1. Overview</a></li>
 <li><a href="#sec-3-2">3.2. Memo</a></li>
+<li><a href="#sec-3-3">3.3. 雑感</a></li>
 </ul>
 </li>
 <li><a href="#sec-4">4. What's Coming from Salesforce and Microsoft</a>
@@ -247,7 +248,7 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-5-1">5.1. Overview</a></li>
 <li><a href="#sec-5-2">5.2. Memo</a></li>
-<li><a href="#sec-5-3">5.3. memo</a></li>
+<li><a href="#sec-5-3">5.3. 所感</a></li>
 </ul>
 </li>
 <li><a href="#sec-6">6. Japan Customer Summit</a>
@@ -255,8 +256,9 @@ for the JavaScript code in this tag.
 <li><a href="#sec-6-1">6.1. agenda</a></li>
 <li><a href="#sec-6-2">6.2. salesforce.comのcustomer jouney</a></li>
 <li><a href="#sec-6-3">6.3. HQ 日本職員 panel</a></li>
-<li><a href="#sec-6-4">6.4. NTT Software dreamforce: suzuki sadahiro</a></li>
-<li><a href="#sec-6-5">6.5. App Excahnge@dreamforce expo: kitahara yuji</a></li>
+<li><a href="#sec-6-4">6.4. ここで、体調不良でJapan Cutomer Summitから離脱</a></li>
+<li><a href="#sec-6-5">6.5. NTT Software dreamforce: suzuki sadahiro</a></li>
+<li><a href="#sec-6-6">6.6. App Excahnge@dreamforce expo: kitahara yuji</a></li>
 </ul>
 </li>
 <li><a href="#sec-7">7. Building Heroku + Force.com Architectures to Extend Your Salesforce Deployment</a>
@@ -459,6 +461,10 @@ Join us to learn how Analytics in the cloud are transforming Urban Services, as 
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>都市丸ごとなスケールデカイ話を、まともに効果評価しつつ推進するのってどうやんだ
+<ul class="org-ul">
+<li>大きい餅を描いてみせたけど、キミはこれをこれからどうすんだっていうのが、よくわからなんだ（あるいは聞き取れなかった）
+</li>
+</ul>
 </li>
 <li>このセッション、なんで Dreamforceでやってんだろ。
 </li>
@@ -703,55 +709,58 @@ Some customers are able to deploy features and fixes up to 500+ times a week, wi
 <div id="outline-container-sec-3-2" class="outline-3">
 <h3 id="sec-3-2"><span class="section-number-3">3.2</span> Memo</h3>
 <div class="outline-text-3" id="text-3-2">
-</div><ol class="org-ol"><li><a id="sec-3-2-1" name="sec-3-2-1"></a>入りは100人くらい？<br  /></li>
-<li><a id="sec-3-2-2" name="sec-3-2-2"></a>CDって？<br  /></li>
-<li><a id="sec-3-2-3" name="sec-3-2-3"></a>何がCDを可能にするのか<br  /><div class="outline-text-4" id="text-3-2-3">
-<p>
-安くて使い捨てできて、configurableな環境
-</p>
+</div><ol class="org-ol"><li><a id="sec-3-2-1" name="sec-3-2-1"></a>CDの定義<br  /></li>
+<li><a id="sec-3-2-2" name="sec-3-2-2"></a>何がCDを可能にするのか<br  /><div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>安くて使い捨てできて、configurableな環境
+</li>
+</ul>
 </div>
 </li>
-<li><a id="sec-3-2-4" name="sec-3-2-4"></a>CDにたどり着くまでの歴史<br  /><div class="outline-text-4" id="text-3-2-4">
+<li><a id="sec-3-2-3" name="sec-3-2-3"></a>CDにたどり着くまでの歴史<br  /><div class="outline-text-4" id="text-3-2-3">
 <ul class="org-ul">
 <li>individual heroics
 </li>
 </ul>
 <p>
-&#x2013; mailでパッチ送り合ってローカルでストとしてsshでデプロイい
+&#x2013; mailでパッチ送り合ってローカルでテストとしてsshでデプロイって世界
 </p>
 <ul class="org-ul">
 <li>process diagram
 </li>
 </ul>
 <p>
-&#x2013; dev team vc build/ut auto accpetance test(smoke?), uat release
+&#x2013; dev team がvcでcheckin -&gt; build and UT -&gt; auto UAT (smokeテストみたいなんのイメージ？) -&gt; uat -&gt; release
 &#x2013; jez humble cc by sa 1.0
 </p>
 </div>
 </li>
-<li><a id="sec-3-2-5" name="sec-3-2-5"></a>CD On Heroku<br  /><div class="outline-text-4" id="text-3-2-5">
+<li><a id="sec-3-2-4" name="sec-3-2-4"></a>CD On Heroku<br  /><div class="outline-text-4" id="text-3-2-4">
 <ul class="org-ul">
 <li>pipelines
 </li>
 <li>github deploys
 </li>
 <li>review apps
-</li>
-</ul>
-<p>
-&#x2013; prごとに作られる使い捨て環境
-&#x2013; (creditの統制効くのか・・・？)
-</p>
 <ul class="org-ul">
-<li>heroku ci
+<li>prごとに作られる使い捨て環境
+</li>
+<li>(dyno unit の creditの統制効くのかしら？)
 </li>
 </ul>
-<p>
-&#x2013; まだ beta
-</p>
+</li>
+<li>heroku ci
+<ul class="org-ul">
+<li>まだ beta
+</li>
+<li>パット見 werckerの activity みたいな画面がdemoで写ったような
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </li>
-<li><a id="sec-3-2-6" name="sec-3-2-6"></a>Demo<br  /><div class="outline-text-4" id="text-3-2-6">
+<li><a id="sec-3-2-5" name="sec-3-2-5"></a>Demo<br  /><div class="outline-text-4" id="text-3-2-5">
 <ul class="org-ul">
 <li>github画面側へ統合(herokuでのreview app名かつghでのbranch名入れる所ができるx)
 </li>
@@ -764,32 +773,55 @@ Some customers are able to deploy features and fixes up to 500+ times a week, wi
 </ul>
 </div>
 </li>
-<li><a id="sec-3-2-7" name="sec-3-2-7"></a>Heroku Flowとは(Demoのまとめ)<br  /></li>
-<li><a id="sec-3-2-8" name="sec-3-2-8"></a>Heroku Pipelinesの恩恵<br  /><div class="outline-text-4" id="text-3-2-8">
+<li><a id="sec-3-2-6" name="sec-3-2-6"></a>Heroku Flowとは(Demoのまとめ)<br  /></li>
+<li><a id="sec-3-2-7" name="sec-3-2-7"></a>Heroku Pipelinesの恩恵<br  /><div class="outline-text-4" id="text-3-2-7">
 <ul class="org-ul">
 <li>production目線
-</li>
-</ul>
-<p>
-&#x2013; いろいろ
-&#x2013; 簡易デモとしてのカチを持つ
-</p>
 <ul class="org-ul">
-<li>development目線
+<li>いろいろ
 </li>
-<li>pipelineでできるいろいろ
+<li>簡易デモとしてのカチを持つ
 </li>
 </ul>
-<p>
-&#x2013; pre-commit checks
-&#x2013; pre-commit env
-&#x2013; test
-&#x2013; <b>Production Traffic Replay</b>
-&#x2013; <b>Multi Environment</b>
-</p>
+</li>
+</ul>
+</div>
+</li>
+<li><a id="sec-3-2-8" name="sec-3-2-8"></a>pipelineでできるいろいろ<br  /><div class="outline-text-4" id="text-3-2-8">
+<ul class="org-ul">
+<li>pre-commit checks
+</li>
+<li>pre-commit env
+</li>
+<li>test
+</li>
+<li>Production Traffic Replay（なにこれ？）
+</li>
+<li>Multi Environment
+</li>
+</ul>
 </div>
 </li>
 <li><a id="sec-3-2-9" name="sec-3-2-9"></a>Mozillaが使ってるよ<br  /></li></ol>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> 雑感</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>入りは100人くらい？
+</li>
+<li>このスピーカーのブログ: Pipeline, Reviewapps, Github syncからなるHeroku flowの話 <a href="https://blog.heroku.com/heroku_flow_pipelines_review_apps_and_github_sync">https://blog.heroku.com/heroku_flow_pipelines_review_apps_and_github_sync</a>
+<ul class="org-ul">
+<li>Heroku CIの話はない
+</li>
+<li>対応するdev centerの項はこっち <a href="https://devcenter.heroku.com/articles/pipelines">https://devcenter.heroku.com/articles/pipelines</a>
+</li>
+</ul>
+</li>
+<li>Heroku ConnectでSF連携が推されていて, Salesforce DXを表に出してきていて、 <i>テスト環境</i> の統合された仕組みか考え方かができるんかいな
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div id="outline-container-sec-4" class="outline-2">
@@ -825,11 +857,14 @@ BMC Softwareがこれらのインテグレーションを行うことで可能�
 <p>
 &#x2013; これ？ <a href="http://www.bmcsoftware.jp/">http://www.bmcsoftware.jp/</a>
 </p>
+<ul class="org-ul">
+<li>当日いけなかったのでカット
+</li>
+</ul>
 </div>
 </li></ol>
 </div>
 </div>
-
 <div id="outline-container-sec-5" class="outline-2">
 <h2 id="sec-5"><span class="section-number-2">5</span> Salesforce on Salesforce: The Journey to Lightning</h2>
 <div class="outline-text-2" id="text-5">
@@ -859,10 +894,12 @@ This session is an open, honest telling of our own Lightning story from the pers
 </div>
 </li>
 <li><a id="sec-5-1-2" name="sec-5-1-2"></a>Speaker<br  /><div class="outline-text-4" id="text-5-1-2">
-<p>
-&#x2013; Caroline Hsieh: Salesforce
-&#x2013; Tacy Parker: Director, Go To Market Business Architecture Salesforce
-</p>
+<ul class="org-ul">
+<li>Caroline Hsieh: Salesforce
+</li>
+<li>Tacy Parker: Director, Go To Market Business Architecture Salesforce
+</li>
+</ul>
 </div>
 </li></ol>
 </div>
@@ -901,7 +938,7 @@ This session is an open, honest telling of our own Lightning story from the pers
 </ul>
 </div>
 </li>
-<li><a id="sec-5-2-3" name="sec-5-2-3"></a>High ouch<br  /><div class="outline-text-4" id="text-5-2-3">
+<li><a id="sec-5-2-3" name="sec-5-2-3"></a>High Touch<br  /><div class="outline-text-4" id="text-5-2-3">
 <ul class="org-ul">
 <li>use caseを見直して以下の様に推進
 </li>
@@ -919,7 +956,6 @@ This session is an open, honest telling of our own Lightning story from the pers
 </ul>
 </div>
 </li>
-
 <li><a id="sec-5-2-5" name="sec-5-2-5"></a>Change Managemnet<br  /><div class="outline-text-4" id="text-5-2-5">
 <p>
 we ran communicate makrenign campaign, building anticipation aomng our user as we approached launch.
@@ -928,10 +964,9 @@ we ran communicate makrenign campaign, building anticipation aomng our user as w
 </li>
 <li><a id="sec-5-2-6" name="sec-5-2-6"></a>Assesment Approach<br  /></li>
 <li><a id="sec-5-2-7" name="sec-5-2-7"></a>Enablement Analysis<br  /><div class="outline-text-4" id="text-5-2-7">
-<p>
-Personaごとによく使う機能を整理、プロフファイルを整理
-</p>
 <ul class="org-ul">
+<li>Personaごとによく使う機能を整理、プロフファイルを整理
+</li>
 <li>ex. Account ExecutiveはOpportunity account, Cotanct, Lead, Forecast, Report/Dashboard Chatterをよく使う、Profile:Field Sales/Inside Sales/Product Specialist など
 </li>
 </ul>
@@ -941,7 +976,7 @@ Personaごとによく使う機能を整理、プロフファイルを整理
 <li><a id="sec-5-2-9" name="sec-5-2-9"></a>Customization retrofile<br  /></li>
 <li><a id="sec-5-2-10" name="sec-5-2-10"></a>Winter'17<br  /><div class="outline-text-4" id="text-5-2-10">
 <ul class="org-ul">
-<li>新しい機能はLXEの方でだけ出るんだぜ
+<li>新しい機能はLXEの方でだけ出るんだぜ。早くLXE始めようぜ。
 </li>
 <li>app manager
 </li>
@@ -963,7 +998,7 @@ Personaごとによく使う機能を整理、プロフファイルを整理
 </li>
 <li>implment in stages
 </li>
-<li>kkep it simple
+<li>keep it simple
 </li>
 <li>evolve and adapt
 </li>
@@ -972,13 +1007,15 @@ Personaごとによく使う機能を整理、プロフファイルを整理
 </li></ol>
 </div>
 <div id="outline-container-sec-5-3" class="outline-3">
-<h3 id="sec-5-3"><span class="section-number-3">5.3</span> memo</h3>
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> 所感</h3>
 <div class="outline-text-3" id="text-5-3">
-<p>
-参加者 80人くらい？
-まぁ、色々いってLightningを押すぜという強い構え
-</p>
 <ul class="org-ul">
+<li>何をいってるのかわからず。英語の問題とLXEのベース知識の問題と
+</li>
+<li>参加者 80人くらい？
+</li>
+<li>LXEを押すぜという強い構えは感じる。
+</li>
 <li>class in 36ってなに
 </li>
 </ul>
@@ -992,11 +1029,11 @@ Personaごとによく使う機能を整理、プロフファイルを整理
 <h3 id="sec-6-1"><span class="section-number-3">6.1</span> agenda</h3>
 <div class="outline-text-3" id="text-6-1">
 <ul class="org-ul">
-<li>nakazawa
+<li>facili: nakazawa
 </li>
-<li>新役員 miyata
+<li>aisatsu: 新役員 miyata
 </li>
-<li>17万人 japan 500人
+<li>DF16の参加者について、17万人 japan 500人
 </li>
 </ul>
 </div>
@@ -1004,16 +1041,15 @@ Personaごとによく使う機能を整理、プロフファイルを整理
 <div id="outline-container-sec-6-2" class="outline-3">
 <h3 id="sec-6-2"><span class="section-number-3">6.2</span> salesforce.comのcustomer jouney</h3>
 <div class="outline-text-3" id="text-6-2">
-<p>
-michelle mere business process director
-</p>
 <ul class="org-ul">
+<li>speaker: michelle mere business process director
+</li>
 <li>sucess model
 </li>
 </ul>
 <p>
 5 key lifecycle functions.ステージに依る5つのサポートステージ
-us 19万 +5k early
+us 19万 ( plus 5k/year)
 </p>
 <ul class="org-ul">
 <li>EWS
@@ -1039,14 +1075,14 @@ mail開いたhelpみたcase openした・・・追っかけてる
 </li>
 <li>Roadmap for japanese
 </li>
+<li>Q. なんでpardotちゃうん？
+</li>
+<li>A. pardotは小中規模用。データ多いなら markethig cloudのほうが向いている(規模の問題?)
+</li>
 </ul>
 <p>
-Q. なんでpardotちゃうん？
-A. pardotは小中規模用。データ多いなら markethig cloudのほうが向いている(規模の問題?)
-　desk.comではpardotというように、セクションによってはSF内でもpardot使ってる。
-  でも marketing cloudが coreっちゃcore.
-memo.
-vidyard/go to webinar
+desk.comではpardotというように、セクションによってはSF内でもpardot使ってる。
+でも marketing cloudが coreっちゃcore.
 </p>
 <ul class="org-ul">
 <li>Q. で、効果は
@@ -1058,7 +1094,7 @@ vidyard/go to webinar
 </ul>
 <p>
 　　Globalで30%は使ってる。日本人中では50%は使ってる。意味はある。Trailheadについては、あんまデータとってないからヘビーに使ってるとか使ってないとかまではわからん
-    ここで喋ってるユーザのユースケースは、adminだけで(developer委託せずに）つかってる例ですぜ
+    ここで喋ってるユーザのユースケースは、adminだけで(developer委託せずに）つかってる例だよ
 </p>
 </div>
 </div>
@@ -1068,7 +1104,9 @@ vidyard/go to webinar
 <ul class="org-ul">
 <li>direction: bannai
 </li>
-<li>sadahiro suzuki (ntt software)
+<li>panneler:
+<ul class="org-ul">
+<li>sadahiro suzuki (ntt software as user position)
 </li>
 <li>ryuji osawa
 <ul class="org-ul">
@@ -1090,7 +1128,7 @@ vidyard/go to webinar
 </li>
 <li>junichiro sekiguchi
 <ul class="org-ul">
-<li>DB啓
+<li>Database
 </li>
 </ul>
 </li>
@@ -1100,28 +1138,33 @@ vidyard/go to webinar
 </li>
 </ul>
 </li>
+</ul>
+</li>
 <li>Q. 最近にAP障害多くない?
 </li>
 <li>A. SF trustsの"障害"閾値はかなり低い
 障害になってもユーザからケースが上がらないことがかなり多い
-sandoboxがやばいのは頑張ってる
-(問題すり替えた?)
+sandoboxがやばいのは頑張って対応してる
+(話がすり替わった?)
 </li>
 <li>trailhead badgeの日本語化進めてる
 </li>
 <li>idea exchange高評価もっと採用してほしい&#x2026;
 評価は注目している。高評価=採用ではない
 </li>
-<li>「engeneering側が拒否することもあるんだよ。思われてるほどPMは強くないんだよ」
+<li>「engeneering側が拒否することもあるんだよ。思われてるほどProduct Managerは強くないんだよ」
 </li>
 </ul>
 </div>
 </div>
 <div id="outline-container-sec-6-4" class="outline-3">
-<h3 id="sec-6-4"><span class="section-number-3">6.4</span> NTT Software dreamforce: suzuki sadahiro</h3>
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> ここで、体調不良でJapan Cutomer Summitから離脱</h3>
 </div>
 <div id="outline-container-sec-6-5" class="outline-3">
-<h3 id="sec-6-5"><span class="section-number-3">6.5</span> App Excahnge@dreamforce expo: kitahara yuji</h3>
+<h3 id="sec-6-5"><span class="section-number-3">6.5</span> NTT Software dreamforce: suzuki sadahiro</h3>
+</div>
+<div id="outline-container-sec-6-6" class="outline-3">
+<h3 id="sec-6-6"><span class="section-number-3">6.6</span> App Excahnge@dreamforce expo: kitahara yuji</h3>
 </div>
 </div>
 <div id="outline-container-sec-7" class="outline-2">
@@ -1389,7 +1432,7 @@ At Dreamforce last year we launched custom metadata types. This year we add a he
 </div></div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: natsuki.takeda</p>
-<p class="date">Created: 2016-10-04 火 21:34</p>
+<p class="date">Created: 2016-10-04 火 22:21</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

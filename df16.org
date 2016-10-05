@@ -54,6 +54,7 @@ Join us to learn how Analytics in the cloud are transforming Urban Services, as 
 
 ** 雑感
 - 都市丸ごとなスケールデカイ話を、まともに効果評価しつつ推進するのってどうやんだ
+	- 大きい餅を描いてみせたけど、キミはこれをこれからどうすんだっていうのが、よくわからなんだ（あるいは聞き取れなかった）
 - このセッション、なんで Dreamforceでやってんだろ。
 - システム概要（ユースケース、データの流れっぽいの）のグランドデザインのスライド、高速でページ送りされた。
 * Salesforce & Partners, Blazing Trails to Customer Transformation
@@ -161,24 +162,24 @@ Some customers are able to deploy features and fixes up to 500+ times a week, wi
 - Ike DeLorenzo: Salesforce
 - Chris Lonnen: Knight errant mozilla
 ** Memo
-*** 入りは100人くらい？
-*** CDって？
+*** CDの定義
 *** 何がCDを可能にするのか
-安くて使い捨てできて、configurableな環境
+- 安くて使い捨てできて、configurableな環境
 *** CDにたどり着くまでの歴史
 - individual heroics
--- mailでパッチ送り合ってローカルでストとしてsshでデプロイい
+-- mailでパッチ送り合ってローカルでテストとしてsshでデプロイって世界
 - process diagram
--- dev team vc build/ut auto accpetance test(smoke?), uat release
+-- dev team がvcでcheckin -> build and UT -> auto UAT (smokeテストみたいなんのイメージ？) -> uat -> release
 -- jez humble cc by sa 1.0
 *** CD On Heroku
 - pipelines
 - github deploys
 - review apps
--- prごとに作られる使い捨て環境
--- (creditの統制効くのか・・・？)
+	- prごとに作られる使い捨て環境
+	- (dyno unit の creditの統制効くのかしら？)
 - heroku ci
--- まだ beta
+	- まだ beta
+	- パット見 werckerの activity みたいな画面がdemoで写ったような
 *** Demo
 - github画面側へ統合(herokuでのreview app名かつghでのbranch名入れる所ができるx)
 - pr作られるとapp-pr名のreview appsが作られる
@@ -187,16 +188,21 @@ Some customers are able to deploy features and fixes up to 500+ times a week, wi
 *** Heroku Flowとは(Demoのまとめ)
 *** Heroku Pipelinesの恩恵
 - production目線
--- いろいろ
--- 簡易デモとしてのカチを持つ
-- development目線
-- pipelineでできるいろいろ
--- pre-commit checks
--- pre-commit env
--- test
--- *Production Traffic Replay*
--- *Multi Environment*
+	- いろいろ
+	- 簡易デモとしてのカチを持つ
+*** pipelineでできるいろいろ
+	- pre-commit checks
+	- pre-commit env
+	- test
+	- Production Traffic Replay（なにこれ？）
+	- Multi Environment
 *** Mozillaが使ってるよ
+** 雑感
+- 入りは100人くらい？
+- このスピーカーのブログ: Pipeline, Reviewapps, Github syncからなるHeroku flowの話 [[https://blog.heroku.com/heroku_flow_pipelines_review_apps_and_github_sync]]
+	- Heroku CIの話はない
+	- 対応するdev centerの項はこっち https://devcenter.heroku.com/articles/pipelines
+- Heroku ConnectでSF連携が推されていて, Salesforce DXを表に出してきていて、 /テスト環境/ の統合された仕組みか考え方かができるんかいな
 * What's Coming from Salesforce and Microsoft
 ** Overview
 *** Description
@@ -212,7 +218,7 @@ BMC Softwareがこれらのインテグレーションを行うことで可能�
 - Philippe Marinier: Salesforce
 - Daniel Zubkoff: Sr. Director BMC Software
 -- これ？ http://www.bmcsoftware.jp/
-
+- 当日いけなかったのでカット
 * Salesforce on Salesforce: The Journey to Lightning
 ** Overview
 *** Description
@@ -228,8 +234,8 @@ In this session we will share with you how Salesforce planned for this change, t
 This session is an open, honest telling of our own Lightning story from the perspective of our Distribution Business Architect and IT delivery org.
 このセッションは、Distribution Business ArchitectとITデリバリ組織の視点から、ごく腹を割って自分らのLightningのストーリーを話すわ。
 *** Speaker
--- Caroline Hsieh: Salesforce
--- Tacy Parker: Director, Go To Market Business Architecture Salesforce
+- Caroline Hsieh: Salesforce
+- Tacy Parker: Director, Go To Market Business Architecture Salesforce
 ** Memo
 *** Mindset
 - Lightning is an Experience.
@@ -241,23 +247,22 @@ This session is an open, honest telling of our own Lightning story from the pers
 	- Console Users
 - customer succes
 	- Heavy use of custom objectss
-*** High ouch
+*** High Touch
 - use caseを見直して以下の様に推進
 - Customer facing personasを見直し
 - Beta to a team of MPS in Production
 *** Low Touch
 - Deploy now, adjust later
-
 *** Change Managemnet
 we ran communicate makrenign campaign, building anticipation aomng our user as we approached launch.
 *** Assesment Approach
 *** Enablement Analysis
-Personaごとによく使う機能を整理、プロフファイルを整理
+- Personaごとによく使う機能を整理、プロフファイルを整理
 - ex. Account ExecutiveはOpportunity account, Cotanct, Lead, Forecast, Report/Dashboard Chatterをよく使う、Profile:Field Sales/Inside Sales/Product Specialist など
 *** Pagelayout optimaization
 *** Customization retrofile
 *** Winter'17
-- 新しい機能はLXEの方でだけ出るんだぜ
+- 新しい機能はLXEの方でだけ出るんだぜ。早くLXE始めようぜ。
 - app manager
 - kanban for lead, contracts, campaign
 - inline editing in list view(beta)
@@ -267,23 +272,24 @@ Personaごとによく使う機能を整理、プロフファイルを整理
 - create your lightning story
 - assess your readiness
 - implment in stages
-- kkep it simple
+- keep it simple
 - evolve and adapt
-** memo
-参加者 80人くらい？
-まぁ、色々いってLightningを押すぜという強い構え
+** 所感
+- 何をいってるのかわからず。英語の問題とLXEのベース知識の問題と
+- 参加者 80人くらい？
+- LXEを押すぜという強い構えは感じる。
 - class in 36ってなに
 * Japan Customer Summit
 ** agenda
-- nakazawa
-- 新役員 miyata
-- 17万人 japan 500人
+- facili: nakazawa
+- aisatsu: 新役員 miyata
+- DF16の参加者について、17万人 japan 500人
 ** salesforce.comのcustomer jouney
-michelle mere business process director
+- speaker: michelle mere business process director
 - sucess model
-5 key lifecycle functions.ステージに依る5つのサポートステージ
-us 19万 +5k early
-- EWS
+	- 5 key lifecycle functions.ステージに依る5つのサポートステージ
+us 19万 ( plus 5k/year)
+- EWS (early warning system)
 	- 組織の利用パターンから手助けがいるんじゃないの？を解析してる
 	- そのためのData Scientitsがいる
 	- lifecycleを解析して jorneyの framework化をしている
@@ -295,39 +301,39 @@ us 19万 +5k early
 	< requests help, mail
   mail開いたhelpみたcase openした・・・追っかけてる
 - Roadmap for japanese
-Q. なんでpardotちゃうん？
-A. pardotは小中規模用。データ多いなら markethig cloudのほうが向いている(規模の問題?)
-　desk.comではpardotというように、セクションによってはSF内でもpardot使ってる。
-  でも marketing cloudが coreっちゃcore.
-memo.
-vidyard/go to webinar
+- Q. なんでpardotちゃうん？
+- A. pardotは小中規模用。データ多いなら markethig cloudのほうが向いている(規模の問題?)
+desk.comではpardotというように、セクションによってはSF内でもpardot使ってる。
+でも marketing cloudが coreっちゃcore.
 - Q. で、効果は
 - A. 上がってると思う。データの傾向事実としてモデル化できたユーザ行動の知見はある。この施策単独効果計測したわけではない。
 - Q. Getting started/webinarって日本人(user admin)使わないんちゃう？
 　　Globalで30%は使ってる。日本人中では50%は使ってる。意味はある。Trailheadについては、あんまデータとってないからヘビーに使ってるとか使ってないとかまではわからん
-    ここで喋ってるユーザのユースケースは、adminだけで(developer委託せずに）つかってる例ですぜ
+    ここで喋ってるユーザのユースケースは、adminだけで(developer委託せずに）つかってる例だよ
 ** HQ 日本職員 panel
 - direction: bannai
-- sadahiro suzuki (ntt software)
-- ryuji osawa
-	- wave analytics dashboard/explore
-- yuri sebata-dember
-	- designer (communityX cloud lightning template)
-- daisuke kawamoto
-	- infra performance
-- junichiro sekiguchi
-	- DB啓
-- kumiko jacobs
-	- localization pm
+- panneler:
+	- sadahiro suzuki (ntt software as user position)
+	- ryuji osawa
+		- wave analytics dashboard/explore
+	- yuri sebata-dember
+		- designer (communityX cloud lightning template)
+	- daisuke kawamoto
+		- infra performance
+	- junichiro sekiguchi
+		- Database
+	- kumiko jacobs
+		- localization pm
 - Q. 最近にAP障害多くない?
 - A. SF trustsの"障害"閾値はかなり低い
 	障害になってもユーザからケースが上がらないことがかなり多い
-	sandoboxがやばいのは頑張ってる
-	(問題すり替えた?)
+	sandoboxがやばいのは頑張って対応してる
+	(話がすり替わった?)
 - trailhead badgeの日本語化進めてる
 - idea exchange高評価もっと採用してほしい...
 	評価は注目している。高評価=採用ではない
-- 「engeneering側が拒否することもあるんだよ。思われてるほどPMは強くないんだよ」
+- 「engeneering側が拒否することもあるんだよ。思われてるほどProduct Managerは強くないんだよ」
+** ここで、体調不良でJapan Cutomer Summitは中座
 ** NTT Software dreamforce: suzuki sadahiro
 ** App Excahnge@dreamforce expo: kitahara yuji
 * Building Heroku + Force.com Architectures to Extend Your Salesforce Deployment
