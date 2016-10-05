@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>dreamforce 2016</title>
-<!-- 2016-10-04 火 22:21 -->
+<!-- 2016-10-05 水 09:13 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="natsuki.takeda" />
@@ -256,7 +256,7 @@ for the JavaScript code in this tag.
 <li><a href="#sec-6-1">6.1. agenda</a></li>
 <li><a href="#sec-6-2">6.2. salesforce.comのcustomer jouney</a></li>
 <li><a href="#sec-6-3">6.3. HQ 日本職員 panel</a></li>
-<li><a href="#sec-6-4">6.4. ここで、体調不良でJapan Cutomer Summitから離脱</a></li>
+<li><a href="#sec-6-4">6.4. ここで、体調不良でJapan Cutomer Summitは中座</a></li>
 <li><a href="#sec-6-5">6.5. NTT Software dreamforce: suzuki sadahiro</a></li>
 <li><a href="#sec-6-6">6.6. App Excahnge@dreamforce expo: kitahara yuji</a></li>
 </ul>
@@ -976,7 +976,7 @@ we ran communicate makrenign campaign, building anticipation aomng our user as w
 <li><a id="sec-5-2-9" name="sec-5-2-9"></a>Customization retrofile<br  /></li>
 <li><a id="sec-5-2-10" name="sec-5-2-10"></a>Winter'17<br  /><div class="outline-text-4" id="text-5-2-10">
 <ul class="org-ul">
-<li>新しい機能はLXEの方でだけ出るんだぜ。早くLXE始めようぜ。
+<li>新しい機能はLXEの方でだけ出るんやで。はよLXEしような。
 </li>
 <li>app manager
 </li>
@@ -1045,14 +1045,17 @@ we ran communicate makrenign campaign, building anticipation aomng our user as w
 <li>speaker: michelle mere business process director
 </li>
 <li>sucess model
+<ul class="org-ul">
+<li>5 key lifecycle functions.ステージに依る5つのサポートステージ
+</li>
+</ul>
 </li>
 </ul>
 <p>
-5 key lifecycle functions.ステージに依る5つのサポートステージ
 us 19万 ( plus 5k/year)
 </p>
 <ul class="org-ul">
-<li>EWS
+<li>EWS (early warning system)
 <ul class="org-ul">
 <li>組織の利用パターンから手助けがいるんじゃないの？を解析してる
 </li>
@@ -1158,7 +1161,7 @@ sandoboxがやばいのは頑張って対応してる
 </div>
 </div>
 <div id="outline-container-sec-6-4" class="outline-3">
-<h3 id="sec-6-4"><span class="section-number-3">6.4</span> ここで、体調不良でJapan Cutomer Summitから離脱</h3>
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> ここで、体調不良でJapan Cutomer Summitは中座</h3>
 </div>
 <div id="outline-container-sec-6-5" class="outline-3">
 <h3 id="sec-6-5"><span class="section-number-3">6.5</span> NTT Software dreamforce: suzuki sadahiro</h3>
@@ -1176,17 +1179,17 @@ sandoboxがやばいのは頑張って対応してる
 </div><ol class="org-ol"><li><a id="sec-7-1-1" name="sec-7-1-1"></a>Description<br  /><div class="outline-text-4" id="text-7-1-1">
 <p>
 Our Trailblazers build amazing things with the App Cloud.
-App Cloudをつこうてものすんごいもんを作りおる。
+やり手や奴らはApp Cloudをつこうてものすんごいもんを作りおる。
 </p>
 
 <p>
 With over 15 million custom apps developed on App Cloud, developers occasionally run into a requirements that seem impossible to solve with Force.com alone.
-1500万を越えるアプリがApp Cloudの上で作られとって、開発者はForce.comだけではちょっと実現が難しいような要件を実現したりしとる。
+1500万を越えるアプリがApp Cloudの上で作られとって、開発者はForce.comだけではちょっとやりようがあらへん要件を実現したりしとる。
 </p>
 
 <p>
 Very often, Heroku is the solution.
-Herokuもよく選ばれる解決策や。
+Herokuもよう選ばれる解決策や。
 </p>
 
 <p>
@@ -1197,7 +1200,7 @@ In this session we will describe real world architecture patterns and show how A
 </li>
 <li><a id="sec-7-1-2" name="sec-7-1-2"></a>Speaker<br  /><div class="outline-text-4" id="text-7-1-2">
 <ul class="org-ul">
-<li>Dan Mehlman: Salesforce
+<li>Dan Mehlman: Salesforce Heroku Technical Architect @DanTheCloudGuy
 </li>
 <li>Gopal Patel: CTO GetFeedback
 </li>
@@ -1205,9 +1208,49 @@ In this session we will describe real world architecture patterns and show how A
 </li>
 </ul>
 </div>
+</li>
+<li><a id="sec-7-1-3" name="sec-7-1-3"></a>Memo<br  /><ol class="org-ol"><li><a id="sec-7-1-3-1" name="sec-7-1-3-1"></a>platform roles<br  /><div class="outline-text-5" id="text-7-1-3-1">
+<ul class="org-ul">
+<li>Functional apps
+</li>
+<li>model-driven apps: force.com
+</li>
+<li>webscale apps heroku
+</li>
+</ul>
+</div>
+</li></ol>
+</li>
+<li><a id="sec-7-1-4" name="sec-7-1-4"></a>usecase<br  /><div class="outline-text-4" id="text-7-1-4">
+<ul class="org-ul">
+<li>apis and micor services on heroku(include heroku connect): elastic compute
+</li>
+<li>data warehousing and data integration, secured. private spaces, postgres, connect
+</li>
+<li>streaming, iot: xively&#x2026;
+</li>
+</ul>
+</div>
+</li>
+<li><a id="sec-7-1-5" name="sec-7-1-5"></a>getfeedbackのヒトから cx について<br  /><div class="outline-text-4" id="text-7-1-5">
+<ul class="org-ul">
+<li>modern, mobile ready, high responseが求められてるよ
+</li>
+<li>feeedback は 簡単にくるけど、相手のstage(journey)こみで解釈しないとね
+</li>
+</ul>
+</div>
+<ol class="org-ol"><li><a id="sec-7-1-5-1" name="sec-7-1-5-1"></a><i><a href="https://www.getfeedback.com/">https://www.getfeedback.com/</a></i> の demo<br  /><div class="outline-text-5" id="text-7-1-5-1">
+<ul class="org-ul">
+<li>resposiveでhigh response
+</li>
+</ul>
+</div>
+</li></ol>
 </li></ol>
 </div>
 </div>
+
 <div id="outline-container-sec-8" class="outline-2">
 <h2 id="sec-8"><span class="section-number-2">8</span> "Be a Customer Trailblazer" with Marc Benioff &amp; Special Guests</h2>
 <div class="outline-text-2" id="text-8">
@@ -1432,7 +1475,7 @@ At Dreamforce last year we launched custom metadata types. This year we add a he
 </div></div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: natsuki.takeda</p>
-<p class="date">Created: 2016-10-04 火 22:21</p>
+<p class="date">Created: 2016-10-05 水 09:13</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

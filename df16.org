@@ -351,11 +351,47 @@ Herokuもよう選ばれる解決策や。
 In this session we will describe real world architecture patterns and show how App Cloud (Heroku + Force.com together) provide robust and scalable solutions for the patterns.
 このセッションでは、実際に使われとるアーキテクチャパターンとか、 App Cloudで(HerokuとForce.comを使って）耐久性に優れたスケーラブルなもんを作る方法について紹介するわ。
 *** Speaker
-- Dan Mehlman: Salesforce
+- Dan Mehlman: Salesforce Heroku Technical Architect @DanTheCloudGuy
 - Gopal Patel: CTO GetFeedback
 - Peter Shankar: Chief Technology Officer Equity Multiple
 *** Memo
-
+**** platform roles
+- Functional apps
+- model-driven apps: force.com
+- webscale apps heroku
+*** usecase
+- apis and micor services on heroku(include heroku connect): elastic compute
+- data warehousing and data integration, secured. private spaces, postgres, connect
+- streaming, iot: xively...
+*** getfeedbackのヒトから cx について
+- modern, mobile ready, high responseが求められてるよ
+- feeedback は 簡単にくるけど、相手のstage(journey)こみで解釈しないとね
+**** [[getthefeedback][https://www.getfeedback.com/]] の demo
+- getthefeedbackでアンケート作って配信して、ユーザがresposiveでhigh responseなとフィードバック画面から送信して、即SFに反映されるまで
+*** mission capital: dataware housing, augomented salesforce
+- 何をしようとした？
+	- ローンの問題に関する金融サービスを扱う。いろんな金融商品、いろんなサービスが絡む。
+	- loan buyer/seller、雇用者向け向け
+- challenge
+	- dilligence ds(外部データいっぱい使う)
+	- ややこいreport,がいる(complex join), PDFで
+	- ストレージ最適かしないと(SFでdatawarehouseとか、やばいやん？）
+- solution
+	- 結局herokuでwarehouse
+	- 機能分割してmicro service
+	- 分割したsf組織とheroku api/app/reportingの組み合わ絵sで
+	- tradesupport org, dilligence org 1,2,...n
+	- org と appsをheroku connectでつなぐ
+*** data archive
+- 組織が育ってデータが増えて sf orgの制限に引っかかった場合に
+	- 安全に(complianceとか)
+	- 検索可能性を保ったまま
+	- 経済的に
+	- よそにデータをうつす
+**** later
+- mission capital.com: demoしたあぷり
+- mailtrap: demoでつかってたやつ
+- 
 * "Be a Customer Trailblazer" with Marc Benioff & Special Guests
 ** Overview
 *** Description
