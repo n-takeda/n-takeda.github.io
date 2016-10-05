@@ -262,7 +262,7 @@ we ran communicate makrenign campaign, building anticipation aomng our user as w
 *** Pagelayout optimaization
 *** Customization retrofile
 *** Winter'17
-- 新しい機能はLXEの方でだけ出るんだぜ。早くLXE始めようぜ。
+- 新しい機能はLXEの方でだけ出るんやで。はよLXEしような。
 - app manager
 - kanban for lead, contracts, campaign
 - inline editing in list view(beta)
@@ -340,13 +340,13 @@ desk.comではpardotというように、セクションによってはSF内で�
 ** Overview
 *** Description
 Our Trailblazers build amazing things with the App Cloud.
-App Cloudをつこうてものすんごいもんを作りおる。
+やり手や奴らはApp Cloudをつこうてものすんごいもんを作りおる。
 
 With over 15 million custom apps developed on App Cloud, developers occasionally run into a requirements that seem impossible to solve with Force.com alone.
-1500万を越えるアプリがApp Cloudの上で作られとって、開発者はForce.comだけではちょっと実現が難しいような要件を実現したりしとる。
+1500万を越えるアプリがApp Cloudの上で作られとって、開発者はForce.comだけではちょっとやりようがあらへん要件を実現したりしとる。
 
 Very often, Heroku is the solution.
-Herokuもよく選ばれる解決策や。
+Herokuもよう選ばれる解決策や。
 
 In this session we will describe real world architecture patterns and show how App Cloud (Heroku + Force.com together) provide robust and scalable solutions for the patterns.
 このセッションでは、実際に使われとるアーキテクチャパターンとか、 App Cloudで(HerokuとForce.comを使って）耐久性に優れたスケーラブルなもんを作る方法について紹介するわ。
@@ -354,6 +354,8 @@ In this session we will describe real world architecture patterns and show how A
 - Dan Mehlman: Salesforce
 - Gopal Patel: CTO GetFeedback
 - Peter Shankar: Chief Technology Officer Equity Multiple
+*** Memo
+
 * "Be a Customer Trailblazer" with Marc Benioff & Special Guests
 ** Overview
 *** Description
