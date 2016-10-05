@@ -15,42 +15,47 @@ Join us to learn how Analytics in the cloud are transforming Urban Services, as 
 - Dipen Dhruv: Services Sales Director - APAC Salesforce
 - Gordon Feller: Cisco Systems HQ - consultant; Meeting of the Minds - founder cisco
 ** Memo
-*** Affordable Digitail Infrastructure. 
-ストレージ単価は下がり続けてる、Bandwidth も広く安く
-*** いろんなデバイスが一つの街に沢山、接続してる。急激に広がってる
-50-75 billion smartbojects、人口に対して急増
-*** 新しい essentilal infrastructureが必要あね　
-*** 都市の何を知りどう解決する？
+*** Affordable Digital Infrastructure.
+- ストレージ単価は下がり続けてる、Bandwidth も広く安くなった。
+*** いろんなデバイスが一つの街の中に沢山、接続してる。急激に広がってる
+- 50-75 billion smartboject
+- 人口の伸びより遥かに強い勾配で急上昇
+*** 新しい essentilal infrastructureが必要なんだ
+*** 都市の何を知り（可視化し）、どう解決する？
 - 交通量
 - 駐車場の問題
-- iotで？parking spaceにsensor.
-- playerが多い, polici, driver, owner...
-	- data -> <processing> -> people
+	- 駐車場にセンサーとかあるよね
+- 都市の諸問題は関連するplayerが多い, 警察とかドライバーとか駐車場オーナーとか
+	- ユースケースに応じた
+		- ( things  <- sensor -> ) data ---processing---> player のstreamが必要
 	- いろいろなthings, そのdata streaming, player use caseごとのprocessing
-- boost road capacity and efficency
+- 問題の例: boost road capacity and efficency
 	- 40%は駐車場を探す人で引き起こされている
-	- 1 b cars onthe road today 4b -> 2050 $100B + lost in congestion
-	- 4.B hours of traffic delays ->> loss of $101B inthe us alone
+	- 1B cars onthe road today 4b -> 2050 $100B + lost in congestion
+	- 4B hours of traffic delays ->> loss of $101B inthe us alone
 	- traffic -> wasted fuel /greenhouses gasses -> increaded warming -> decline in water
 - how
 	- visualization realtime traffic, and parking opportunities
 	- enhancement reliablity network infra
-	-
-- ゴミ収集車はなんでちゃんと全部改修できるの？
+	- とか
+- ゴミ収集車はなんで毎回ちゃんと全部回収できるの？
 	- 収集対象（ゴミ箱、色分け、巡回
 - 飲料水はなぜきれいに保てるのか
 	- sensor, QA
 - 都市はtypicalな問題のサイロ
 	- digitizing
 		-> smart city
-		- real ex. barcelona
+		- 現実の例として. barcelona がある [fn:1]
 			- smart water/lighting....hospital
 - QA
--- Q. コレを広めようとしたら何が必要だ？何をケアしないといけない、
--- A. めっちゃうかねはかかる。コストセンターはデータセンターになる。
--- Q. 聞き取れないけど絵に描いた餅感がある的なはなし？
--- Q. 都市間のデータの所有権とかそういう話？
--- A. 
+	- Q. コレをやろうとしたら何が必要だ？何をケアしないといけない、
+	- A. めっちゃう金かかる。最大のコストセンターはデータセンターになる。
+	- Q. ？ （都市間のデータの所有権の問題とかそういう質問があったような。聞き取れず）
+
+** 雑感
+- 都市丸ごとなスケールデカイ話を、まともに効果評価しつつ推進するのってどうやんだ
+- このセッション、なんで Dreamforceでやってんだろ。
+- システム概要（ユースケース、データの流れっぽいの）のグランドデザインのスライド、高速でページ送りされた。
 * Salesforce & Partners, Blazing Trails to Customer Transformation
 ** Overview
 *** Description
@@ -62,7 +67,6 @@ As the world's largest, and most connected Cloud ecosystem, we come together to 
 
 Join Tyler Prince, EVP, WW Alliances & GTM Innovation and gain insights into partner success, market opportunities and other initiatives that empower Salesforce and partners to continue blazing trails of customer transformation and success.
 WW AlliancesとGTM( go-to-market? ) Innovationの EVPのTyler Prince、がパートナーの成功の中から得られた洞察やマーケットのオポチュニティ、その他 継続的な顧客の変化と成功の新機軸を切り開く力先導する要素。（について話す?）
-
 *** Spekaer
 - Keith Block: ice Chairman, President & COO Salesforce
 - Pam Miller: IDC
@@ -70,8 +74,8 @@ WW AlliancesとGTM( go-to-market? ) Innovationの EVPのTyler Prince、がパー
 - Adam Seligman: EVP, App Cloud Salesforce
 - Todd Surdey: Senior Vice President Salesforce
 - Neeracha Taychakhoonavudh: SVP, Partner Programs & Enablement Salesforce
-*** typer
-**** what makes our ecosystem amazing
+*** Video https://www.salesforce.com/video/282396/
+*** Memo what makes our ecosystem amazing
 - ohanaspirit
 -- parner ecosystm
 - innovation
@@ -131,6 +135,13 @@ https://twitter.com/svenkatesan/status/783363089399808000
 - parnter community
 - trailhead ( one learning dashboard)
 - build your buisiness like salesforce
+*** 雑感
+- chatterに既に流れているので割愛
+- salesforce dxはどこまで code で管理できるのか（何ができずに残ってしまうのか）[fn:3]
+-- jsonでconfigできるとか、seleniumテスト含めて蹴れるとか胸が熱いのでは
+-- demoのときにコンソールにでてた sfdxコマンドのhelp descriptionが Heroku CLIのものだったので、（開発的には）それがベースか。
+- lightning experience、app exchangeとあわせて猛push
+-- exchange上でappに[LXE ready]とかつけられる。certificationを整えている
 * Introduction to Git-Based Continuous Delivery with Heroku Pipelines
 ** Overview
 *** Description
@@ -252,8 +263,73 @@ Personaごとによく使う機能を整理、プロフファイルを整理
 - inline editing in list view(beta)
 - vido, image, and code snippet in chatter
 *** The sales journey to lightning (まとめ)
+*** Lightning STRIKE
+- create your lightning story
+- assess your readiness
+- implment in stages
+- kkep it simple
+- evolve and adapt
 ** memo
+参加者 80人くらい？
 まぁ、色々いってLightningを押すぜという強い構え
+- class in 36ってなに
+* Japan Customer Summit
+** agenda
+- nakazawa
+- 新役員 miyata
+- 17万人 japan 500人
+** salesforce.comのcustomer jouney
+michelle mere business process director
+- sucess model
+5 key lifecycle functions.ステージに依る5つのサポートステージ
+us 19万 +5k early
+- EWS
+	- 組織の利用パターンから手助けがいるんじゃないの？を解析してる
+	- そのためのData Scientitsがいる
+	- lifecycleを解析して jorneyの framework化をしている
+	- lifecycleに併せた補助リソースを整備している（knowledge/base... document/trailheadとか)
+- marketing cluodでGetting started以降を追いかけてる/ caseの担当者割当も適切に行うようにしている
+- nakazawa: 「ちゃんとメールが送れるように取引先責任者のメンテは気を使ってる
+- salescloud - markting cloud
+	> infor, health data
+	< requests help, mail
+  mail開いたhelpみたcase openした・・・追っかけてる
+- Roadmap for japanese
+Q. なんでpardotちゃうん？
+A. pardotは小中規模用。データ多いなら markethig cloudのほうが向いている(規模の問題?)
+　desk.comではpardotというように、セクションによってはSF内でもpardot使ってる。
+  でも marketing cloudが coreっちゃcore.
+memo.
+vidyard/go to webinar
+- Q. で、効果は
+- A. 上がってると思う。データの傾向事実としてモデル化できたユーザ行動の知見はある。この施策単独効果計測したわけではない。
+- Q. Getting started/webinarって日本人(user admin)使わないんちゃう？
+　　Globalで30%は使ってる。日本人中では50%は使ってる。意味はある。Trailheadについては、あんまデータとってないからヘビーに使ってるとか使ってないとかまではわからん
+    ここで喋ってるユーザのユースケースは、adminだけで(developer委託せずに）つかってる例ですぜ
+** HQ 日本職員 panel
+- direction: bannai
+- sadahiro suzuki (ntt software)
+- ryuji osawa
+	- wave analytics dashboard/explore
+- yuri sebata-dember
+	- designer (communityX cloud lightning template)
+- daisuke kawamoto
+	- infra performance
+- junichiro sekiguchi
+	- DB啓
+- kumiko jacobs
+	- localization pm
+- Q. 最近にAP障害多くない?
+- A. SF trustsの"障害"閾値はかなり低い
+	障害になってもユーザからケースが上がらないことがかなり多い
+	sandoboxがやばいのは頑張ってる
+	(問題すり替えた?)
+- trailhead badgeの日本語化進めてる
+- idea exchange高評価もっと採用してほしい...
+	評価は注目している。高評価=採用ではない
+- 「engeneering側が拒否することもあるんだよ。思われてるほどPMは強くないんだよ」
+** NTT Software dreamforce: suzuki sadahiro
+** App Excahnge@dreamforce expo: kitahara yuji
 * Building Heroku + Force.com Architectures to Extend Your Salesforce Deployment
 ** Overview
 *** Description
@@ -353,3 +429,7 @@ At Dreamforce last year we launched custom metadata types. This year we add a he
 *** Spekaer
 - hoge
 - fuga
+
+[fn:1] バルセロナスマートシティ話は この辺 http://smartcity.bcn.cat/en/buits-plan.html 分析プラットフォームはAzureとかPower BI https://azure.microsoft.com/en-us/documentation/videos/windows-azure-case-study-barcelona-bigdata/ ?
+[fn:2] https://www.salesforce.com/video/282396/
+[fn:3] https://www.salesforce.com/products/platform/products/salesforce-dx/ ブースの salesforce DXのエリアは(developerぽい)人がタカってた
