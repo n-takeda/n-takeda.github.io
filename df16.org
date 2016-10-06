@@ -600,6 +600,64 @@ You’ll see how we use Heroku to build apps that provide a unified user experie
 Marketing is the sum of all interactions with your brand.
 In a world where customer experience is king, relevant and contextual interactions are the keys to the kingdom.
 Join Bryan Wade, CPO & SVP of Marketing Cloud, and special guests to discover an evolution in marketing that puts the customer at the center of every experience with your brand -- from awareness and acquisition, to retention. Hear how the world's most innovative companies, including Change.org, MasterCard, and Dunkin' Brands, are getting smarter and more predictive about their customers, creating seamless 1-to-1 customer journeys.
+** Speaker
+** Memo
+- 9:30 PV
+- 9:33 Bryan wade
+	- Makertingの変遷: broadcast -> digitail -> 1-to-1 journey
+		- 効果の計測、追跡可能になっていく
+		- 1-to-1 marketは思想としては 10年以上前からあるけど、実装実現は困難だった
+		- Pardotとの違い
+			- success platformの中でデータハブになる
+			- メール等のメッセージ, 製品のdeviceデータ, SNS, Sales pipeline
+			- customer, support agent, sales, product
+- 9:41 Bob Staz
+	- Market Cloudのlifecycle layer
+		- 以下の3層で構成している
+		- Jouney Management (Journey Builder Lighting)
+			- SFのオブジェクトからMCにデータマップ定義して、15分毎にMCへ同期で。
+				- Community Cloud -> MCを連携
+		- Artifical Intelligence(Einstein連携)
+			- Contactsの各種スコアリングを自動で( メール, SNS....)
+			- Webサイトのカスタム表示
+		- Data Management(Krux: by CEO Tom chavez)
+	- Demo
+		- mastercard ( SVP Product Marketing Shannon Duffy )
+			- PardotでLeadにキャンペーンを張って顧客かするところで重点利用
+				- Market - Salesが同じデータをもとに
+			- Wave for B2B Marketing
+				- BI/Data Science/Analyticsの専門知識なしに、Insight得る
+				- 速度速く
+				- 担当者ごとに最適化されたダッシュボード
+					- Pipeline
+					- EinsteinのInsight
+					- B2B Marketing の Dashboard
+						- Campaign, Pipeline...
+						- いろんなところからdrill downなどデータをinteractiveに見られるように
+						- こっちにもEinstein insights
+							- 顧客のクラスタリングも？(似た顧客、同じキャンペーン効果を得られそうな顧客を抽出できる？）
+						- Coreとの行ったり来たりも簡単
+				- Leadの状態（買いそう、買わなさそう、がスコアリング）
+					- Web上でのアクションが多い、とかそういうactivity を元に
+				- Advitersing Studio
+					- 効果の低いもの(Einstein insightsで, click rateの低い Call to action, demo videoだったら +17%はクリックレートが上がるよ、とか）
+			- mastercardについて
+				- 「大量のトランザクションを捌く テクノロジーの会社だ」
+			- 最後に mastercard商品券を数人にまく
+		- change.org ( by Dan visnic )
+			- makerting - service cloudの統合
+		- dunkin' doughnut( by Leslie Fine)
+			- 顧客の臨むチャンネルで顧客の臨む情報を渡して adovacy advertising
+			- App Cloud
+			- Commerce Cloud
+			- Social Console
+				- いろんなメディアで行われた関連ポストが集まったdashboard
+				- 文字情報で集合だけではなく、画像も認識(Dunkinのロゴ)
+				- 「近くに店がない」というツイートに対して、直接メッセージを送って「こんな店舗がある、こちらのアプリ」からといったコンタクトを取れる
+				- アプリからユーザのWeb、アプリ活動のデータを元に、Einsteinで次に有効なコンタクトのとり方を(Journey path)を選択
+** どうでもいいこと
+- ゲストからの、バラマキが多め
+	- mastercardのgift cardあげるよ、dunkin'のクーポンあげるよ、とか
 * Salesforce for Developers Keynote
 ** Overview
 *** Description
@@ -607,6 +665,54 @@ Apps have never been more critical in our lives and our work, and everything and
 This app revolution has given rise to a global renaissance for developers.
 At the same time, our digital experiences are often disconnected and new apps frequently lag expectations.
 Join Srini Tallapragada, President, Technology at Salesforce, in this year's Developer Keynote, to learn how to build apps faster, smarter and for the future, today.
+** Memo
+- 注力していること
+	- DAU(Daily Active User) MAU(Monthly Active User)をあげる
+	- 苦労して作ったものが使ってもらえないとね
+	- 利用者に寄り添ったものを -> personal journey を組み上げないと
+	- だから、ビジネスUCの実装に注力できるように
+		- だから、trustなplatformを使うことは重要なので
+		- Identity, Security, 標準とかそんなんはplatform(Salesforce)に任せろ
+	- ownerからdeveloperへの要求
+		- Build apps faster: もっと早く（ビジネスシーンに併せて色々試したい、もっと早くリリースして欲しい・・・)
+		- Build apps smarter: もっと親切に（メールが送れない、接続がとれない、なら対応をユーザに教えてやらないと。ソフトウェアは何が問題わかってるやろ？的な問題に対応できるようにアプリを親切にする）
+		- Build apps together: チームで開発できるように
+	- Build apps faster: by Leah MacGowen-Hare, Director, Technology & Products
+		- Lightning: good ux, good framework, good ecosystem で faster
+			- framework
+				- data service - componentとdataのmapping markup( apexなしで )
+				- 全部つこうたサンプル作ったで: dreamhouse app demo
+					- schema builder
+					- app builder
+						- app exchangeと統合されてて、builer から exchangeで使いたいものを探して d&d
+						- apex controllerなしで schemaの住所fieldから、地図componentに渡して地図表示
+						- componetはいろんなところに配置できる
+							- ステータスバーに入れたり、Quick Action(submenu -> dialog表示する)に置いたり、画面下のutility barに置いたり
+						- mobile対応(独自ブランドとしてappを作れる "Salesforce1" アイコンに限らない）
+	- Build Smarter (by Emily Rose, Lead Developer Evangelist)
+		- smart -> event develop  ( with einstein)
+			- evnetが発生したら学習してクラスタリングして、その結果を使う
+			- Process Builder
+				- 値段変わったイベント -> 客のmobile appに物件のrecommend push notification
+				- 値段を何に変える？
+					- einsteinが「適正」な値段をrecommend
+				- 客は recommendを評価 positive/negative
+					- appは 評価を kafkaでsubscribeして、「学習」データとして食う
+				- 客は自然言語で物件問合せができる bot を作成 (heroku)
+					- 客が物件の写真をupload -> app は 画像認識してパースして類似物件をrecommend
+	- Build Apps together: by Wade Wegner, VP, Product
+		- platformの痛み -> developerはチームでどう仕事すればいい？
+		- salesforce DXの話
+			- ソースコード駆動、Git/Selenium/Eclipseなどの"普通"のツールを使えるように
+			- sfdx CLI
+				- 組織作成、config, data/import, gitのsrc+metadataをpush....
+				- Force.com IDEで開発が完結できるように
+					- App Builderも Eclipseの中から使えるようにしている
+			- test
+				- git管理でcliで組織を作れるわけだから、Jenkinsなんかも使えるわけやで
+				- Heroku Pipelineを使えるようにする
+					- review appsも scratch orgという形で作成できる
+	- 利用事例 Debbie Ashton ( Financal Force )
 * Salesforce Einstein Keynote: AI for Everyone
 ** Overview
 *** Description
