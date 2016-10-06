@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>dreamforce 2016</title>
-<!-- 2016-10-05 水 12:02 -->
+<!-- 2016-10-06 木 01:42 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="natsuki.takeda" />
@@ -276,6 +276,8 @@ for the JavaScript code in this tag.
 <li><a href="#sec-9">9. "Be a Customer Trailblazer" with Marc Benioff &amp; Special Guests</a>
 <ul>
 <li><a href="#sec-9-1">9.1. Overview</a></li>
+<li><a href="#sec-9-2">9.2. Memo</a></li>
+<li><a href="#sec-9-3">9.3. 雑感</a></li>
 </ul>
 </li>
 <li><a href="#sec-10">10. Deep Dive into the New Salesforce Development Experience (DX) Architecture</a>
@@ -286,6 +288,8 @@ for the JavaScript code in this tag.
 <li><a href="#sec-11">11. Building Force.com Apps from Source</a>
 <ul>
 <li><a href="#sec-11-1">11.1. Overview</a></li>
+<li><a href="#sec-11-2">11.2. memo</a></li>
+<li><a href="#sec-11-3">11.3. 所感</a></li>
 </ul>
 </li>
 <li><a href="#sec-12">12. How Salesforce Builds Salesforce using Heroku</a>
@@ -560,63 +564,84 @@ rename app innovation partner
 <li>app exchange 広がってる、利用も、高評価なものも
 </li>
 <li>trust , distribution, innovation
+<ul class="org-ul">
+<li>Sf自身の全ての機能拡張もこのため
 </li>
 </ul>
-<p>
-&#x2013; Sf自身の全ての機能拡張もこのため
-</p>
-<ul class="org-ul">
+</li>
 <li>einstein
-</li>
-</ul>
-<p>
-&#x2013; intteligence smarter
-</p>
 <ul class="org-ul">
-<li>partner trailblazer
+<li>inteligence smarter
 </li>
 </ul>
-<p>
-&#x2013; faster
-&#x2014; lightning対応進んでる、appも
-&#x2014; linghtning certificationを是非。roadmapは引いた
-&#x2014; winter17
-&#x2014; component有り物含めてつかえ。 lightnig exchangeをもりあげてくれ
-</p>
+</li>
+<li>partner trailblazer
+<ul class="org-ul">
+<li>faster
+<ul class="org-ul">
+<li>lightning対応進んでる、appも
+</li>
+<li>linghtning certificationを是非。roadmapは引いた
+</li>
+<li>winter17
+</li>
+<li>component有り物含めてつかえ。 lightnig exchangeをもりあげてくれ
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </li>
 <li><a id="sec-2-1-8-2" name="sec-2-1-8-2"></a>joise chase<br  /><div class="outline-text-5" id="text-2-1-8-2">
-<p>
--&#x2014; app exchange homeを使ってみよ
--&#x2014; sample-usecase: sage live
--&#x2014; 「ね、簡単でしょ」
--&#x2014; lightning app builder で d&amp;d customize demop
--&#x2014; 「ね、簡単でしょ」
-&#x2013; adam seligman
-&#x2014; もっと作りやすくしていくつもりだからfeed bacck よろ
-&#x2013; Salesforce DX (Deploper experience)
-&#x2014; source-driven development (apex meta-data)
-&#x2014; なんか Heroku toolbeltみたいなデモ
-&#x2014; git selenium eclipseとかとの統合
-&#x2014; git flowもいしきしてるっぽい
-</p>
+<ul class="org-ul">
+<li>app exchange homeを使ってみよ
+</li>
+<li>sample-usecase: sage live の導入
+<ul class="org-ul">
+<li>「ね、簡単でしょ」
+</li>
+<li>lightning app builder で d&amp;d customize demop
+</li>
+<li>「ね、簡単でしょ」
+</li>
+</ul>
+</li>
+<li>adam seligman
+<ul class="org-ul">
+<li>もっと作りやすくしていくつもりだからfeed bacck よろ
+</li>
+</ul>
+</li>
+<li>Salesforce DX (Deploper experience)
+<ul class="org-ul">
+<li>source-driven development (apex meta-data)
+</li>
+<li>なんか Heroku toolbeltみたいなコマンド体系のCLIデモ
+</li>
+<li>git selenium eclipseとかとの統合
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </li></ol>
 </li>
 <li><a id="sec-2-1-9" name="sec-2-1-9"></a>with wade wegner<br  /><div class="outline-text-4" id="text-2-1-9">
 <ul class="org-ul">
-<li>forcedotcom/dreamhouse-partnerkeynote-sdx
-</li>
 <li>cli development
 </li>
-<li>json でのconfigのpush, cat
+<li>json での組織configのpush, cat
+<ul class="org-ul">
+<li>multicurrencyとかlicenseとか
 </li>
 </ul>
-<p>
-```
-sfdc force:test
-```
-</p>
+</li>
+</ul>
+<pre class="example">
+sfdx force:test
+</pre>
 <ul class="org-ul">
 <li>force ideに lightning app builder を統合（ブラウザでガワだしてるだけでは&#x2026;.？）
 </li>
@@ -657,19 +682,20 @@ sfdc force:test
 <li>chatterに既に流れているので割愛
 </li>
 <li>salesforce dxはどこまで code で管理できるのか（何ができずに残ってしまうのか）<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>
-</li>
-</ul>
-<p>
-&#x2013; jsonでconfigできるとか、seleniumテスト含めて蹴れるとか胸が熱いのでは
-&#x2013; demoのときにコンソールにでてた sfdxコマンドのhelp descriptionが Heroku CLIのものだったので、（開発的には）それがベースか。
-</p>
 <ul class="org-ul">
-<li>lightning experience、app exchangeとあわせて猛push
+<li>jsonでconfigできるとか、seleniumテスト含めて蹴れるとか胸が熱いのでは
+</li>
+<li>demoのときにコンソールにでてた sfdxコマンドのhelp descriptionが Heroku CLIのものだったので、（開発的には）それがベースか。
 </li>
 </ul>
-<p>
-&#x2013; exchange上でappに[LXE ready]とかつけられる。certificationを整えている
-</p>
+</li>
+<li>lightning experience、app exchangeとあわせて猛push
+<ul class="org-ul">
+<li>exchange上でappに[LXE ready]とかつけられる。certificationを整えている
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </li></ol>
 </div>
@@ -1317,13 +1343,13 @@ In this session we will describe real world architecture patterns and show how A
 </li>
 <li>A. ApexとかStreamAPIでもできるけど、やっぱシンプルだよ
 </li>
-<li>Q. User authenticationはどうしてる？
+<li>Q. User authenticationはどうしてる？（って言ってた気がする）
 </li>
 </ul>
 </div>
 <ol class="org-ol"><li><a id="sec-7-1-8-1" name="sec-7-1-8-1"></a>later<br  /><div class="outline-text-5" id="text-7-1-8-1">
 <ul class="org-ul">
-<li>mission capital.com: demoしたあぷり
+<li>mission capital.com: demoしてたアプリ
 </li>
 <li>mailtrap: メール送信demoでつかってた模様。SMTPのプロキシとして振る舞って、実際の送信先とは違うところに送る模様。、 <a href="https://mailtrap.io/">https://mailtrap.io/</a> ユーザデータみたいなんでテストするときに送信先を開発者アカウントに捻じ曲げるためにつかう？
 </li>
@@ -1443,15 +1469,142 @@ Marc will highlight how innovative companies are using the cloud, mobility, IoT 
 Salesforce will showcase new products and technology like Einstein that will dramatically change how employees across sales, service, marketing &amp; IT perform their jobs and engage with customers.
 Seating in the Main Keynote is limited. Attendees will be seated first-come, first-served. The keynote will be broadcast at locations throughout the Dreamforce Campus.
 </p>
-
-<p>
-クラウド、動体、IoT、人工知能に注目。新しい製品・技術のショーケース。Einstein。
-</p>
 </div>
 </li></ol>
 </div>
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> Memo</h3>
+<div class="outline-text-3" id="text-9-2">
+<ul class="org-ul">
+<li>- 13:00 スポンサーインタビュー. accentureとかcocacolaとか。
+</li>
+<li>- 13:15 なんだっけ。
+</li>
+<li>- 13:25 "ohana" を受けての aloha takaの音楽セッション
+</li>
+<li>- 13:27 SFのPV.  einstein trail ohana推し
+</li>
+<li>13:29 - Marc benioff登場
+<ul class="org-ul">
+<li>"thanks community"
+</li>
+<li>SFの成長の話 forbes, fortuneへの掲載を出しながら
+</li>
+<li>1-1-1の話 : the age of equality
+<ul class="org-ul">
+<li>具体的な援助のはなし 主に教育援助
+</li>
+</ul>
+</li>
+<li>a smarter world (roadmap, connected , iot -&gt; ai -&gt; )
+</li>
+<li>the age of the customer 顧客接点サービスの増加変化
+<ul class="org-ul">
+<li>ex. turbo tax, asics, uber,
+</li>
+</ul>
+</li>
+<li>"no codeで素早くやりたいことがやれるplatformを広く"
+</li>
+<li>ということでAI: SFのベースに組み込まれていく機能
+<ul class="org-ul">
+<li>-&gt; einstein
+</li>
+</ul>
+</li>
+<li>lightning family
+<ul class="org-ul">
+<li>サービス発展ののagilityのために必要なもの
+</li>
+<li>showcaseとしてはquip
+</li>
+</ul>
+</li>
+<li>enterprise 5角変革と対応するSF製品/サービス
+<ul class="org-ul">
+<li>紹介
+</li>
+<li>unity ecommerce
+</li>
+<li>mobile salesforce1
+</li>
+<li>などなどplatformとしてappが揃ってきた
+</li>
+</ul>
+</li>
+<li>einstein by parker parris
+<ul class="org-ul">
+<li>技術や理屈がやや小難しいAIについて、AIを使うユースケースの土台を作っておいて、シンプルに使えるようにする
+</li>
+<li>arch. layer: secureなdata層(thnder)と接点apps(lightning)の間に einsteinが位置する
+</li>
+</ul>
+</li>
+<li>shuba nabbar ( einstein 紹介)
+<ul class="org-ul">
+<li>データソースの統合、スクラッチ開発なしに
+</li>
+<li>uc1. 競合の分析とtodo recommend ( snsなど外部ソースも含め分析対象に含める )
+</li>
+<li>uc2. ケースの重要度をスコアリングして一覧に表示、フィルタ（全部見られて探せるのではなく、必要な情報を必要な情報にサジェストする。思想としては、ubiquitousからambientへ、のくだりで7年前にも聞いた気がするけど。）
+<ul class="org-ul">
+<li>スコアリングのフローを設定するビルダー画面もあります
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>lightningを改めてharrisから押し 「SFとしてはLightningはreadyなんだ、使える状態になったんだ」
+</li>
+<li>14:10- 14:35 red, ebony frelix
+<ul class="org-ul">
+<li>sf1, com cloud on thnder bolt (pow by einstein) demo
+</li>
+<li>ceoa
+</li>
+</ul>
+</li>
+<li>14:36 - 14:54- schnide electric: pv integrate subsystem, iot, einstein. mobile by alex dayon
+<ul class="org-ul">
+<li>Salesforce CPQ
+<ul class="org-ul">
+<li>lead concatc 管理、見積もり
+</li>
+</ul>
+</li>
+<li>filed service einstein
+</li>
+<li>my salesforce 1
+</li>
+</ul>
+</li>
+<li>14:55 -   fitbit by stephany buscemi
+</li>
+</ul>
+</li>
+</ul>
 </div>
-
+</div>
+<div id="outline-container-sec-9-3" class="outline-3">
+<h3 id="sec-9-3"><span class="section-number-3">9.3</span> 雑感</h3>
+<div class="outline-text-3" id="text-9-3">
+<ul class="org-ul">
+<li>Lightning推してくる
+<ul class="org-ul">
+<li>今日までの間、Classic画面をほとんど見ていない。Classic禁止令でも出てるのか。世間はClassicなんか使ってないのか
+</li>
+<li>Einsteinが基盤的な存在として遍在することになる、というのが個人的には印象的
+</li>
+</ul>
+</li>
+<li>CSRアピール枠、結構しっかりとってくるものなのね
+</li>
+<li>DXな話は、この基調講演には入らない
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div id="outline-container-sec-10" class="outline-2">
 <h2 id="sec-10"><span class="section-number-2">10</span> Deep Dive into the New Salesforce Development Experience (DX) Architecture</h2>
 <div class="outline-text-2" id="text-10">
@@ -1502,8 +1655,138 @@ App Cloud CLI Plugin, 開発・テストのための組織のワークスペー�
 </div>
 </li></ol>
 </div>
+<div id="outline-container-sec-11-2" class="outline-3">
+<h3 id="sec-11-2"><span class="section-number-3">11.2</span> memo</h3>
+<div class="outline-text-3" id="text-11-2">
+<ul class="org-ul">
+<li>pricinples of modern software delivery
+<ul class="org-ul">
+<li>(色々書いてあったけど) CI/CD, Github flow的な, リッチなtask runnerとかそういうの、やるやろ？やりたいやろ？
+</li>
+</ul>
+</li>
+<li>SFはどう変わる?
+<ul class="org-ul">
+<li>runtimeじゃない、VCSとして : sourt of truth
+</li>
+<li>environmentsもいっぱい作れるように&#x2026;とか
+</li>
+<li>世のPrinciplesに寄っていくようになる
+</li>
+</ul>
+</li>
+<li>Salesforce DX
+<ul class="org-ul">
+<li>Sourceとは以下の要素を含むようになる
+<ul class="org-ul">
+<li>app code
+</li>
+<li>metadate
+</li>
+<li>org confi
+</li>
+</ul>
+</li>
+<li>Salesfoce DX APIs
+<ul class="org-ul">
+<li>ツールから叩ける用にな
+</li>
+<li>ソースの動機、変更のトラッキング
+</li>
+<li>とかとかするので、
+<ul class="org-ul">
+<li>今のよくあるやり方で統制を効かせられるようになるんや
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Salesforce CLI
+<ul class="org-ul">
+<li>CI/DEV用組織作ったり、組織とローカルのソース動悸したり、データ同期（開発・テスト用途で）したり・・・
+</li>
+</ul>
+</li>
+<li>Salesforce IDE
+<ul class="org-ul">
+<li>eclipseベース
+</li>
+<li>Code Completion や Refactoringにも対応する
+</li>
+</ul>
+</li>
+<li>Scratch Orgs
+<ul class="org-ul">
+<li>使い捨て組織を作れるように、DEV/CI用途
+</li>
+</ul>
+</li>
+<li>Pipelines
+<ul class="org-ul">
+<li>Herokuのそれみたいなの Review appsとか
+</li>
+</ul>
+</li>
+<li>Heroku CI
+<ul class="org-ul">
+<li>Support for apex and mixed language apps
+</li>
+</ul>
+</li>
+<li>packaging 2.0
+<ul class="org-ul">
+<li>multiple package from a single namespace
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>demo
+<ul class="org-ul">
+<li>scratch orgで開発用組織作って
+</li>
+<li>他の組織からsource同期してきて
+</li>
+<li>ローカルで編集して
+</li>
+<li>開発用組織にpushして、さっき編集したファイルが同期される
+</li>
+</ul>
+</li>
+<li>dev -&gt; prd リリース
+<ul class="org-ul">
+<li>diffのchange setをprdに送りつける
+</li>
+<li>vcsのリリースブランチから組織に同期される
+</li>
+<li>違うパッケージがそれぞれあるブランチ複数から1つの組織へ同期
+</li>
+<li>複数のappから組織を構成するという考え方/設計が可能に
+</li>
+</ul>
+</li>
+<li>sandbox
+</li>
+<li>QA
+</li>
+</ul>
 </div>
+</div>
+<div id="outline-container-sec-11-3" class="outline-3">
+<h3 id="sec-11-3"><span class="section-number-3">11.3</span> 所感</h3>
+<div class="outline-text-3" id="text-11-3">
+<ul class="org-ul">
+<li>80人くらい？
+</li>
 
+<li>途中離脱する人多い 5,6人くらい？
+</li>
+<li>speakerのおっさん舌打ち多め
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div id="outline-container-sec-12" class="outline-2">
 <h2 id="sec-12"><span class="section-number-2">12</span> How Salesforce Builds Salesforce using Heroku</h2>
 <div class="outline-text-2" id="text-12">
@@ -1654,7 +1937,7 @@ At Dreamforce last year we launched custom metadata types. This year we add a he
 </div></div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: natsuki.takeda</p>
-<p class="date">Created: 2016-10-05 水 12:02</p>
+<p class="date">Created: 2016-10-06 木 01:42</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

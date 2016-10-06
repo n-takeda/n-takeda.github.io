@@ -94,35 +94,34 @@ rename app innovation partner
 **** adam seligman
 - app exchange 広がってる、利用も、高評価なものも
 - trust , distribution, innovation
--- Sf自身の全ての機能拡張もこのため
+	- Sf自身の全ての機能拡張もこのため
 - einstein
--- intteligence smarter
+	- inteligence smarter
 - partner trailblazer
--- faster
---- lightning対応進んでる、appも
---- linghtning certificationを是非。roadmapは引いた
---- winter17
---- component有り物含めてつかえ。 lightnig exchangeをもりあげてくれ
+	- faster
+		- lightning対応進んでる、appも
+		- linghtning certificationを是非。roadmapは引いた
+		- winter17
+		- component有り物含めてつかえ。 lightnig exchangeをもりあげてくれ
 **** joise chase
----- app exchange homeを使ってみよ
----- sample-usecase: sage live
----- 「ね、簡単でしょ」
----- lightning app builder で d&d customize demop
----- 「ね、簡単でしょ」
--- adam seligman
---- もっと作りやすくしていくつもりだからfeed bacck よろ
--- Salesforce DX (Deploper experience)
---- source-driven development (apex meta-data)
---- なんか Heroku toolbeltみたいなデモ
---- git selenium eclipseとかとの統合
---- git flowもいしきしてるっぽい
+- app exchange homeを使ってみよ
+- sample-usecase: sage live の導入
+	- 「ね、簡単でしょ」
+	- lightning app builder で d&d customize demop
+	- 「ね、簡単でしょ」
+- adam seligman
+	- もっと作りやすくしていくつもりだからfeed bacck よろ
+- Salesforce DX (Deploper experience)
+	- source-driven development (apex meta-data)
+	- なんか Heroku toolbeltみたいなコマンド体系のCLIデモ
+	- git selenium eclipseとかとの統合
 *** with wade wegner
-- forcedotcom/dreamhouse-partnerkeynote-sdx
 - cli development
-- json でのconfigのpush, cat
-```
-sfdc force:test
-```
+- json での組織configのpush, cat
+	- multicurrencyとかlicenseとか
+#+BEGIN_SRC
+sfdx force:test
+#+END_SRC
 - force ideに lightning app builder を統合（ブラウザでガワだしてるだけでは....？）
 - jenkins pipelineでbuild test
 - inside heroku pipeline
@@ -139,10 +138,10 @@ https://twitter.com/svenkatesan/status/783363089399808000
 *** 雑感
 - chatterに既に流れているので割愛
 - salesforce dxはどこまで code で管理できるのか（何ができずに残ってしまうのか）[fn:3]
--- jsonでconfigできるとか、seleniumテスト含めて蹴れるとか胸が熱いのでは
--- demoのときにコンソールにでてた sfdxコマンドのhelp descriptionが Heroku CLIのものだったので、（開発的には）それがベースか。
+	- jsonでconfigできるとか、seleniumテスト含めて蹴れるとか胸が熱いのでは
+	- demoのときにコンソールにでてた sfdxコマンドのhelp descriptionが Heroku CLIのものだったので、（開発的には）それがベースか。
 - lightning experience、app exchangeとあわせて猛push
--- exchange上でappに[LXE ready]とかつけられる。certificationを整えている
+	- exchange上でappに[LXE ready]とかつけられる。certificationを整えている
 * Introduction to Git-Based Continuous Delivery with Heroku Pipelines
 ** Overview
 *** Description
@@ -438,9 +437,54 @@ Join Marc Benioff and industry giants to see the future of customer engagement.
 Marc will highlight how innovative companies are using the cloud, mobility, IoT and artificial intelligence to achieve new levels of success with connecting with their customers.
 Salesforce will showcase new products and technology like Einstein that will dramatically change how employees across sales, service, marketing & IT perform their jobs and engage with customers.
 Seating in the Main Keynote is limited. Attendees will be seated first-come, first-served. The keynote will be broadcast at locations throughout the Dreamforce Campus.
-
-クラウド、動体、IoT、人工知能に注目。新しい製品・技術のショーケース。Einstein。
-
+** Memo
+- - 13:00 スポンサーインタビュー. accentureとかcocacolaとか。
+- - 13:15 なんだっけ。
+- - 13:25 "ohana" を受けての aloha takaの音楽セッション
+- - 13:27 SFのPV.  einstein trail ohana推し
+- 13:29 - Marc benioff登場
+	- "thanks community"
+	- SFの成長の話 forbes, fortuneへの掲載を出しながら
+	- 1-1-1の話 : the age of equality
+		- 具体的な援助のはなし 主に教育援助
+	- a smarter world (roadmap, connected , iot -> ai -> )
+	- the age of the customer 顧客接点サービスの増加変化
+		- ex. turbo tax, asics, uber,
+	- "no codeで素早くやりたいことがやれるplatformを広く"
+	- ということでAI: SFのベースに組み込まれていく機能
+		- -> einstein
+	- lightning family
+		- サービス発展ののagilityのために必要なもの
+		- showcaseとしてはquip
+	- enterprise 5角変革と対応するSF製品/サービス
+		- 紹介
+		- unity ecommerce
+		- mobile salesforce1
+		- などなどplatformとしてappが揃ってきた
+	- einstein by parker parris
+		- 技術や理屈がやや小難しいAIについて、AIを使うユースケースの土台を作っておいて、シンプルに使えるようにする
+		- arch. layer: secureなdata層(thnder)と接点apps(lightning)の間に einsteinが位置する
+	- shuba nabbar ( einstein 紹介)
+		- データソースの統合、スクラッチ開発なしに
+		- uc1. 競合の分析とtodo recommend ( snsなど外部ソースも含め分析対象に含める )
+		- uc2. ケースの重要度をスコアリングして一覧に表示、フィルタ（全部見られて探せるのではなく、必要な情報を必要な情報にサジェストする。思想としては、ubiquitousからambientへ、のくだりで7年前にも聞いた気がするけど。）
+			- スコアリングのフローを設定するビルダー画面もあります
+	- lightningを改めてharrisから押し 「SFとしてはLightningはreadyなんだ、使える状態になったんだ」
+	- 14:10- 14:35 red, ebony frelix
+		- sf1, com cloud on thnder bolt (pow by einstein) demo
+		- ceoa
+	- 14:36 - 14:54- schnide electric: pv integrate subsystem, iot, einstein. mobile by alex dayon
+		- Salesforce CPQ
+			- lead concatc 管理、見積もり
+		- filed service einstein
+		- my salesforce 1
+	- 14:55 -   fitbit by stephany buscemi
+** 雑感
+- Lightning推してくる
+	- 今日までの間、Classic画面をほとんど見ていない。Classic禁止令でも出てるのか。世間はClassicなんか使ってないのか
+	- Einsteinが基盤的な存在として遍在することになる、というのが個人的には印象的
+- CSRアピール枠、結構しっかりとってくるものなのね
+- DXな話は、この基調講演には入らない
 * Deep Dive into the New Salesforce Development Experience (DX) Architecture
 ** Overview
 *** Description
@@ -464,7 +508,53 @@ AppCloud Develoepr Experienceの新しい機能について。
 
 In this session, we will discuss the App Cloud CLI Plugin, Workspace Orgs for development and testing, as well as our Source Synchronization commands to help you better interact with an org and more easily integrate with source control systems.
 App Cloud CLI Plugin, 開発・テストのための組織のワークスペース, ソースの動機コマンドで組織の操作を簡単にソース管理システムとの統合をより簡単に。
+** memo
+- pricinples of modern software delivery
+	- (色々書いてあったけど) CI/CD, Github flow的な, リッチなtask runnerとかそういうの、やるやろ？やりたいやろ？
+- SFはどう変わる?
+	- runtimeじゃない、VCSとして : sourt of truth
+	- environmentsもいっぱい作れるように...とか
+	- 世のPrinciplesに寄っていくようになる
+- Salesforce DX
+	- Sourceとは以下の要素を含むようになる
+		- app code
+		- metadate
+		- org confi
+	- Salesfoce DX APIs
+		- ツールから叩ける用にな
+		- ソースの動機、変更のトラッキング
+		- とかとかするので、
+			- 今のよくあるやり方で統制を効かせられるようになるんや
+	- Salesforce CLI
+		- CI/DEV用組織作ったり、組織とローカルのソース動悸したり、データ同期（開発・テスト用途で）したり・・・
+	- Salesforce IDE
+		- eclipseベース
+		- Code Completion や Refactoringにも対応する
+	- Scratch Orgs
+		- 使い捨て組織を作れるように、DEV/CI用途
+	- Pipelines
+		- Herokuのそれみたいなの Review appsとか
+	- Heroku CI
+		- Support for apex and mixed language apps
+	- packaging 2.0
+		- multiple package from a single namespace
+- demo
+	- scratch orgで開発用組織作って
+	- 他の組織からsource同期してきて
+	- ローカルで編集して
+	- 開発用組織にpushして、さっき編集したファイルが同期される
+- dev -> prd リリース
+	- diffのchange setをprdに送りつける
+	- vcsのリリースブランチから組織に同期される
+	- 違うパッケージがそれぞれあるブランチ複数から1つの組織へ同期
+	- 複数のappから組織を構成するという考え方/設計が可能に
+- sandbox
+- QA
+** 所感
+- 80人くらい？
 
+- 途中離脱する人多い 5,6人くらい？
+- speakerのおっさん舌打ち多め
 * How Salesforce Builds Salesforce using Heroku
 ** Overview
 *** Description
