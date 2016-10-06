@@ -681,7 +681,7 @@ Join Srini Tallapragada, President, Technology at Salesforce, in this year's Dev
 		- Lightning: good ux, good framework, good ecosystem で faster
 			- framework
 				- data service - componentとdataのmapping markup( apexなしで )
-				- 全部つこうたサンプル作ったで: dreamhouse app demo
+				- 全部つこうたサンプル作ったで: dreamhouse app demo たぶん、これ[[https://developer.salesforce.com/blogs/developer-relations/2016/06/meet-dreamhouse-new-app-cloud-sample-app.html]]
 					- schema builder
 					- app builder
 						- app exchangeと統合されてて、builer から exchangeで使いたいものを探して d&d
@@ -713,6 +713,38 @@ Join Srini Tallapragada, President, Technology at Salesforce, in this year's Dev
 				- Heroku Pipelineを使えるようにする
 					- review appsも scratch orgという形で作成できる
 	- 利用事例 Debbie Ashton ( Financal Force )
+* Predictive System Performance Data Analytics using Salesforce Wave
+** Overview
+*** Description
+*** Speaker
+- Jasmin Nakic: Lead Software Engineer, Enterrise Sxale
+- Samir Pilipovic: Senior Software Engineer, Enterprise Scale
+** memo
+- agenda
+	- beginner sysadmins, performance engineer, developers
+- Performace analyticsの要素
+	- understand
+		- 短長期のトレンド、パターンを知る
+	- predict
+		- machine learningとかして予想して、予想と違う動きを見つける
+	- alert
+	- visualiztiion
+- 機械学習のために
+	- 学習可能な用にデータの特徴点を binaryに砕け
+		- timestamp -> isMonday, isWeekday, .....
+	- 線形回帰モデル
+		- の概説
+	- Waveにデータ突っ込んで学習して予測のdemoするやで
+		- 特徴足して学修・予測するとどんどん結果がfitするようになってくる
+			（みたいなことを見せてるけど、それはusecaseとdataにとって意味のある次元を選んでいるからで。
+			どの次元を採用するかは human intelligence 頼りなんだっけか）
+		- Waveで実データと予測データを並べて見られますよ
+** 雑感
+	- Performance Monitorという 例は wave的に正しいの？
+	- SFで扱うのはバイト単価の高いデータというイメージだけど
+	- 大量の履歴データ、モデル調整、再計算があると思うので、
+		- 少なくとも モデルを育てる、深くdrill downするとかは SFの上でやるもんだろうか
+		- 別のdatawarehouseに溜めてperformance monitorとしてはkibanaでも刺しといて、自分のecサイトとかサービスのavailabilityと結びつけて売上を見たい、ぐらいのためのサラッとしたサマリのデータマートをSFにぶっこむぐらいではないのかしら
 * Salesforce Einstein Keynote: AI for Everyone
 ** Overview
 *** Description

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>dreamforce 2016</title>
-<!-- 2016-10-06 木 13:41 -->
+<!-- 2016-10-06 木 14:24 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="natsuki.takeda" />
@@ -313,29 +313,36 @@ for the JavaScript code in this tag.
 <li><a href="#sec-14-2">14.2. Memo</a></li>
 </ul>
 </li>
-<li><a href="#sec-15">15. Salesforce Einstein Keynote: AI for Everyone</a>
+<li><a href="#sec-15">15. Predictive System Performance Data Analytics using Salesforce Wave</a>
 <ul>
 <li><a href="#sec-15-1">15.1. Overview</a></li>
+<li><a href="#sec-15-2">15.2. memo</a></li>
+<li><a href="#sec-15-3">15.3. 雑感</a></li>
 </ul>
 </li>
-<li><a href="#sec-16">16. Continuous Delivery from Dev to Production with Heroku Flow</a>
+<li><a href="#sec-16">16. Salesforce Einstein Keynote: AI for Everyone</a>
 <ul>
 <li><a href="#sec-16-1">16.1. Overview</a></li>
 </ul>
 </li>
-<li><a href="#sec-17">17. Salesforce for Admins Keynote</a>
+<li><a href="#sec-17">17. Continuous Delivery from Dev to Production with Heroku Flow</a>
 <ul>
 <li><a href="#sec-17-1">17.1. Overview</a></li>
 </ul>
 </li>
-<li><a href="#sec-18">18. Build Sophisticated App Configurations with Custom Metadata</a>
+<li><a href="#sec-18">18. Salesforce for Admins Keynote</a>
 <ul>
 <li><a href="#sec-18-1">18.1. Overview</a></li>
 </ul>
 </li>
-<li><a href="#sec-19">19. Template Title</a>
+<li><a href="#sec-19">19. Build Sophisticated App Configurations with Custom Metadata</a>
 <ul>
 <li><a href="#sec-19-1">19.1. Overview</a></li>
+</ul>
+</li>
+<li><a href="#sec-20">20. Template Title</a>
+<ul>
+<li><a href="#sec-20-1">20.1. Overview</a></li>
 </ul>
 </li>
 </ul>
@@ -2149,7 +2156,7 @@ Join Srini Tallapragada, President, Technology at Salesforce, in this year's Dev
 <ul class="org-ul">
 <li>data service - componentとdataのmapping markup( apexなしで )
 </li>
-<li>全部つこうたサンプル作ったで: dreamhouse app demo
+<li>全部つこうたサンプル作ったで: dreamhouse app demo たぶん、これ<a href="https://developer.salesforce.com/blogs/developer-relations/2016/06/meet-dreamhouse-new-app-cloud-sample-app.html">https://developer.salesforce.com/blogs/developer-relations/2016/06/meet-dreamhouse-new-app-cloud-sample-app.html</a>
 <ul class="org-ul">
 <li>schema builder
 </li>
@@ -2256,12 +2263,108 @@ Join Srini Tallapragada, President, Technology at Salesforce, in this year's Dev
 </div>
 </div>
 <div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> Salesforce Einstein Keynote: AI for Everyone</h2>
+<h2 id="sec-15"><span class="section-number-2">15</span> Predictive System Performance Data Analytics using Salesforce Wave</h2>
 <div class="outline-text-2" id="text-15">
 </div><div id="outline-container-sec-15-1" class="outline-3">
 <h3 id="sec-15-1"><span class="section-number-3">15.1</span> Overview</h3>
 <div class="outline-text-3" id="text-15-1">
-</div><ol class="org-ol"><li><a id="sec-15-1-1" name="sec-15-1-1"></a>Description<br  /><div class="outline-text-4" id="text-15-1-1">
+</div><ol class="org-ol"><li><a id="sec-15-1-1" name="sec-15-1-1"></a>Description<br  /></li>
+<li><a id="sec-15-1-2" name="sec-15-1-2"></a>Speaker<br  /><div class="outline-text-4" id="text-15-1-2">
+<ul class="org-ul">
+<li>Jasmin Nakic: Lead Software Engineer, Enterrise Sxale
+</li>
+<li>Samir Pilipovic: Senior Software Engineer, Enterprise Scale
+</li>
+</ul>
+</div>
+</li></ol>
+</div>
+<div id="outline-container-sec-15-2" class="outline-3">
+<h3 id="sec-15-2"><span class="section-number-3">15.2</span> memo</h3>
+<div class="outline-text-3" id="text-15-2">
+<ul class="org-ul">
+<li>agenda
+<ul class="org-ul">
+<li>beginner sysadmins, performance engineer, developers
+</li>
+</ul>
+</li>
+<li>Performace analyticsの要素
+<ul class="org-ul">
+<li>understand
+<ul class="org-ul">
+<li>短長期のトレンド、パターンを知る
+</li>
+</ul>
+</li>
+<li>predict
+<ul class="org-ul">
+<li>machine learningとかして予想して、予想と違う動きを見つける
+</li>
+</ul>
+</li>
+<li>alert
+</li>
+<li>visualiztiion
+</li>
+</ul>
+</li>
+<li>機械学習のために
+<ul class="org-ul">
+<li>学習可能な用にデータの特徴点を binaryに砕け
+<ul class="org-ul">
+<li>timestamp -&gt; isMonday, isWeekday, &#x2026;..
+</li>
+</ul>
+</li>
+<li>線形回帰モデル
+<ul class="org-ul">
+<li>の概説
+</li>
+</ul>
+</li>
+<li>Waveにデータ突っ込んで学習して予測のdemoするやで
+<ul class="org-ul">
+<li>特徴足して学修・予測するとどんどん結果がfitするようになってくる
+（みたいなことを見せてるけど、それはusecaseとdataにとって意味のある次元を選んでいるからで。
+どの次元を採用するかは human intelligence 頼りなんだっけか）
+</li>
+<li>Waveで実データと予測データを並べて見られますよ
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-15-3" class="outline-3">
+<h3 id="sec-15-3"><span class="section-number-3">15.3</span> 雑感</h3>
+<div class="outline-text-3" id="text-15-3">
+<ul class="org-ul">
+<li>Performance Monitorという 例は wave的に正しいの？
+</li>
+<li>SFで扱うのはバイト単価の高いデータというイメージだけど
+</li>
+<li>大量の履歴データ、モデル調整、再計算があると思うので、
+<ul class="org-ul">
+<li>少なくとも モデルを育てる、深くdrill downするとかは SFの上でやるもんだろうか
+</li>
+<li>別のdatawarehouseに溜めてperformance monitorとしてはkibanaでも刺しといて、自分のecサイトとかサービスのavailabilityと結びつけて売上を見たい、ぐらいのためのサラッとしたサマリのデータマートをSFにぶっこむぐらいではないのかしら
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-16" class="outline-2">
+<h2 id="sec-16"><span class="section-number-2">16</span> Salesforce Einstein Keynote: AI for Everyone</h2>
+<div class="outline-text-2" id="text-16">
+</div><div id="outline-container-sec-16-1" class="outline-3">
+<h3 id="sec-16-1"><span class="section-number-3">16.1</span> Overview</h3>
+<div class="outline-text-3" id="text-16-1">
+</div><ol class="org-ol"><li><a id="sec-16-1-1" name="sec-16-1-1"></a>Description<br  /><div class="outline-text-4" id="text-16-1-1">
 <p>
 AI is the next great technology disruption transforming how we live and work, and Salesforce Einstein is the first comprehensive AI platform for CRM. Join John Ball, GM of Salesforce Einstein, along with some of Salesforce's most innovative customers, to see how they're getting smarter and more predictive about their customers.
 </p>
@@ -2269,13 +2372,13 @@ AI is the next great technology disruption transforming how we live and work, an
 </li></ol>
 </div>
 </div>
-<div id="outline-container-sec-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> Continuous Delivery from Dev to Production with Heroku Flow</h2>
-<div class="outline-text-2" id="text-16">
-</div><div id="outline-container-sec-16-1" class="outline-3">
-<h3 id="sec-16-1"><span class="section-number-3">16.1</span> Overview</h3>
-<div class="outline-text-3" id="text-16-1">
-</div><ol class="org-ol"><li><a id="sec-16-1-1" name="sec-16-1-1"></a>Description<br  /><div class="outline-text-4" id="text-16-1-1">
+<div id="outline-container-sec-17" class="outline-2">
+<h2 id="sec-17"><span class="section-number-2">17</span> Continuous Delivery from Dev to Production with Heroku Flow</h2>
+<div class="outline-text-2" id="text-17">
+</div><div id="outline-container-sec-17-1" class="outline-3">
+<h3 id="sec-17-1"><span class="section-number-3">17.1</span> Overview</h3>
+<div class="outline-text-3" id="text-17-1">
+</div><ol class="org-ol"><li><a id="sec-17-1-1" name="sec-17-1-1"></a>Description<br  /><div class="outline-text-4" id="text-17-1-1">
 <p>
 Delivering software in small batches in a continuous manner drastically reduces risk and is one of the core tenets of Agile methodology. Continuous Delivery (CD) takes a disciplined approach to building software, where it's releasable to production at any time. Join us to see how Heroku Flow embeds CD right into the platform, making it easy for teams to iterate rapidly on apps and features customers care about.
 </p>
@@ -2283,13 +2386,13 @@ Delivering software in small batches in a continuous manner drastically reduces 
 </li></ol>
 </div>
 </div>
-<div id="outline-container-sec-17" class="outline-2">
-<h2 id="sec-17"><span class="section-number-2">17</span> Salesforce for Admins Keynote</h2>
-<div class="outline-text-2" id="text-17">
-</div><div id="outline-container-sec-17-1" class="outline-3">
-<h3 id="sec-17-1"><span class="section-number-3">17.1</span> Overview</h3>
-<div class="outline-text-3" id="text-17-1">
-</div><ol class="org-ol"><li><a id="sec-17-1-1" name="sec-17-1-1"></a>Description<br  /><div class="outline-text-4" id="text-17-1-1">
+<div id="outline-container-sec-18" class="outline-2">
+<h2 id="sec-18"><span class="section-number-2">18</span> Salesforce for Admins Keynote</h2>
+<div class="outline-text-2" id="text-18">
+</div><div id="outline-container-sec-18-1" class="outline-3">
+<h3 id="sec-18-1"><span class="section-number-3">18.1</span> Overview</h3>
+<div class="outline-text-3" id="text-18-1">
+</div><ol class="org-ol"><li><a id="sec-18-1-1" name="sec-18-1-1"></a>Description<br  /><div class="outline-text-4" id="text-18-1-1">
 <p>
 Every day is an adventure when you're a Salesforce Administrator. You spend your days in the cloud and on the ground in a quest to become more efficient and more effective. You're passionate about productivity and using innovative technology to create positive and lasting impact for your customers, your company and the community. Join Mike Rosenbaum, EVP CRM Applications, Kris Lande, Sr. Director Admin Marketing and Mike Gerholdt, Sr. Manager Admin Evangelism on an adventure with fellow Trailblazers as we discover new ways to use technology to go faster, get smarter and go further.
 </p>
@@ -2297,13 +2400,13 @@ Every day is an adventure when you're a Salesforce Administrator. You spend your
 </li></ol>
 </div>
 </div>
-<div id="outline-container-sec-18" class="outline-2">
-<h2 id="sec-18"><span class="section-number-2">18</span> Build Sophisticated App Configurations with Custom Metadata</h2>
-<div class="outline-text-2" id="text-18">
-</div><div id="outline-container-sec-18-1" class="outline-3">
-<h3 id="sec-18-1"><span class="section-number-3">18.1</span> Overview</h3>
-<div class="outline-text-3" id="text-18-1">
-</div><ol class="org-ol"><li><a id="sec-18-1-1" name="sec-18-1-1"></a>Description<br  /><div class="outline-text-4" id="text-18-1-1">
+<div id="outline-container-sec-19" class="outline-2">
+<h2 id="sec-19"><span class="section-number-2">19</span> Build Sophisticated App Configurations with Custom Metadata</h2>
+<div class="outline-text-2" id="text-19">
+</div><div id="outline-container-sec-19-1" class="outline-3">
+<h3 id="sec-19-1"><span class="section-number-3">19.1</span> Overview</h3>
+<div class="outline-text-3" id="text-19-1">
+</div><ol class="org-ol"><li><a id="sec-19-1-1" name="sec-19-1-1"></a>Description<br  /><div class="outline-text-4" id="text-19-1-1">
 <p>
 At Dreamforce last year we launched custom metadata types. This year we add a heavily requested, powerful new capability: metadata relationships. You can now build complex, hierarchical metadata structures by relating your custom metadata to other custom metadata and even to standard and custom objects and fields! If you are still using custom settings or custom objects for app configurations, attend this session to learn how custom metadata types can save your time and sanity managing app configurations and eliminate the need for sophisticated custom tooling or manual configuration and deployment processes.
 </p>
@@ -2311,14 +2414,14 @@ At Dreamforce last year we launched custom metadata types. This year we add a he
 </li></ol>
 </div>
 </div>
-<div id="outline-container-sec-19" class="outline-2">
-<h2 id="sec-19"><span class="section-number-2">19</span> Template Title</h2>
-<div class="outline-text-2" id="text-19">
-</div><div id="outline-container-sec-19-1" class="outline-3">
-<h3 id="sec-19-1"><span class="section-number-3">19.1</span> Overview</h3>
-<div class="outline-text-3" id="text-19-1">
-</div><ol class="org-ol"><li><a id="sec-19-1-1" name="sec-19-1-1"></a>Description<br  /></li>
-<li><a id="sec-19-1-2" name="sec-19-1-2"></a>Spekaer<br  /><div class="outline-text-4" id="text-19-1-2">
+<div id="outline-container-sec-20" class="outline-2">
+<h2 id="sec-20"><span class="section-number-2">20</span> Template Title</h2>
+<div class="outline-text-2" id="text-20">
+</div><div id="outline-container-sec-20-1" class="outline-3">
+<h3 id="sec-20-1"><span class="section-number-3">20.1</span> Overview</h3>
+<div class="outline-text-3" id="text-20-1">
+</div><ol class="org-ol"><li><a id="sec-20-1-1" name="sec-20-1-1"></a>Description<br  /></li>
+<li><a id="sec-20-1-2" name="sec-20-1-2"></a>Spekaer<br  /><div class="outline-text-4" id="text-20-1-2">
 <ul class="org-ul">
 <li>hoge
 </li>
@@ -2346,7 +2449,7 @@ At Dreamforce last year we launched custom metadata types. This year we add a he
 </div></div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: natsuki.takeda</p>
-<p class="date">Created: 2016-10-06 木 13:41</p>
+<p class="date">Created: 2016-10-06 木 14:24</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
