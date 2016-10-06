@@ -748,7 +748,52 @@ Join Srini Tallapragada, President, Technology at Salesforce, in this year's Dev
 * Salesforce Einstein Keynote: AI for Everyone
 ** Overview
 *** Description
-AI is the next great technology disruption transforming how we live and work, and Salesforce Einstein is the first comprehensive AI platform for CRM. Join John Ball, GM of Salesforce Einstein, along with some of Salesforce's most innovative customers, to see how they're getting smarter and more predictive about their customers.
+AI is the next great technology disruption transforming how we live and work, and Salesforce Einstein is the first comprehensive AI platform for CRM.
+Join John Ball, GM of Salesforce Einstein, along with some of Salesforce's most innovative customers, to see how they're getting smarter and more predictive about their customers.
+** Speaker
+- John Ball SVP & GM, Salesforce Einstein
+** Memo
+- 色々connectedになったから、集まるデータをうまくつかいたいね
+- けど、さらっとできるほど簡単なものではない
+	- データ計測、蓄積・安全に保全、クレンジング、学習....
+- Salesforce PlatformのためのAIとしてのEinstein
+	- 予測する、スマートなCRM、簡単に使える（難しいところはPlatformの中に）
+- Platformで
+	- データを集める
+		- SF(contact, lead, opportunity...), IoT, mail, sns, calendar ....
+	- 予測して、重要なデータを見つけて、ハイライトする
+		- 見込みのある見込み顧客のscoringや、やるべき次の行動をrecommend
+		- で、1 to 1 の customer journeyが描ける
+	- Business User/Admin向けに
+	- Data Scientists/Developers
+	- 事例: by Jim Sinai VP, Product Marketing
+		- 事例1: AI for CRM "Square"
+			- sales reps: SquareはFinancal Serviceを中傷企業向けに
+			- sales reps: Einsteinからアラートmail: 「販売ノルマ たりなさそうだよ」
+			- sales reps: mailからwaveでそのデータを見る
+			- sales reps: LXEからLeadを見て、Scoringされた情報/Einstein insightから次の行動の提案を受ける
+			- devs: Application Builderで scoringロジックを改善
+		- Square Taylor Cascino, Head of Salesから
+			- ユニークな顧客が多いから、Einstein Insightに期待している
+	- Platformについて by Shubha Nabbar
+		- 1 to 1 の customer journeyを作るために、data から適切な modelを選択する
+		- "Data sciensist as a Service"
+	- 事例2: fanatics
+		- 1 to 1 の customer journeyをeinsteinの提案から作る demo
+		- Fanaticsのchris orton, Chief Marketing & Revenue Officer からコメント
+	- Salesforce Researchについて by Richard Socher, PhD, Chief Scientist
+		- vRad: 医療データ解析
+		- Predictive Vision Service:
+			- 学習画像データを与えて、予測器を提供するもの
+		- Dynamic memory network by @metamind
+			- 自然言語分析、多言語で（ positive/negathiveを英語/中国語で解析するdemo）
+** どうでもいいこと
+- 他のセッションで協調してたこと
+	- Platformなんだ
+	- 誰でも使えるんだ
+	- 自然言語分析と一緒に画像から意味情報を抽出する
+- データサイエンスの民主化だ
+
 * Continuous Delivery from Dev to Production with Heroku Flow
 ** Overview
 *** Description
