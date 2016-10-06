@@ -552,7 +552,6 @@ App Cloud CLI Plugin, 開発・テストのための組織のワークスペー�
 - QA
 ** 所感
 - 80人くらい？
-
 - 途中離脱する人多い 5,6人くらい？
 - speakerのおっさん舌打ち多め
 * How Salesforce Builds Salesforce using Heroku
@@ -566,7 +565,35 @@ Herokuを使った、内部向けの気の利いたポータルとか、Trailhea
 
 You’ll see how we use Heroku to build apps that provide a unified user experience and presentation layer across multiple different Salesforce orgs.
 複数の異なったSF組織を跨いだプレゼンテーションレイヤ・統合されたUXを提供するアプリをHerokuで。
-
+*** Speaker
+- Lyric Hartley: Heroku CSA
+** Memo
+- Herokuとは
+	- customer success platformの中では code一杯書く方です
+	- 要はPaasです
+		- 開発者はappとdataに集中します
+		- appのideaから、on-premiseやiaasだったら気にする色々をショートカットできます(常套句)
+	- Private Spacesの説明
+	- Heroku Connectの説明
+	- Heroku Flowの話
+- Herokuのええ所
+	- security
+		- network isolation, limit inbound traffic(src IP), add-on whitelisting...
+	- trust applications
+	- dev/agility
+		- trailheadのフロントはHeroku, 認証 DRM等はSFと連携
+		- S1 org chat
+			- s1から canvasで heroku の node.jsでできたアプリと連携
+	- scalability
+		- Thunder IoT(聞き取れず)
+		- Einstein(聞き取れず)
+	- exetending salesforce orgs
+		- Herokuを複数orgのdata hubとして使う8Heroku connect)
+- Heroku使用例
+	- Concierge( User Portal的な)
+		- Salesforce DMZ?
+** 所感
+- Session間で結構話が被る
 * Salesforce for Marketing Keynote: The Smartest CRM for 1-to-1 Customer Journeys
 ** Overview
 *** Description

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>dreamforce 2016</title>
-<!-- 2016-10-06 木 01:42 -->
+<!-- 2016-10-06 木 09:03 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="natsuki.takeda" />
@@ -295,6 +295,8 @@ for the JavaScript code in this tag.
 <li><a href="#sec-12">12. How Salesforce Builds Salesforce using Heroku</a>
 <ul>
 <li><a href="#sec-12-1">12.1. Overview</a></li>
+<li><a href="#sec-12-2">12.2. Memo</a></li>
+<li><a href="#sec-12-3">12.3. 所感</a></li>
 </ul>
 </li>
 <li><a href="#sec-13">13. Salesforce for Marketing Keynote: The Smartest CRM for 1-to-1 Customer Journeys</a>
@@ -1778,7 +1780,6 @@ App Cloud CLI Plugin, 開発・テストのための組織のワークスペー�
 <ul class="org-ul">
 <li>80人くらい？
 </li>
-
 <li>途中離脱する人多い 5,6人くらい？
 </li>
 <li>speakerのおっさん舌打ち多め
@@ -1809,10 +1810,100 @@ You’ll see how we use Heroku to build apps that provide a unified user experie
 複数の異なったSF組織を跨いだプレゼンテーションレイヤ・統合されたUXを提供するアプリをHerokuで。
 </p>
 </div>
+</li>
+<li><a id="sec-12-1-2" name="sec-12-1-2"></a>Speaker<br  /><div class="outline-text-4" id="text-12-1-2">
+<ul class="org-ul">
+<li>Lyric Hartley: Heroku CSA
+</li>
+</ul>
+</div>
 </li></ol>
 </div>
+<div id="outline-container-sec-12-2" class="outline-3">
+<h3 id="sec-12-2"><span class="section-number-3">12.2</span> Memo</h3>
+<div class="outline-text-3" id="text-12-2">
+<ul class="org-ul">
+<li>Herokuとは
+<ul class="org-ul">
+<li>customer success platformの中では code一杯書く方です
+</li>
+<li>要はPaasです
+<ul class="org-ul">
+<li>開発者はappとdataに集中します
+</li>
+<li>appのideaから、on-premiseやiaasだったら気にする色々をショートカットできます(常套句)
+</li>
+</ul>
+</li>
+<li>Private Spacesの説明
+</li>
+<li>Heroku Connectの説明
+</li>
+<li>Heroku Flowの話
+</li>
+</ul>
+</li>
+<li>Herokuのええ所
+<ul class="org-ul">
+<li>security
+<ul class="org-ul">
+<li>network isolation, limit inbound traffic(src IP), add-on whitelisting&#x2026;
+</li>
+</ul>
+</li>
+<li>trust applications
+</li>
+<li>dev/agility
+<ul class="org-ul">
+<li>trailheadのフロントはHeroku, 認証 DRM等はSFと連携
+</li>
+<li>S1 org chat
+<ul class="org-ul">
+<li>s1から canvasで heroku の node.jsでできたアプリと連携
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>scalability
+<ul class="org-ul">
+<li>Thunder IoT(聞き取れず)
+</li>
+<li>Einstein(聞き取れず)
+</li>
+</ul>
+</li>
+<li>exetending salesforce orgs
+<ul class="org-ul">
+<li>Herokuを複数orgのdata hubとして使う8Heroku connect)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Heroku使用例
+<ul class="org-ul">
+<li>Concierge( User Portal的な)
+<ul class="org-ul">
+<li>Salesforce DMZ?
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
-
+</div>
+<div id="outline-container-sec-12-3" class="outline-3">
+<h3 id="sec-12-3"><span class="section-number-3">12.3</span> 所感</h3>
+<div class="outline-text-3" id="text-12-3">
+<ul class="org-ul">
+<li>Session間で結構話が被る
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div id="outline-container-sec-13" class="outline-2">
 <h2 id="sec-13"><span class="section-number-2">13</span> Salesforce for Marketing Keynote: The Smartest CRM for 1-to-1 Customer Journeys</h2>
 <div class="outline-text-2" id="text-13">
@@ -1937,7 +2028,7 @@ At Dreamforce last year we launched custom metadata types. This year we add a he
 </div></div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: natsuki.takeda</p>
-<p class="date">Created: 2016-10-06 木 01:42</p>
+<p class="date">Created: 2016-10-06 木 09:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
