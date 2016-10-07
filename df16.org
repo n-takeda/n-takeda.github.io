@@ -512,28 +512,28 @@ App Cloud CLI Plugin, 開発・テストのための組織のワークスペー�
 - pricinples of modern software delivery
 	- (色々書いてあったけど) CI/CD, Github flow的な, リッチなtask runnerとかそういうの、やるやろ？やりたいやろ？
 - SFはどう変わる?
-	- runtimeじゃない、VCSとして : sourt of truth
-	- environmentsもいっぱい作れるように...とか
+	- ただのruntimeではなくなる。VCSの要素も持って、sourceが真実である、と言えるようになる
+	- environments(org)もいっぱい作れるように
 	- 世のPrinciplesに寄っていくようになる
 - Salesforce DX
 	- Sourceとは以下の要素を含むようになる
 		- app code
 		- metadate
-		- org confi
+		- org config
 	- Salesfoce DX APIs
-		- ツールから叩ける用にな
-		- ソースの動機、変更のトラッキング
-		- とかとかするので、
-			- 今のよくあるやり方で統制を効かせられるようになるんや
+		- ツールから叩ける
+		- ソースのチェックアウト/イン、変更のトラッキング
+		- などができるようになるので、modern software deliveryが実現できる
 	- Salesforce CLI
-		- CI/DEV用組織作ったり、組織とローカルのソース動悸したり、データ同期（開発・テスト用途で）したり・・・
+		- CI/DEV用組織作ったり(scratch orgs)、組織とローカルのsourceを同期したり、データインポート（開発・テスト用途で）したり・・・
+		- といったことができる CLI
 	- Salesforce IDE
 		- eclipseベース
-		- Code Completion や Refactoringにも対応する
+		- 「Code Completion や Refactoringにも対応する」とのこと
 	- Scratch Orgs
 		- 使い捨て組織を作れるように、DEV/CI用途
 	- Pipelines
-		- Herokuのそれみたいなの Review appsとか
+		- Heroku Pipelineと同じようなもの。 Review appsも含めて。
 	- Heroku CI
 		- Support for apex and mixed language apps
 	- packaging 2.0
@@ -542,12 +542,12 @@ App Cloud CLI Plugin, 開発・テストのための組織のワークスペー�
 	- scratch orgで開発用組織作って
 	- 他の組織からsource同期してきて
 	- ローカルで編集して
-	- 開発用組織にpushして、さっき編集したファイルが同期される
+	- 開発用組織にpushすると、ローカル編集したファイルがscratch orgに反映される
 - dev -> prd リリース
 	- diffのchange setをprdに送りつける
 	- vcsのリリースブランチから組織に同期される
 	- 違うパッケージがそれぞれあるブランチ複数から1つの組織へ同期
-	- 複数のappから組織を構成するという考え方/設計が可能に
+	- 複数のappから組織を構成する、という考え方/設計で作る、ということが実現しやすくなる
 - sandbox
 - QA
 ** 所感
@@ -590,7 +590,7 @@ You’ll see how we use Heroku to build apps that provide a unified user experie
 	- exetending salesforce orgs
 		- Herokuを複数orgのdata hubとして使う8Heroku connect)
 - Heroku使用例
-	- Concierge( User Portal的な)
+	- concierge( User Portal的な)
 		- Salesforce DMZ?
 ** 所感
 - Session間で結構話が被る
@@ -844,6 +844,17 @@ Calling all developers & advanced admins! Can you imagine a future where adding 
 	- ApexClass In Flowで 取得したJSONの値を用いてカスタムオブジェクトの値を更新する処理を定義
 - テストカバレッジにもカウントされないのもよい
 - Winter '17 で、外部Webサービス登録のpilotでるよ
+* Deliver an Exceptional Customer Experience with AppExchange
+** Overview
+*** Description
+Make customer service your competitive advantage with hundreds of solutions from AppExchange. Join us to hear how experts use apps to engage with customers in new ways - through, for example, increased agent productivity, better field service, and surveys. You'll walk away with actionable tips and a list of top service apps (both paid and free) that you can easily deploy with just a few clicks.
+** Memo
+- ちゃんと AppExchange 有効利用しような、雑な車輪の再開発なんぞするもんやないで、という話。AppExchangeのオススメ（宣伝
+- SMS Magic
+	- two-way text communication
+	- tracked to member profile cases or activities
+- 紹介されたもの一覧
+	- https://appexchange.salesforce.com/results?keywords=df16appexcustomerexperience
 [fn:1] バルセロナスマートシティ話は この辺 http://smartcity.bcn.cat/en/buits-plan.html 分析プラットフォームはAzureとかPower BI https://azure.microsoft.com/en-us/documentation/videos/windows-azure-case-study-barcelona-bigdata/ ?
 [fn:2] https://www.salesforce.com/video/282396/
-[fn:3] https://www.salesforce.com/products/platform/products/salesforce-dx/ ブースの salesforce DXのエリアは(developerぽい)人がタカってた
+[fn:3] https://www.salesforce.com/products/platform/products/salesforce-dx/ Salesforce DXのでもブース、何度か前を通ったがいつもdeveloperぽい人がタカってた。
