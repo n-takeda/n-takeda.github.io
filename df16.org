@@ -801,18 +801,49 @@ Delivering software in small batches in a continuous manner drastically reduces 
 * Salesforce for Admins Keynote
 ** Overview
 *** Description
-Every day is an adventure when you're a Salesforce Administrator. You spend your days in the cloud and on the ground in a quest to become more efficient and more effective. You're passionate about productivity and using innovative technology to create positive and lasting impact for your customers, your company and the community. Join Mike Rosenbaum, EVP CRM Applications, Kris Lande, Sr. Director Admin Marketing and Mike Gerholdt, Sr. Manager Admin Evangelism on an adventure with fellow Trailblazers as we discover new ways to use technology to go faster, get smarter and go further.
-* Build Sophisticated App Configurations with Custom Metadata
+Every day is an adventure when you're a Salesforce Administrator.
+You spend your days in the cloud and on the ground in a quest to become more efficient and more effective.
+You're passionate about productivity and using innovative technology to create positive and lasting impact for your customers, your company and the community.
+Join
+ Mike Rosenbaum, EVP CRM Applications,
+ Kris Lande, Sr. Director Admin Marketing and Mike Gerholdt,
+ Sr. Manager Admin Evangelism
+on an adventure with fellow Trailblazers as we discover new ways to use technology to go faster, get smarter and go further.
+*** Speaker
+- Mike Rosenbaum: EVP, CRM Applications
+** memo
+- Salesforce Platform + Salesforce Admin -> #AWSESOME
+	- Idea, Process Builder, Cusotm lightning component の数が増えていることから、使われていることを示す
+- Kris Lande: Sr. Director, Admin Marketing
+	- trailhead 重要
+		user community(勉強会みたいなの）紹介
+- Admin Storiesサイト
+	- Adminのインタビュー記事
+- Mike Gerholdt: Sr.Manager, Admin Evangelist
+- 新機能 walk through demo
+** どうでもいいこと
+- いきなり行進・ダンスから始まって、他のkeynoteと趣の違うオープニング
+* Register External Web Services Lightning Fast
 ** Overview
 *** Description
-At Dreamforce last year we launched custom metadata types. This year we add a heavily requested, powerful new capability: metadata relationships. You can now build complex, hierarchical metadata structures by relating your custom metadata to other custom metadata and even to standard and custom objects and fields! If you are still using custom settings or custom objects for app configurations, attend this session to learn how custom metadata types can save your time and sanity managing app configurations and eliminate the need for sophisticated custom tooling or manual configuration and deployment processes.
-* Template Title
-** Overview
-*** Description
-*** Spekaer
-- hoge
-- fuga
-
+Calling all developers & advanced admins! Can you imagine a future where adding a web service into Salesforce will not require an Apex class? In this session, we will show developers how to compose a JSON schema description of their API service so that advanced admins can register and configure external web services without writing Apex code.
+** Memo
+- Goal
+	- Plug and play simplicity
+- システム統合のやり方は次の2つに分類可能
+	- Process Integration
+		- 組織外に配置したシステムの処理を呼ぶ
+	- Data Integration
+		- システム間でデータ連携する
+- 外部システム連携の定義
+	- Developerはコードを書きたい
+	- AdminはP&Cで作りたい
+	- 間をとって JSON Schemaをうまく使いましょう
+- HerokuにJSON応答するappを作成
+- 外部Webサービスとして登録
+	- ApexClass In Flowで 取得したJSONの値を用いてカスタムオブジェクトの値を更新する処理を定義
+- テストカバレッジにもカウントされないのもよい
+- Winter '17 で、外部Webサービス登録のpilotでるよ
 [fn:1] バルセロナスマートシティ話は この辺 http://smartcity.bcn.cat/en/buits-plan.html 分析プラットフォームはAzureとかPower BI https://azure.microsoft.com/en-us/documentation/videos/windows-azure-case-study-barcelona-bigdata/ ?
 [fn:2] https://www.salesforce.com/video/282396/
 [fn:3] https://www.salesforce.com/products/platform/products/salesforce-dx/ ブースの salesforce DXのエリアは(developerぽい)人がタカってた
