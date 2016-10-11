@@ -1,0 +1,73 @@
+#+TITLE: Dreamforce'16 参加者振り返り
+#+AUTHOR: ntakeda67
+#+LANGUAGE: ja
+#+OPTIONS: creator:nil LaTeX:t date:t toc:t H:2
+#+INFOJS_OPT: view:showall toc:t tdepth:2 ltoc:nil mouse:#ffffcc path:./resource/org-info.js
+#+SETUPFILE: ./resource/theme-readtheorg.setup
+
+* Overview
+** 開催要領
+- とき: 2016/10/12(水) 12:00 - 12:30
+- ところ: 京橋社内 その辺
+** Topics
+- 社内共有会の日取り
+- 社内共有会の概要
+- 社内共有会の発表者決定
+- 社内共有会の資料作成者の決定
+- 2016/10/27 (19:00〜) に、SalesforceDeveloperMeetupの参加者（発表者）決定
+
+* 振り返り前個人メモ
+** 参加前のDreamForceへの期待値
+- 参加者の熱量と肌感を知る
+	- -> カネとジカンとヒトがデカイスケールで突っ込まれていることは実感できた
+	- -> （セッションや興味範囲の乖離はあれど）スーツ族もギーク族も集まる今時点でデカイコミュニティなのだと
+- Salesforceを（自身が）やる気になる
+	- 世間からの注目の高さは理解した
+	- セッション内で新出情報のつまみ食いができたし、trailheadの整備が進むということで自分で食べ歩くこともできそう
+	- 美味しいところしか食べられないので、現実の案件で現実の生臭いところに当たっていくための下準備の道が見えたということで
+** 実際にわかったこと
+- xx Flow的なモダン開発・CIサイクルを多くの人が欲していた
+	- Salesforce DXのデモブースはいつも人が群がっていたように思う。
+- Lightning推進に本腰
+	- メインキーノート Parker Harris談「SFとしてはLightningはreadyなんだ、使える状態になったんだ」
+	- DF期間中、Lightningじゃない画面を見ることはほぼなかった
+		- セッション "Migrating Lightning Components from Visualforce" の入場に長蛇の列ができていた
+- AppExchangeの重要性推し
+	- 開発効率が上がる、改善のサイクルを高められる等々、「使えるから、使ってくれ、パートナも引き続きいいものをどんどん作ってくれ」
+	- 各AppについてLightning Ready Certification( https://partners.salesforce.com/s/education/general/Lightning_Experience ) 取得の推進
+- Einstein
+	- 軽い使用例の紹介ということで、夢は大いに語られた。意気込みは感じる
+	- データの基盤としてのThunderと、利用者接点アプリたるLighgning等の間に横たわる、基盤的存在として喧伝
+	- impliする・売る立場として、何をどこまで売り先にコミットできるかはまだわからない。
+		- 学習、リコメンドのconfigurableな部分や、その効果測定や結果検証やチューニングポイント、デバッグがどうできるかとか。
+			- ビッグデータ時代にさんざんやった「ツール売り」みたいな、益体のない商売にならないように出来るか
+** わかったことなどでみんなに共有したいこと
+*** セッション・キーノートのトピックについて
+開発者目線にて。
+
+- Lightning Experience, Componentの 開発の準備を始めるときが来た
+- 来夏に Salesforce DXが来そうなので その前提で
+	- 既存PJ、既存SF機能内での開発フロー枠組み整備の温度感調整
+	- after Salesforce DX の Sandbox Previewとかで検証の準備を
+- Heroku CI
+	- 脱サードパティサービス（wercker）を目して、Heroku CIへの期待整理と新出情報待ち
+	- Review appsは積極的に、機能自体の習熟、利用フローの整備がこなれていくよう試していけるところ
+	- Heroku Connectは外せない機能 + 急ぎリリースされた機能のためかバグが多く。個々に試す以前に Subaru/Komatsu?の知見回収からかしら
+- Einsteinは・・・開発者目線ではまだ新出情報待ち(何がどこまでimpli可能、configurableなのか)？
+
+*** セッション、キーノートの選び方について
+**** 新出トピックの情報量は重複する -> 聞くだけならKeynoteで押さえる
+目玉となるトピックの発表は各セッションに遍在するし、複数聞く意味はあまりない。
+おそらく、出せる情報が少ない・利用者が限られてるので生々しい話が薄いので無理もない。
+Keynoteで頭出ししておけばよい。（Keynote系が初日に固まってればいいんだけど・・・）
+
+- Einsteinはプラットフォームのコアとして入るので、それぞれのアプリの立場からの説明が入る。これは当然だし問題ない
+- Salesforce DX, Heroku CIについては 聞いた範囲で各セッションで情報量の差は少ない
+	- Salesforce DX関係
+		- Building Force.com Apps from Source
+		- Salesforce for Developers Keynote
+		- Salesforce & Partners, Blazing Trails to Customer Transformation
+	- Heroku CI関係
+		- Introduction to Git-Based Continuous Delivery with Heroku Pipelines
+		- How Salesforce Builds Salesforce using Heroku
+		- Salesforce for Developers Keynote

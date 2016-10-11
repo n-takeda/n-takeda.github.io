@@ -847,7 +847,9 @@ Calling all developers & advanced admins! Can you imagine a future where adding 
 * Deliver an Exceptional Customer Experience with AppExchange
 ** Overview
 *** Description
-Make customer service your competitive advantage with hundreds of solutions from AppExchange. Join us to hear how experts use apps to engage with customers in new ways - through, for example, increased agent productivity, better field service, and surveys. You'll walk away with actionable tips and a list of top service apps (both paid and free) that you can easily deploy with just a few clicks.
+Make customer service your competitive advantage with hundreds of solutions from AppExchange.
+Join us to hear how experts use apps to engage with customers in new ways - through, for example, increased agent productivity, better field service, and surveys.
+You'll walk away with actionable tips and a list of top service apps (both paid and free) that you can easily deploy with just a few clicks.
 ** Memo
 - ちゃんと AppExchange 有効利用しような、雑な車輪の再開発なんぞするもんやないで、という話。AppExchangeのオススメ（宣伝
 - SMS Magic
