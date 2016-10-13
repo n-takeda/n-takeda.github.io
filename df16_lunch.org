@@ -48,7 +48,9 @@ file:./resource/dreamforce-logo-1.png
 * SF上での開発を変えるために、SFはどう変わろうとしているのか
 	- Heroku Flowとの統合
 
-** Heroku Flow
+** Heroku Flow?
+- Heroku Pipeline
+- Review apps
 ** Heroku Flow統合のための機能増強
 - Scratch Orgs
 - Salesforce DX API
@@ -119,7 +121,7 @@ This standard source-driven development approach has been used by developers for
 
 
 Another key innovation for Salesforce DX is something we call the scratch org.
-もひとつ、Salesforce DXのおっきな発明に scratch orgと呼んどるもんがある。
+もひとつ、Salesforce DXのごっつい発明に scratch orgと呼んどるもんがある。
 
 The scratch org is a brand new org type built specifically for developers and automation.
 scratch orgは開発・自動（テスト？）向けの新しいタイプの組織や。
@@ -129,23 +131,59 @@ It’s ephemeral, built quickly from your source and metadata, and makes it easy
 これでチーム開発や自動テストが捗るで。
 
 It’s worth noting that scratch orgs aren’t a replacement for sandboxes.
+scratch orgはsandboxを置き換えるもんとは違う。
 
-Sandboxes are an important part of the larger development lifecycle, and work with our new source-driven development process as the destination for packages built directly from source. All sandbox types, from developer to full, offer the ability to act as user acceptance testing (UAT) and staging environments of the production org.
+Sandboxes are an important part of the larger development lifecycle, and work with our new source-driven development process as the destination for packages built directly from source.
+Sandboxはもっと大きい開発ライフサイクルの中で大切になってくるもんで、source-drivenな開発プロセス？？
 
-I’m also really excited by the Salesforce Environment Manager, a tool we’ve created to make it easier to manage the orgs you use as part of the development process. Most of these orgs will be scratch orgs, but it also allows you to manage your sandbox and production orgs. Furthermore, the Salesforce Environment Manager makes it easy to attach your orgs to Heroku so that they can participate inside of Heroku Pipelines, our continuous delivery tool.
+All sandbox types, from developer to full, offer the ability to act as user acceptance testing (UAT) and staging environments of the production org.
+どのSandboxタイプでも（開発用sandからフルsandまで）、本番環境に対するUAT、ステージング環境として使うもんや。
+
+I’m also really excited by the Salesforce Environment Manager, a tool we’ve created to make it easier to manage the orgs you use as part of the development process.
+Salesforce Environment Managerはマジで鼻血もんや。ツールをつこうて簡単に組織の管理ができるし、開発プロセスの中で使えるようになる。
+
+Most of these orgs will be scratch orgs, but it also allows you to manage your sandbox and production orgs.
+こういう開発用の組織はほぼほぼ、scratch orgになっていくやろ。それだけやのうてサンドボックスと本番組織も管理できるようになるんや。
+
+Furthermore, the Salesforce Environment Manager makes it easy to attach your orgs to Heroku so that they can participate inside of Heroku Pipelines, our continuous delivery tool.
+さらに、 Salesforce Environment Managerは組織とHerokuを関連付けて、Heroku Pipelineに乗っかることができるようになる。
 
 Is Salesforce DX only for coders? Or is Salesforce DX something admins and low-code developers would want to use, too?
+Salesforce DXはコーダーだけのためのものか？ アドミンやあまりコードを開かない開発者や、他のヒトも使いたくなるものなのか？
 
-We’re about to launch a private Developer Preview for Salesforce DX. At this time, Salesforce DX is primarily focused on coders. But the long-term vision is for all of the Salesforce DX innovations, starting with metadata externalization all the way to new packaging, to make it easier for coders and non-coders to work together to build high-quality Salesforce apps.
+We’re about to launch a private Developer Preview for Salesforce DX.
+Salesforce DXの開発者向けprivate プレビューを用意しようとしとる。
 
+At this time, Salesforce DX is primarily focused on coders.
+こんときには、Salesforce DXはまず第一にコーダーにフォーカスしたもんになる。
 
+But the long-term vision is for all of the Salesforce DX innovations,
+starting with metadata externalization all the way to new packaging,
+to make it easier for coders and non-coders to work together to build high-quality Salesforce apps.
+けどな、長期的には外出したメタデータのパッケージング方法から？？
+ハイクオリティなSalesforceアプリをコーダにもノンコーダもがごく簡単に一緒に開発ができるようにしていくんや。
 
 Will developers need a Heroku account to use Salesforce DX?
+Salesforce DX使おうおもたらｌHerokuアカウントが必要になるんか？
 
-Not necessarily. If you want to use Heroku Pipelines to drive continuous integration and continuous delivery for your Salesforce apps, then you’ll need a free Heroku developer account. This is a scenario where Salesforce DX really shines, and highlights the best of App Cloud. However, if you’ve already invested in automation tools, you can use those just with your Salesforce org and Salesforce account.
+Not necessarily.
+いや、いらん。
+
+If you want to use Heroku Pipelines to drive continuous integration and continuous delivery for your Salesforce apps, then you’ll need a free Heroku developer account.
+でもまぁ、Heorku PipilinesをつこうてSalesforceアプリのCI/CDをするんやったら、Heroku開発者アカウントは必要になるかな。
+
+This is a scenario where Salesforce DX really shines, and highlights the best of App Cloud.
+Pipelinesを使うんが、Salesforce DXを使うにおいちゃ素晴らしいシナリオではあるな。
+
+However, if you’ve already invested in automation tools, you can use those just with your Salesforce org and Salesforce account.
+でもまぁ、ジブンが既に自動化ツールの整備がしとるんやったら、Salesforceの組織とアカウントだけで切り盛りできるわ。
 
 How can developers learn more about Salesforce DX at Dreamforce ‘16?
+Dreamforce' 16で紹介された Salesforce DXの詳しい情報はどこにあるんや？
 
-I’d encourage everyone who didn’t attend the Developer Keynote to watch the live recording. We also have a number of fantastic sessions you’ll want to attend, and a booth in the Developer Forest staffed with members of our engineering team. You don’t want to miss it!
+I’d encourage everyone who didn’t attend the Developer Keynote to watch the live recording.
+まずは Developer Keynote見てくれや。参加してなくても録画が見られるで。
 
-#+REVEAL_HTML: <style> .title-author { text-aligh: right;} .title-mail {text-align: right;}</style>
+We also have a number of fantastic sessions you’ll want to attend, and a booth in the Developer Forest staffed with members of our engineering team. You don’t want to miss it!
+ファンタスティクなセッションがたくさんあるからな、Developer Forestにおるスタッフとか開発チームのおるブースもやで。
+見逃すなや。
