@@ -1,0 +1,151 @@
+#+TITLE: Dreamforce'16 報告 - Salesforce DX
+#+AUTHOR: 竹田 夏木
+#+Email: natsuki.takeda@flect.co.jp
+#+REVEAL_ROOT: ./resource/reveal
+#+REVEAL_THEME: moon
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+LANGUAGE: ja
+#+OPTIONS: creator:nil LaTeX:t date:t toc:t H:1 reveal_title_slide:"<h2>%t</h2><br><br><h4>%a</h4><h4>%e</h4>"
+
+#+ATTR_HTML: :style float:left
+file:./resource/dreamforce-logo-1.png
+
+* 最初に
+:PROPERTIES:
+:reveal_background: ./resource/salesforce-safe-harbor.jpg
+:END:
+* Dreamforceでの扱い
+- 開発者向け基調講演で大きく取り上げ (Salesforce for Developers Keynote)
+- 関連セッションも多数
+	- Building Force.com Apps from Source
+	- Deep Dive into the New Salesforce Development Experience (DX) Architecture
+- Salesforce DXデモブースにはいつも聴衆が集まっている
+- ユーザ体験への直接の変化ではないにしろ、注目
+* Salesfoceがアプリに対して注力していること
+- DAU(Daily Active User), MAU(Monthly ActiveUser)の向上
+	- 苦労して作っても、使ってもらえないと、ね？
+	- 利用者に寄り添ったアプリが作れるようにする
+
+** Developerが要求されること
+- Build apps faster
+	- アプリの変更を、リリースをもっと早く
+	- -> Lightningとか
+- Build apps smarter
+	- アプリをもっと親切に、スマートに
+	- -> Einsteinとか
+- Build apps together
+	- チームで開発できるように
+	- -> Salesforce DX
+
+* SalesforceというPlatform上での開発の痛み
+- 限られたリソース、限られた数のPlatform(Runtime)
+- 世に確立されつつある、モダンな開発手法が取れない
+	- CI/CD
+	- ** Flow (ex. Github Flow)
+
+* SF上での開発を変えるために、SFはどう変わろうとしているのか
+	- Heroku Flowとの統合
+
+** Heroku Flow
+** Heroku Flow統合のための機能増強
+- Scratch Orgs
+- Salesforce DX API
+- Salesforce DX CLI
+** Scratch Orgs
+- 使い捨て可能な新しい開発用の組織
+- 自動テストの実行や実装に使用されることを目的としたもの
+
+
+* 開発者目線でどう変わるのか
+
+* いつ変わるのか
+
+* 参考資料
+** Dreamforce 関連セッション
+- DF16 Session: Building Force.com Apps from Source
+	- TerraSkyのレポート http://www.terrasky.co.jp/blog/2016/161007_001856.php
+- DF16 Keynote: [[https://www.salesforce.com/video/183640/][Salesforce for Developers Keynote]]
+- Web: Adopt a continuous delivery model for your Salesforce apps
+	https://www.salesforce.com/products/platform/products/salesforce-dx/
+- Web: [[https://developer.salesforce.com/platform/dx][Salesforce Developers - Salesforce DX]]
+- Web: [[https://developer.salesforce.com/blogs/developer-relations/2016/10/salesforce-dx-ux-developers.html][Salesforce Developers Blog "Salesforce DX = UX For Developers"]]
+
+** Salesforce Developers Blog "Salesforce DX = UX For Developers"
+I talked to Wade Wegner, VP of Product Management for Salesforce DX, to ask him a few questions about exciting new changes coming soon to the Salesforce developer experience.
+Salesforce DXのProduct Management VPであるところの Wade Wegnerと話して、もうすぐやってくるっちゅうSalesforce DXについていくつか質問してみたんや。
+
+Wade, tell me a little about Salesforce DX
+
+Salesforce DX helps developers build together in teams.
+Salesfroce DXは チームで一緒に開発するんを助けてくれる。
+
+In many ways, it brings together the best of the Force.com and Heroku developer experiences.
+Force.comとHerokuでの開発者にええ体験を提供できるはずや。
+
+It’s a new approach that supports team collaboration with a focus on quality, predictability, and an open and standardized development lifecycle on Salesforce.
+これは、チームの協調作業の品質、予測可能性に寄与し、Salesforce上での開発ライフサイクルの標準化の道を開いてくれる。
+
+A core theme of Salesforce DX is letting developers choose the tools they want.
+Salesforce DXの中心たるテーマは、開発者が使いたいツールを使えるようにすることや。
+
+For example, we’re investing in making the Force.com IDE a best-in-class solution, but with Salesforce DX and our new command-line interface,
+you can use the text editor or IDE of your choice, along with the CLI, to develop your app. It’s up to you.
+例えば、Force.com IDEを作ったんやが、Salesforce DXと新しいCLIを使えば、
+IDEでもテキストエディタでもあんたさんの好きなもんを、新しいCLIとよしなに組み合わせて開発したらええようになるんや。
+
+Another example is build automation and how you run tests.
+例えば自動テストを作って走らせる場合の話。
+
+With Salesforce DX, you could use our all-new Heroku CI, currently in private beta,
+combined with Heroku Pipelines enhancements to drive both continuous integration and continuous delivery.
+Or you could also choose to integrate a different build automation tool, such as Jenkins or TeamCity.
+Salesforce DXを使えば、新しい Heroku CI(まだ private betaやけど)とHeroku Pipelinesを組み合わせて CI/CDが実現できるんやで。
+別に Heroku CIに限らんでもJenknisなりTeamCityなり好きなもん使ってくれてえんやで。
+
+
+
+Besides being able to use my favorite tools, what’s new or different in Salesforce DX?
+お宅の好きなツールを使えるようになる、その他にSalesforce DXで何が変わるんか？
+
+One of the most important changes with Salesforce DX is that, by externalizing more of the metadata and the org shape,
+we can shift the app’s “source of truth” from the Salesforce org to a version control system.
+Salesforce DXで変わるめっちゃ大事なことの一つに、メタデータ、組織のshape(設定とか？)が外出できるようになることで、
+アプリケーションの"真実"が、組織からVCSへと移動できるようになることや。
+
+This standard source-driven development approach has been used by developers for years, and it’s now a core part of the Salesforce developer experience.
+近年では ソースドリブンな開発が一般的になっとるし、それこそがSalesforce devloper experienceの中核なんや。
+
+
+Another key innovation for Salesforce DX is something we call the scratch org.
+もひとつ、Salesforce DXのおっきな発明に scratch orgと呼んどるもんがある。
+
+The scratch org is a brand new org type built specifically for developers and automation.
+scratch orgは開発・自動（テスト？）向けの新しいタイプの組織や。
+
+It’s ephemeral, built quickly from your source and metadata, and makes it easy to build your app consistently over and over again, which is great for team collaboration and test automation.
+これは短期間だけ使う、ソースとメタデータを元に素早く作れる、簡単に繰り返し作成可能な環境や、
+これでチーム開発や自動テストが捗るで。
+
+It’s worth noting that scratch orgs aren’t a replacement for sandboxes.
+
+Sandboxes are an important part of the larger development lifecycle, and work with our new source-driven development process as the destination for packages built directly from source. All sandbox types, from developer to full, offer the ability to act as user acceptance testing (UAT) and staging environments of the production org.
+
+I’m also really excited by the Salesforce Environment Manager, a tool we’ve created to make it easier to manage the orgs you use as part of the development process. Most of these orgs will be scratch orgs, but it also allows you to manage your sandbox and production orgs. Furthermore, the Salesforce Environment Manager makes it easy to attach your orgs to Heroku so that they can participate inside of Heroku Pipelines, our continuous delivery tool.
+
+Is Salesforce DX only for coders? Or is Salesforce DX something admins and low-code developers would want to use, too?
+
+We’re about to launch a private Developer Preview for Salesforce DX. At this time, Salesforce DX is primarily focused on coders. But the long-term vision is for all of the Salesforce DX innovations, starting with metadata externalization all the way to new packaging, to make it easier for coders and non-coders to work together to build high-quality Salesforce apps.
+
+
+
+Will developers need a Heroku account to use Salesforce DX?
+
+Not necessarily. If you want to use Heroku Pipelines to drive continuous integration and continuous delivery for your Salesforce apps, then you’ll need a free Heroku developer account. This is a scenario where Salesforce DX really shines, and highlights the best of App Cloud. However, if you’ve already invested in automation tools, you can use those just with your Salesforce org and Salesforce account.
+
+How can developers learn more about Salesforce DX at Dreamforce ‘16?
+
+I’d encourage everyone who didn’t attend the Developer Keynote to watch the live recording. We also have a number of fantastic sessions you’ll want to attend, and a booth in the Developer Forest staffed with members of our engineering team. You don’t want to miss it!
+
+#+REVEAL_HTML: <style> .title-author { text-aligh: right;} .title-mail {text-align: right;}</style>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<title>Dreamforce'16 報告 - Salesforce DX</title>
+<meta name="author" content="(竹田 夏木)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./resource/reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="./resource/reveal/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './resource/reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>Dreamforce'16 報告 - Salesforce DX</h2><br><br><h4>竹田 夏木</h4><h4><a href="mailto:natsuki.takeda@flect.co.jp">natsuki.takeda@flect.co.jp</a></h4>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-orgheadline1">1. 最初に</a></li>
+<li><a href="#/slide-orgheadline2">2. Dreamforceでの扱い</a></li>
+<li><a href="#/slide-orgheadline4">3. Salesfoceがアプリに対して注力していること</a></li>
+<li><a href="#/slide-orgheadline5">4. SalesforceというPlatform上での開発の痛み</a></li>
+<li><a href="#/slide-orgheadline9">5. SF上での開発を変えるために、SFはどう変わろうとしているのか</a></li>
+<li><a href="#/slide-orgheadline10">6. 開発者目線でどう変わるのか</a></li>
+<li><a href="#/slide-orgheadline11">7. いつ変わるのか</a></li>
+<li><a href="#/slide-orgheadline14">8. 参考資料</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<div class="figure">
+<p><img src="./resource/dreamforce-logo-1.png" alt="dreamforce-logo-1.png" style="float:left" />
+</p>
+</div>
+
+<section>
+<section id="slide-orgheadline1" data-background="./resource/salesforce-safe-harbor.jpg">
+<h2 id="orgheadline1"><span class="section-number-2">1</span> 最初に</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline2">
+<h2 id="orgheadline2"><span class="section-number-2">2</span> Dreamforceでの扱い</h2>
+<ul>
+<li>開発者向け基調講演で大きく取り上げ (Salesforce for Developers Keynote)</li>
+<li>関連セッションも多数
+<ul>
+<li>Building Force.com Apps from Source</li>
+<li>Deep Dive into the New Salesforce Development Experience (DX) Architecture</li>
+
+</ul></li>
+<li>Salesforce DXデモブースにはいつも聴衆が集まっている</li>
+<li>ユーザ体験への直接の変化ではないにしろ、注目</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline4">
+<h2 id="orgheadline4"><span class="section-number-2">3</span> Salesfoceがアプリに対して注力していること</h2>
+<ul>
+<li>DAU(Daily Active User), MAU(Monthly ActiveUser)の向上
+<ul>
+<li>苦労して作っても、使ってもらえないと、ね？</li>
+<li>利用者に寄り添ったアプリが作れるようにする</li>
+
+</ul></li>
+
+</ul>
+
+<ol class="org-ol"><li><a id="orgheadline3"></a>Developerが要求されること<br  /><ul>
+<li>Build apps faster
+<ul>
+<li>アプリの変更を、リリースをもっと早く</li>
+<li>-&gt; Lightningとか</li>
+
+</ul></li>
+<li>Build apps smarter
+<ul>
+<li>アプリをもっと親切に、スマートに</li>
+<li>-&gt; Einsteinとか</li>
+
+</ul></li>
+<li>Build apps together
+<ul>
+<li>チームで開発できるように</li>
+<li>-&gt; Salesforce DX</li>
+
+</ul></li>
+
+</ul></li></ol>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5"><span class="section-number-2">4</span> SalesforceというPlatform上での開発の痛み</h2>
+<ul>
+<li>限られたリソース、限られた数のPlatform(Runtime)</li>
+<li>世に確立されつつある、モダンな開発手法が取れない
+<ul>
+<li>CI/CD</li>
+<li>** Flow (ex. Github Flow)</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
+<h2 id="orgheadline9"><span class="section-number-2">5</span> SF上での開発を変えるために、SFはどう変わろうとしているのか</h2>
+<ul>
+<li>Heroku Flowとの統合</li>
+
+</ul>
+
+<ol class="org-ol"><li><a id="orgheadline6"></a>Heroku Flow<br  /></li>
+<li><a id="orgheadline7"></a>Heroku Flow統合のための機能増強<br  /><ul>
+<li>Scratch Orgs</li>
+<li>Salesforce DX API</li>
+<li>Salesforce DX CLI</li>
+
+</ul></li>
+<li><a id="orgheadline8"></a>Scratch Orgs<br  /><ul>
+<li>使い捨て可能な新しい開発用の組織</li>
+<li>自動テストの実行や実装に使用されることを目的としたもの</li>
+
+</ul></li></ol>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline10">
+<h2 id="orgheadline10"><span class="section-number-2">6</span> 開発者目線でどう変わるのか</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline11">
+<h2 id="orgheadline11"><span class="section-number-2">7</span> いつ変わるのか</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline14">
+<h2 id="orgheadline14"><span class="section-number-2">8</span> 参考資料</h2>
+<div class="outline-text-2" id="text-8">
+</div><ol class="org-ol"><li><a id="orgheadline12"></a>Dreamforce 関連セッション<br  /><ul>
+<li>DF16 Session: Building Force.com Apps from Source
+<ul>
+<li>TerraSkyのレポート <a href="http://www.terrasky.co.jp/blog/2016/161007_001856.php">http://www.terrasky.co.jp/blog/2016/161007_001856.php</a></li>
+
+</ul></li>
+<li>DF16 Keynote: <a href="https://www.salesforce.com/video/183640/">Salesforce for Developers Keynote</a></li>
+<li>Web: Adopt a continuous delivery model for your Salesforce apps
+<a href="https://www.salesforce.com/products/platform/products/salesforce-dx/">https://www.salesforce.com/products/platform/products/salesforce-dx/</a></li>
+<li>Web: <a href="https://developer.salesforce.com/platform/dx">Salesforce Developers - Salesforce DX</a></li>
+<li>Web: <a href="https://developer.salesforce.com/blogs/developer-relations/2016/10/salesforce-dx-ux-developers.html">Salesforce Developers Blog "Salesforce DX = UX For Developers"</a></li>
+
+</ul></li>
+
+<li><a id="orgheadline13"></a>Salesforce Developers Blog "Salesforce DX = UX For Developers"<br  /><p>
+I talked to Wade Wegner, VP of Product Management for Salesforce DX, to ask him a few questions about exciting new changes coming soon to the Salesforce developer experience.
+Salesforce DXのProduct Management VPであるところの Wade Wegnerと話して、もうすぐやってくるっちゅうSalesforce DXについていくつか質問してみたんや。
+</p>
+
+<p>
+Wade, tell me a little about Salesforce DX
+</p>
+
+<p>
+Salesforce DX helps developers build together in teams.
+Salesfroce DXは チームで一緒に開発するんを助けてくれる。
+</p>
+
+<p>
+In many ways, it brings together the best of the Force.com and Heroku developer experiences.
+Force.comとHerokuでの開発者にええ体験を提供できるはずや。
+</p>
+
+<p>
+It’s a new approach that supports team collaboration with a focus on quality, predictability, and an open and standardized development lifecycle on Salesforce.
+これは、チームの協調作業の品質、予測可能性に寄与し、Salesforce上での開発ライフサイクルの標準化の道を開いてくれる。
+</p>
+
+<p>
+A core theme of Salesforce DX is letting developers choose the tools they want.
+Salesforce DXの中心たるテーマは、開発者が使いたいツールを使えるようにすることや。
+</p>
+
+<p>
+For example, we’re investing in making the Force.com IDE a best-in-class solution, but with Salesforce DX and our new command-line interface,
+you can use the text editor or IDE of your choice, along with the CLI, to develop your app. It’s up to you.
+例えば、Force.com IDEを作ったんやが、Salesforce DXと新しいCLIを使えば、
+IDEでもテキストエディタでもあんたさんの好きなもんを、新しいCLIとよしなに組み合わせて開発したらええようになるんや。
+</p>
+
+<p>
+Another example is build automation and how you run tests.
+例えば自動テストを作って走らせる場合の話。
+</p>
+
+<p>
+With Salesforce DX, you could use our all-new Heroku CI, currently in private beta, 
+combined with Heroku Pipelines enhancements to drive both continuous integration and continuous delivery.
+Or you could also choose to integrate a different build automation tool, such as Jenkins or TeamCity.
+Salesforce DXを使えば、新しい Heroku CI(まだ private betaやけど)とHeroku Pipelinesを組み合わせて CI/CDが実現できるんやで。
+別に Heroku CIに限らんでもJenknisとか TeamCityとか好きなもん使ってくれてえんやで。
+</p>
+
+
+
+<p>
+Besides being able to use my favorite tools, what’s new or different in Salesforce DX?
+</p>
+
+<p>
+One of the most important changes with Salesforce DX is that, by externalizing more of the metadata and the org shape, we can shift the app’s “source of truth” from the Salesforce org to a version control system. This standard source-driven development approach has been used by developers for years, and it’s now a core part of the Salesforce developer experience.
+</p>
+
+<p>
+Another key innovation for Salesforce DX is something we call the scratch org. The scratch org is a brand new org type built specifically for developers and automation. It’s ephemeral, built quickly from your source and metadata, and makes it easy to build your app consistently over and over again, which is great for team collaboration and test automation.
+</p>
+
+<p>
+It’s worth noting that scratch orgs aren’t a replacement for sandboxes. Sandboxes are an important part of the larger development lifecycle, and work with our new source-driven development process as the destination for packages built directly from source. All sandbox types, from developer to full, offer the ability to act as user acceptance testing (UAT) and staging environments of the production org.
+</p>
+
+<p>
+I’m also really excited by the Salesforce Environment Manager, a tool we’ve created to make it easier to manage the orgs you use as part of the development process. Most of these orgs will be scratch orgs, but it also allows you to manage your sandbox and production orgs. Furthermore, the Salesforce Environment Manager makes it easy to attach your orgs to Heroku so that they can participate inside of Heroku Pipelines, our continuous delivery tool.
+</p>
+
+<p>
+Is Salesforce DX only for coders? Or is Salesforce DX something admins and low-code developers would want to use, too?
+</p>
+
+<p>
+We’re about to launch a private Developer Preview for Salesforce DX. At this time, Salesforce DX is primarily focused on coders. But the long-term vision is for all of the Salesforce DX innovations, starting with metadata externalization all the way to new packaging, to make it easier for coders and non-coders to work together to build high-quality Salesforce apps.
+</p>
+
+
+
+<p>
+Will developers need a Heroku account to use Salesforce DX?
+</p>
+
+<p>
+Not necessarily. If you want to use Heroku Pipelines to drive continuous integration and continuous delivery for your Salesforce apps, then you’ll need a free Heroku developer account. This is a scenario where Salesforce DX really shines, and highlights the best of App Cloud. However, if you’ve already invested in automation tools, you can use those just with your Salesforce org and Salesforce account.
+</p>
+
+<p>
+How can developers learn more about Salesforce DX at Dreamforce ‘16?
+</p>
+
+<p>
+I’d encourage everyone who didn’t attend the Developer Keynote to watch the live recording. We also have a number of fantastic sessions you’ll want to attend, and a booth in the Developer Forest staffed with members of our engineering team. You don’t want to miss it!
+</p>
+
+<style> .title-author { text-aligh: right;} .title-mail {text-align: right;}</style></li></ol>
+</section>
+</section>
+</div>
+</div>
+<script src="./resource/reveal/lib/js/head.min.js"></script>
+<script src="./resource/reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './resource/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './resource/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './resource/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './resource/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './resource/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
