@@ -1,0 +1,8 @@
+/** General  */
+.reveal li { margin-top: 10px; margin-bottom: 10px; }
+.reveal ul { margin-bottom: 10px; }
+.reveal span.section-number-2:after { content: ". " }
+.reveal p { text-align: left; }
+
+/** Title Slide */
+.reveal #sec-title-slide h4 { text-align: right; margin-top: 150px; }
