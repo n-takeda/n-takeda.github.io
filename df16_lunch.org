@@ -42,9 +42,8 @@ file:./resource/df_ci.png
 - 限られた数の組織(コードを走らせるためのRuntime) 上での開発
 - コードとRuntimeの分離
 	- （どこかのVCSにホストしたコード + 各Runtime上の設定）で成り立つ振る舞い
-- 世に確立されつつある、モダンな開発手法が取りづらい
-	- CI/CD
-	- ** Flow (ex. Github Flow)
+- CI/CDのお膳立てが非常に大変
+	- コード管理、テスト実行環境、リリース構成管理....
 
 ** Salesforce DXで何を変えるのか？
 - ソース駆動のモダンな開発をサポート
@@ -54,43 +53,54 @@ file:./resource/df_ci.png
 file:./resource/intro_dx.png
 
 ** 新しい機能s
-*** Salesforce DX CLI
-	- 組織の管理を行うためのCLI
-	- 組織の作成、テストの実行、データインポート...のキック
-file:./resource/cli_01.png
-
-file:./resource/dx_data_import.png
-
 *** Scratch Orgs
-	- 手軽に作成・使い捨て可能な組織
+	- 手軽に作成できる、使い捨て組織
 	- 開発や自動テストでの利用を想定
 
 file:./resource/scratch_org_create01.png
 
-*** CIツールとの統合
-**** データインポート
+*** Salesforce DX CLI
+	- scratch orgの作成、テストの実行、データインポートなどの実行
+#+ATTR_HTML: :style width: 60%;
+file:./resource/cli_01.png
+
+#+ATTR_HTML: :style width: 40%;
 file:./resource/dx_data_import.png
 
-**** gitとの統合
-file:./resource/dx_hot_fix.png
+これで、稼働環境の作成 -> テストデータセット -> テスト実行 が可能な道具が揃う。
 
-**** 例えばJenkins
-file:./resource/dx_jenkins.png
+さらに、この流れの実行をHeroku Flow上で実行可能に。
 
-**** Heroku Pipelinesとの統合
-	- Review appsの立ち上げ
-	- テストの実行
-file:./resource/dx_pipelines.png
+*** Heroku Flow
 
-**** Ref. Heroku Flow
+**** Heroku Flow
 file:./resource/dx_heroku_flow.png
 
-*** Force.com IDE
-	- Salesforce DX CLIの統合
+**** コードの改修
+- ブランチ作成
+- 開発
+- Pull Request
+file:./resource/dx_hot_fix.png
 
+**** PRの自動テストの実行
+- Heroku CI (Private Beta) によりApex等の自動テスト実行が可能
+- DF中のデモでは、Apexテスト + Seleniumを実行
+file:./resource/dx_heroku_ci.png
 
-*** Salesforce DX API
-	- 組織へのソースのチェックアウト/イン等の管理を行うAPI
+**** Heroku Pipelinesとの統合
+	- PRに対応したReview appsの立ち上げ
+
+file:./resource/dx_pipelines.png
+
+*** その他機能
+	- Force.com IDEの強化
+		- Salesforce DX CLIの統合
+			#+ATTR_HTML: :style width: 60%;
+			file:./resource/dx_ide.png
+		- "Code Completion, Refactoring機能の強化"
+	- packageing 2.0
+		- multiple package from a single namespace (TODO)
+
 * Dreamforce16での位置づけ
 - 開発者向け基調講演で大きく取り上げ
 - 関連セッションもいくつか
@@ -102,24 +112,6 @@ file:./resource/dx_heroku_flow.png
 - DAU(Daily Active User), MAU(Monthly ActiveUser)の向上
 	- 苦労して作っても、使ってもらえないと、ね？
 	- 利用者に寄り添ったアプリが作れるようにする
-
-
-* SF上での開発を変えるために、SFはどう変わろうとしているのか
-	- Heroku Flowとの統合
-
-** Heroku Flow?
-- Heroku Pipeline
-- Review apps
-** Heroku Flow統合のための機能増強
-- Scratch Orgs
-- Salesforce DX API
-- Salesforce DX CLI
-** Scratch Orgs
-- 使い捨て可能な新しい開発用の組織
-- 自動テストの実行や実装に使用されることを目的としたもの
-
-
-* 開発者目線でどう変わるのか
 
 * いつ変わるのか
 
