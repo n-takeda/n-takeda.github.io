@@ -114,6 +114,8 @@ file:./resource/dx_pipelines.png
 	- 利用者に寄り添ったアプリが作れるようにする
 
 * いつ変わるのか
+- TODO リリース予定
+- TODO 早期レビューの登録
 
 * 参考資料
 ** Dreamforce 関連セッション
