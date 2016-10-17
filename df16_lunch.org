@@ -21,29 +21,42 @@ file:./resource/dreamforce-logo-1.png
 :PROPERTIES:
 :reveal_background: ./resource/df16_safe_harbor.png
 :END:
-* Salesforce DX
-** Salesforce DXとは
-- Salesforce上でチーム開発する際の「痛み」を解消するためのCDを支える新機能
-
-file:./resource/df_ci.png
-
-** アプリ開発に求められること
+* Salesforce Developer Keynote
+** 開発者に求められること
 - Build apps faster
-	- アプリの開発サイクルを早めて、素早い価値提供を
-	- -> Lightningとか
+	- アプリの開発サイクルを早めて、素早い価値提供を継続的に
+	- -> Lightning
+#+BEGIN_NOTES
+"People love apps that are delivered fast to meet their needs.
+And continuously improved"
+#+END_NOTES
 - Build apps smarter
 	- アプリをもっと親切に、スマートに
-	- -> Einsteinとか
+	- -> Einstein
+#+BEGIN_NOTES
+"People love apps that are smart.
+They won't use apps that aren't"
+#+END_NOTES
 - *Build apps together*
 	- チームで開発できるように
 	- -> Salesforce DX
+#+BEGIN_NOTES
+"I am my best when I work together with my team and leverage the community."
+#+END_NOTES
 
-** SalesforceというPlatform上での開発の「痛み」
+** チームで開発する際の辛み
 - 限られた数の組織(コードを走らせるためのRuntime) 上での開発
 - コードとRuntimeの分離
 	- （どこかのVCSにホストしたコード + 各Runtime上の設定）で成り立つ振る舞い
 - CI/CDのお膳立てが非常に大変
 	- コード管理、テスト実行環境、リリース構成管理....
+
+* Salesforce DX
+** Salesforce DXとは
+- Salesforce上でチーム開発する際の「痛み」を解消するために作られた、開発者向けの新機能
+
+file:./resource/df_ci.png
+
 
 ** Salesforce DXで何を変えるのか？
 - ソース駆動のモダンな開発をサポート
