@@ -10,18 +10,27 @@
 #+REVEAL_HLEVEL: 3
 #+LANGUAGE: ja
 #+OPTIONS: reveal_width:1600 reveal_height:1200
-#+OPTIONS: creator:nil LaTeX:t date:t toc:1 H:99 reveal_title_slide:"<h2>%t</h2><h4><div>%a</div><div>%e</div></h4>" reveal_slide_number:c/t
+#+OPTIONS: creator:nil LaTeX:t date:t toc:nil H:99 reveal_title_slide:"<h2>%t</h2><h4><div>%a</div><div>%e</div></h4>" reveal_slide_number:c/t
 #+REVEAL_EXTRA_CSS: ./resource/reveal_custom.css
 
 #+ATTR_HTML: :style float:left
 file:./resource/dreamforce-logo-1.png
 
 * 最初に
+** 今日話すこと
+- Dreamforce'16 で紹介された Salesforce DXなるものの概要
+#+BEGIN_NOTES
+- 紹介された内容そのもの
+- まだ触れない Limited Preview
+- なので、
+#+END_NOTES
+
 ** いつもの
 :PROPERTIES:
 :reveal_background: ./resource/df16_safe_harbor.png
 :END:
-* Salesforce Developer Keynote
+
+* なにを解決したいのか
 ** 開発者に求められること
 - Build apps faster
 	- アプリの開発サイクルを早めて、素早い価値提供を継続的に
@@ -33,16 +42,14 @@ file:./resource/dreamforce-logo-1.png
 	- チームで開発できるように
 	- -> Salesforce DX
 #+BEGIN_NOTES
-Build aps faster
-
+- なぜ、Salesforce DXを作ったのか
+- Build aps faster
 "People love apps that are delivered fast to meet their needs.
 And continuously improved"
-
-Build apps smarter
+- Build apps smarter
 "People love apps that are smart.
 They won't use apps that aren't"
-
-*Build apps together*
+- *Build apps together*
 "I am my best when I work together with my team and leverage the community."
 #+END_NOTES
 
@@ -90,6 +97,15 @@ file:./resource/dx_data_import.png
 
 **** Heroku Flow
 file:./resource/dx_heroku_flow.png
+
+**** Heroku Pipelines
+- Heroku Flowを実施するための機能
+	- PRに対応したテスト環境用意 -> ステージング環境に自動デプロイ -> 本番環境に反映
+- PRに対応したテスト用環境
+- UAT用のステージング環境
+- 本番環境
+
+file:./resource/heroku_pipeline.png
 
 **** コードの改修
 - ブランチ作成
