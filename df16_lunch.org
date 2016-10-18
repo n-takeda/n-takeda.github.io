@@ -26,21 +26,23 @@ file:./resource/dreamforce-logo-1.png
 - Build apps faster
 	- アプリの開発サイクルを早めて、素早い価値提供を継続的に
 	- -> Lightning
-#+BEGIN_NOTES
-"People love apps that are delivered fast to meet their needs.
-And continuously improved"
-#+END_NOTES
 - Build apps smarter
 	- アプリをもっと親切に、スマートに
 	- -> Einstein
-#+BEGIN_NOTES
-"People love apps that are smart.
-They won't use apps that aren't"
-#+END_NOTES
 - *Build apps together*
 	- チームで開発できるように
 	- -> Salesforce DX
 #+BEGIN_NOTES
+Build aps faster
+
+"People love apps that are delivered fast to meet their needs.
+And continuously improved"
+
+Build apps smarter
+"People love apps that are smart.
+They won't use apps that aren't"
+
+*Build apps together*
 "I am my best when I work together with my team and leverage the community."
 #+END_NOTES
 
@@ -60,7 +62,7 @@ file:./resource/df_ci.png
 
 ** Salesforce DXで何を変えるのか？
 - ソース駆動のモダンな開発をサポート
-	- ソース(apex, metadata,  *org configuration* )のバージョン管理
+	- ソース(app code, metadata,  *org configuration* )のバージョン管理
 	- 開発・自動テストを継続的に行うための、新しいタイプの使い捨て組織
 	- 各々が使い慣れたツールと連携できるような、オープンなインタフェース
 file:./resource/intro_dx.png
@@ -95,15 +97,15 @@ file:./resource/dx_heroku_flow.png
 - Pull Request
 file:./resource/dx_hot_fix.png
 
-**** PRの自動テストの実行
-- Heroku CI (Private Beta) によりApex等の自動テスト実行が可能
-- DF中のデモでは、Apexテスト + Seleniumを実行
-file:./resource/dx_heroku_ci.png
-
 **** Heroku Pipelinesとの統合
 	- PRに対応したReview appsの立ち上げ
 
 file:./resource/dx_pipelines.png
+
+**** PRの自動テストの実行
+- Heroku CI (Private Beta) により自動テスト実行が可能
+- DF中のデモでは、Apexテスト + Seleniumを実行
+file:./resource/dx_heroku_ci.png
 
 *** その他機能
 	- Force.com IDEの強化
@@ -112,7 +114,22 @@ file:./resource/dx_pipelines.png
 			file:./resource/dx_ide.png
 		- "Code Completion, Refactoring機能の強化"
 	- packageing 2.0
-		- multiple package from a single namespace (TODO)
+		- multiple package from a single namespace 
+
+* いつ変わるのか
+- 不明
+- まだ Limited Developer Previewの段階
+
+* 最後に
+- Salesforce社は開発の痛みを受け止めようとしている
+- 世の開発プラクティスに追いつこうとしている
+- まだ詳細情報は明らかではないが、開発者が使える道具、取れる手段は増える見込み
+
+
+* おしまい
+:PROPERTIES:
+:reveal_background: ./resource/df16_safe_harbor.png
+:END:
 
 * Dreamforce16での位置づけ
 - 開発者向け基調講演で大きく取り上げ
@@ -120,30 +137,25 @@ file:./resource/dx_pipelines.png
 	- Building Force.com Apps from Source
 	- Deep Dive into the New Salesforce Development Experience (DX) Architecture
 - Salesforce DXデモブースにはいつも聴衆が集まっている
-- UXへの直接の変化ではないが、目玉の一つと言える
-* 前提: Salesfoceがアプリ開発に対して注力していること
-- DAU(Daily Active User), MAU(Monthly ActiveUser)の向上
-	- 苦労して作っても、使ってもらえないと、ね？
-	- 利用者に寄り添ったアプリが作れるようにする
+- UXへの直接の変化ではないが、目玉の一つとは言える
 
-* いつ変わるのか
-- TODO リリース予定
-- TODO 早期レビューの登録
 
 * 参考資料
 ** Dreamforce 関連セッション
+- DF16 Developers Keynote: [[https://www.salesforce.com/video/183640/][Salesforce for Developers Keynote]]
 - DF16 Session: Building Force.com Apps from Source
 	- TerraSkyのレポート http://www.terrasky.co.jp/blog/2016/161007_001856.php
-- DF16 Keynote: [[https://www.salesforce.com/video/183640/][Salesforce for Developers Keynote]]
-- Web: Adopt a continuous delivery model for your Salesforce apps
-	https://www.salesforce.com/products/platform/products/salesforce-dx/
+- Web: [[https://www.salesforce.com/products/platform/products/salesforce-dx/][Adopt a continuous delivery model for your Salesforce apps]]
+	- 製品紹介ページ
 - Web: [[https://developer.salesforce.com/platform/dx][Salesforce Developers - Salesforce DX]]
 - Web: [[https://developer.salesforce.com/blogs/developer-relations/2016/10/salesforce-dx-ux-developers.html][Salesforce Developers Blog "Salesforce DX = UX For Developers"]]
 
 ** Salesforce Developers Blog "Salesforce DX = UX For Developers"
+*** 前説
 I talked to Wade Wegner, VP of Product Management for Salesforce DX, to ask him a few questions about exciting new changes coming soon to the Salesforce developer experience.
 Salesforce DXのProduct Management VPであるところの Wade Wegnerと話して、もうすぐやってくるっちゅうSalesforce DXについていくつか質問してみたんや。
 
+*** 位置づけ
 Wade, tell me a little about Salesforce DX
 
 Salesforce DX helps developers build together in teams.
@@ -155,6 +167,7 @@ Force.comとHerokuでの開発者にええ体験を提供できるはずや。
 It’s a new approach that supports team collaboration with a focus on quality, predictability, and an open and standardized development lifecycle on Salesforce.
 これは、チームの協調作業の品質、予測可能性に寄与し、Salesforce上での開発ライフサイクルの標準化の道を開いてくれる。
 
+*** 詳細
 A core theme of Salesforce DX is letting developers choose the tools they want.
 Salesforce DXの中心たるテーマは、開発者が使いたいツールを使えるようにすることや。
 
@@ -163,6 +176,7 @@ you can use the text editor or IDE of your choice, along with the CLI, to develo
 例えば、Force.com IDEを作ったんやが、Salesforce DXと新しいCLIを使えば、
 IDEでもテキストエディタでもあんたさんの好きなもんを、新しいCLIとよしなに組み合わせて開発したらええようになるんや。
 
+*** CI
 Another example is build automation and how you run tests.
 例えば自動テストを作って走らせる場合の話。
 
@@ -173,7 +187,7 @@ Salesforce DXを使えば、新しい Heroku CI(まだ private betaやけど)と
 別に Heroku CIに限らんでもJenknisなりTeamCityなり好きなもん使ってくれてえんやで。
 
 
-
+*** ソース管理
 Besides being able to use my favorite tools, what’s new or different in Salesforce DX?
 お宅の好きなツールを使えるようになる、その他にSalesforce DXで何が変わるんか？
 
@@ -185,7 +199,7 @@ Salesforce DXで変わるめっちゃ大事なことの一つに、メタデー�
 This standard source-driven development approach has been used by developers for years, and it’s now a core part of the Salesforce developer experience.
 近年では ソースドリブンな開発が一般的になっとるし、それこそがSalesforce devloper experienceの中核なんや。
 
-
+*** scratch orgs
 Another key innovation for Salesforce DX is something we call the scratch org.
 もひとつ、Salesforce DXのごっつい発明に scratch orgと呼んどるもんがある。
 
@@ -196,6 +210,7 @@ It’s ephemeral, built quickly from your source and metadata, and makes it easy
 これは短期間だけ使う、ソースとメタデータを元に素早く作れる、簡単に繰り返し作成可能な環境や、
 これでチーム開発や自動テストが捗るで。
 
+*** scratch orgsのsandboxとの違い
 It’s worth noting that scratch orgs aren’t a replacement for sandboxes.
 scratch orgはsandboxを置き換えるもんとは違う。
 
@@ -214,6 +229,7 @@ Most of these orgs will be scratch orgs, but it also allows you to manage your s
 Furthermore, the Salesforce Environment Manager makes it easy to attach your orgs to Heroku so that they can participate inside of Heroku Pipelines, our continuous delivery tool.
 さらに、 Salesforce Environment Managerは組織とHerokuを関連付けて、Heroku Pipelineに乗っかることができるようになる。
 
+*** DXは誰が使うもの？
 Is Salesforce DX only for coders? Or is Salesforce DX something admins and low-code developers would want to use, too?
 Salesforce DXはコーダーだけのためのものか？ アドミンやあまりコードを開かない開発者や、他のヒトも使いたくなるものなのか？
 
@@ -229,6 +245,7 @@ to make it easier for coders and non-coders to work together to build high-quali
 けどな、長期的には外出したメタデータのパッケージング方法から？？
 ハイクオリティなSalesforceアプリをコーダにもノンコーダもがごく簡単に一緒に開発ができるようにしていくんや。
 
+*** Herokuアカウントいる？
 Will developers need a Heroku account to use Salesforce DX?
 Salesforce DX使おうおもたらｌHerokuアカウントが必要になるんか？
 
@@ -244,6 +261,7 @@ Pipelinesを使うんが、Salesforce DXを使うにおいちゃ素晴らしい�
 However, if you’ve already invested in automation tools, you can use those just with your Salesforce org and Salesforce account.
 でもまぁ、ジブンが既に自動化ツールの整備がしとるんやったら、Salesforceの組織とアカウントだけで切り盛りできるわ。
 
+*** motto kwsk
 How can developers learn more about Salesforce DX at Dreamforce ‘16?
 Dreamforce' 16で紹介された Salesforce DXの詳しい情報はどこにあるんや？
 

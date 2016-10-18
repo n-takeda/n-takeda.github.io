@@ -35,13 +35,13 @@
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#/slide-orgheadline2">1. 最初に</a></li>
-<li><a href="#/slide-orgheadline17">2. Salesforce DX</a></li>
-<li><a href="#/slide-orgheadline18">3. Dreamforce16での位置づけ</a></li>
-<li><a href="#/slide-orgheadline19">4. 前提: Salesfoceがアプリ開発に対して注力していること</a></li>
-<li><a href="#/slide-orgheadline23">5. SF上での開発を変えるために、SFはどう変わろうとしているのか</a></li>
-<li><a href="#/slide-orgheadline24">6. 開発者目線でどう変わるのか</a></li>
-<li><a href="#/slide-orgheadline25">7. いつ変わるのか</a></li>
-<li><a href="#/slide-orgheadline28">8. 参考資料</a></li>
+<li><a href="#/slide-orgheadline5">2. Salesforce Developer Keynote</a></li>
+<li><a href="#/slide-orgheadline17">3. Salesforce DX</a></li>
+<li><a href="#/slide-orgheadline18">4. いつ変わるのか</a></li>
+<li><a href="#/slide-orgheadline19">5. 最後に</a></li>
+<li><a href="#/slide-orgheadline20">6. おしまい</a></li>
+<li><a href="#/slide-orgheadline21">7. Dreamforce16での位置づけ</a></li>
+<li><a href="#/slide-orgheadline34">8. 参考資料</a></li>
 </ul>
 </div>
 </div>
@@ -64,41 +64,25 @@
 </section>
 </section>
 <section>
-<section id="slide-orgheadline17">
-<h2 id="orgheadline17"><span class="section-number-2">2</span> Salesforce DX</h2>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5"><span class="section-number-2">2</span> Salesforce Developer Keynote</h2>
 <div class="outline-text-2" id="text-2">
 </div></section>
 </section>
 <section>
 <section id="slide-orgheadline3">
-<h3 id="orgheadline3"><span class="section-number-3">2.1</span> Salesforce DXとは</h3>
-<ul>
-<li>Salesforce上でチーム開発する際の「痛み」を解消するためのCDを支える新機能</li>
-
-</ul>
-
-
-<div class="figure">
-<p><img src="./resource/df_ci.png" alt="df_ci.png" />
-</p>
-</div>
-
-</section>
-</section>
-<section>
-<section id="slide-orgheadline4">
-<h3 id="orgheadline4"><span class="section-number-3">2.2</span> アプリ開発に求められること</h3>
+<h3 id="orgheadline3"><span class="section-number-3">2.1</span> 開発者に求められること</h3>
 <ul>
 <li>Build apps faster
 <ul>
-<li>アプリの開発サイクルを早めて、素早い価値提供を</li>
-<li>-&gt; Lightningとか</li>
+<li>アプリの開発サイクルを早めて、素早い価値提供を継続的に</li>
+<li>-&gt; Lightning</li>
 
 </ul></li>
 <li>Build apps smarter
 <ul>
 <li>アプリをもっと親切に、スマートに</li>
-<li>-&gt; Einsteinとか</li>
+<li>-&gt; Einstein</li>
 
 </ul></li>
 <li><b>Build apps together</b>
@@ -109,12 +93,34 @@
 </ul></li>
 
 </ul>
+<aside class="notes">
+<p>
+Build aps faster
+</p>
+
+<p>
+"People love apps that are delivered fast to meet their needs.
+And continuously improved"
+</p>
+
+<p>
+Build apps smarter
+"People love apps that are smart.
+They won't use apps that aren't"
+</p>
+
+<p>
+<b>Build apps together</b>
+"I am my best when I work together with my team and leverage the community."
+</p>
+
+</aside>
 
 </section>
 </section>
 <section>
-<section id="slide-orgheadline5">
-<h3 id="orgheadline5"><span class="section-number-3">2.3</span> SalesforceというPlatform上での開発の「痛み」</h3>
+<section id="slide-orgheadline4">
+<h3 id="orgheadline4"><span class="section-number-3">2.2</span> チームで開発する際の辛み</h3>
 <ul>
 <li>限られた数の組織(コードを走らせるためのRuntime) 上での開発</li>
 <li>コードとRuntimeの分離
@@ -133,12 +139,35 @@
 </section>
 </section>
 <section>
+<section id="slide-orgheadline17">
+<h2 id="orgheadline17"><span class="section-number-2">3</span> Salesforce DX</h2>
+<div class="outline-text-2" id="text-3">
+</div></section>
+</section>
+<section>
 <section id="slide-orgheadline6">
-<h3 id="orgheadline6"><span class="section-number-3">2.4</span> Salesforce DXで何を変えるのか？</h3>
+<h3 id="orgheadline6"><span class="section-number-3">3.1</span> Salesforce DXとは</h3>
+<ul>
+<li>Salesforce上でチーム開発する際の「痛み」を解消するために作られた、開発者向けの新機能</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="./resource/df_ci.png" alt="df_ci.png" />
+</p>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h3 id="orgheadline7"><span class="section-number-3">3.2</span> Salesforce DXで何を変えるのか？</h3>
 <ul>
 <li>ソース駆動のモダンな開発をサポート
 <ul>
-<li>ソース(apex, metadata,  <b>org configuration</b> )のバージョン管理</li>
+<li>ソース(app code, metadata,  <b>org configuration</b> )のバージョン管理</li>
 <li>開発・自動テストを継続的に行うための、新しいタイプの使い捨て組織</li>
 <li>各々が使い慣れたツールと連携できるような、オープンなインタフェース</li>
 
@@ -155,13 +184,13 @@
 </section>
 <section>
 <section id="slide-orgheadline16">
-<h3 id="orgheadline16"><span class="section-number-3">2.5</span> 新しい機能s</h3>
-<div class="outline-text-3" id="text-2-5">
+<h3 id="orgheadline16"><span class="section-number-3">3.3</span> 新しい機能s</h3>
+<div class="outline-text-3" id="text-3-3">
 </div></section>
 </section>
 <section>
-<section id="slide-orgheadline7">
-<h4 id="orgheadline7"><span class="section-number-4">2.5.1</span> Scratch Orgs</h4>
+<section id="slide-orgheadline8">
+<h4 id="orgheadline8"><span class="section-number-4">3.3.1</span> Scratch Orgs</h4>
 <ul>
 <li>手軽に作成できる、使い捨て組織</li>
 <li>開発や自動テストでの利用を想定</li>
@@ -177,8 +206,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgheadline8">
-<h4 id="orgheadline8"><span class="section-number-4">2.5.2</span> Salesforce DX CLI</h4>
+<section id="slide-orgheadline9">
+<h4 id="orgheadline9"><span class="section-number-4">3.3.2</span> Salesforce DX CLI</h4>
 <ul>
 <li>scratch orgの作成、テストの実行、データインポートなどの実行</li>
 
@@ -206,12 +235,12 @@
 </section>
 </section>
 <section>
-<section id="slide-orgheadline13">
-<h4 id="orgheadline13"><span class="section-number-4">2.5.3</span> Heroku Flow</h4>
-<div class="outline-text-4" id="text-2-5-3">
+<section id="slide-orgheadline14">
+<h4 id="orgheadline14"><span class="section-number-4">3.3.3</span> Heroku Flow</h4>
+<div class="outline-text-4" id="text-3-3-3">
 </div></section>
-<section id="slide-orgheadline9">
-<h5 id="orgheadline9"><span class="section-number-5">2.5.3.1</span> Heroku Flow</h5>
+<section id="slide-orgheadline10">
+<h5 id="orgheadline10"><span class="section-number-5">3.3.3.1</span> Heroku Flow</h5>
 
 <div class="figure">
 <p><img src="./resource/dx_heroku_flow.png" alt="dx_heroku_flow.png" />
@@ -219,8 +248,8 @@
 </div>
 
 </section>
-<section id="slide-orgheadline10">
-<h5 id="orgheadline10"><span class="section-number-5">2.5.3.2</span> コードの改修</h5>
+<section id="slide-orgheadline11">
+<h5 id="orgheadline11"><span class="section-number-5">3.3.3.2</span> コードの改修</h5>
 <ul>
 <li>ブランチ作成</li>
 <li>開発</li>
@@ -234,22 +263,8 @@
 </div>
 
 </section>
-<section id="slide-orgheadline11">
-<h5 id="orgheadline11"><span class="section-number-5">2.5.3.3</span> PRの自動テストの実行</h5>
-<ul>
-<li>Heroku CI (Private Beta) によりApex等の自動テスト実行が可能</li>
-<li>DF中のデモでは、Apexテスト + Seleniumを実行</li>
-
-</ul>
-
-<div class="figure">
-<p><img src="./resource/dx_heroku_ci.png" alt="dx_heroku_ci.png" />
-</p>
-</div>
-
-</section>
 <section id="slide-orgheadline12">
-<h5 id="orgheadline12"><span class="section-number-5">2.5.3.4</span> Heroku Pipelinesとの統合</h5>
+<h5 id="orgheadline12"><span class="section-number-5">3.3.3.3</span> Heroku Pipelinesとの統合</h5>
 <ul>
 <li>PRに対応したReview appsの立ち上げ</li>
 
@@ -262,10 +277,24 @@
 </div>
 
 </section>
+<section id="slide-orgheadline13">
+<h5 id="orgheadline13"><span class="section-number-5">3.3.3.4</span> PRの自動テストの実行</h5>
+<ul>
+<li>Heroku CI (Private Beta) により自動テスト実行が可能</li>
+<li>DF中のデモでは、Apexテスト + Seleniumを実行</li>
+
+</ul>
+
+<div class="figure">
+<p><img src="./resource/dx_heroku_ci.png" alt="dx_heroku_ci.png" />
+</p>
+</div>
+
+</section>
 </section>
 <section>
-<section id="slide-orgheadline14">
-<h4 id="orgheadline14"><span class="section-number-4">2.5.4</span> その他機能</h4>
+<section id="slide-orgheadline15">
+<h4 id="orgheadline15"><span class="section-number-4">3.3.4</span> その他機能</h4>
 <ul>
 <li>Force.com IDEの強化
 <ul>
@@ -282,27 +311,47 @@ Salesforce DX CLIの統合
 </ul></li>
 <li>packageing 2.0
 <ul>
-<li>multiple package from a single namespace (TODO)</li>
+<li>multiple package from a single namespace</li>
 
 </ul></li>
 
 </ul>
 
-
-</section>
-</section>
-<section>
-<section id="slide-orgheadline15">
-<h4 id="orgheadline15"><span class="section-number-4">2.5.5</span> Salesforce DX API</h4>
-<ul>
-<li>組織へのソースのチェックアウト/イン等の管理を行うAPI</li>
-
-</ul>
 </section>
 </section>
 <section>
 <section id="slide-orgheadline18">
-<h2 id="orgheadline18"><span class="section-number-2">3</span> Dreamforce16での位置づけ</h2>
+<h2 id="orgheadline18"><span class="section-number-2">4</span> いつ変わるのか</h2>
+<ul>
+<li>不明</li>
+<li>まだ Limited Developer Previewの段階</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline19">
+<h2 id="orgheadline19"><span class="section-number-2">5</span> 最後に</h2>
+<ul>
+<li>Salesforce社は開発の痛みを受け止めようとしている</li>
+<li>世の開発プラクティスに追いつこうとしている</li>
+<li>まだ詳細情報は明らかではないが、開発者が使える道具、取れる手段は増える見込み</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline20" data-background="./resource/df16_safe_harbor.png">
+<h2 id="orgheadline20"><span class="section-number-2">6</span> おしまい</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline21">
+<h2 id="orgheadline21"><span class="section-number-2">7</span> Dreamforce16での位置づけ</h2>
 <ul>
 <li>開発者向け基調講演で大きく取り上げ</li>
 <li>関連セッションもいくつか
@@ -312,21 +361,7 @@ Salesforce DX CLIの統合
 
 </ul></li>
 <li>Salesforce DXデモブースにはいつも聴衆が集まっている</li>
-<li>UXへの直接の変化ではないが、目玉の一つと言える</li>
-
-</ul>
-</section>
-</section>
-<section>
-<section id="slide-orgheadline19">
-<h2 id="orgheadline19"><span class="section-number-2">4</span> 前提: Salesfoceがアプリ開発に対して注力していること</h2>
-<ul>
-<li>DAU(Daily Active User), MAU(Monthly ActiveUser)の向上
-<ul>
-<li>苦労して作っても、使ってもらえないと、ね？</li>
-<li>利用者に寄り添ったアプリが作れるようにする</li>
-
-</ul></li>
+<li>UXへの直接の変化ではないが、目玉の一つとは言える</li>
 
 </ul>
 
@@ -334,78 +369,26 @@ Salesforce DX CLIの統合
 </section>
 </section>
 <section>
-<section id="slide-orgheadline23">
-<h2 id="orgheadline23"><span class="section-number-2">5</span> SF上での開発を変えるために、SFはどう変わろうとしているのか</h2>
-<ul>
-<li>Heroku Flowとの統合</li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-orgheadline20">
-<h3 id="orgheadline20"><span class="section-number-3">5.1</span> Heroku Flow?</h3>
-<ul>
-<li>Heroku Pipeline</li>
-<li>Review apps</li>
-
-</ul>
-</section>
-</section>
-<section>
-<section id="slide-orgheadline21">
-<h3 id="orgheadline21"><span class="section-number-3">5.2</span> Heroku Flow統合のための機能増強</h3>
-<ul>
-<li>Scratch Orgs</li>
-<li>Salesforce DX API</li>
-<li>Salesforce DX CLI</li>
-
-</ul>
-</section>
-</section>
-<section>
-<section id="slide-orgheadline22">
-<h3 id="orgheadline22"><span class="section-number-3">5.3</span> Scratch Orgs</h3>
-<ul>
-<li>使い捨て可能な新しい開発用の組織</li>
-<li>自動テストの実行や実装に使用されることを目的としたもの</li>
-
-</ul>
-
-
-</section>
-</section>
-<section>
-<section id="slide-orgheadline24">
-<h2 id="orgheadline24"><span class="section-number-2">6</span> 開発者目線でどう変わるのか</h2>
-
-</section>
-</section>
-<section>
-<section id="slide-orgheadline25">
-<h2 id="orgheadline25"><span class="section-number-2">7</span> いつ変わるのか</h2>
-
-</section>
-</section>
-<section>
-<section id="slide-orgheadline28">
-<h2 id="orgheadline28"><span class="section-number-2">8</span> 参考資料</h2>
+<section id="slide-orgheadline34">
+<h2 id="orgheadline34"><span class="section-number-2">8</span> 参考資料</h2>
 <div class="outline-text-2" id="text-8">
 </div></section>
 </section>
 <section>
-<section id="slide-orgheadline26">
-<h3 id="orgheadline26"><span class="section-number-3">8.1</span> Dreamforce 関連セッション</h3>
+<section id="slide-orgheadline22">
+<h3 id="orgheadline22"><span class="section-number-3">8.1</span> Dreamforce 関連セッション</h3>
 <ul>
+<li>DF16 Developers Keynote: <a href="https://www.salesforce.com/video/183640/">Salesforce for Developers Keynote</a></li>
 <li>DF16 Session: Building Force.com Apps from Source
 <ul>
 <li>TerraSkyのレポート <a href="http://www.terrasky.co.jp/blog/2016/161007_001856.php">http://www.terrasky.co.jp/blog/2016/161007_001856.php</a></li>
 
 </ul></li>
-<li>DF16 Keynote: <a href="https://www.salesforce.com/video/183640/">Salesforce for Developers Keynote</a></li>
-<li>Web: Adopt a continuous delivery model for your Salesforce apps
-<a href="https://www.salesforce.com/products/platform/products/salesforce-dx/">https://www.salesforce.com/products/platform/products/salesforce-dx/</a></li>
+<li>Web: <a href="https://www.salesforce.com/products/platform/products/salesforce-dx/">Adopt a continuous delivery model for your Salesforce apps</a>
+<ul>
+<li>製品紹介ページ</li>
+
+</ul></li>
 <li>Web: <a href="https://developer.salesforce.com/platform/dx">Salesforce Developers - Salesforce DX</a></li>
 <li>Web: <a href="https://developer.salesforce.com/blogs/developer-relations/2016/10/salesforce-dx-ux-developers.html">Salesforce Developers Blog "Salesforce DX = UX For Developers"</a></li>
 
@@ -414,13 +397,24 @@ Salesforce DX CLIの統合
 </section>
 </section>
 <section>
-<section id="slide-orgheadline27">
-<h3 id="orgheadline27"><span class="section-number-3">8.2</span> Salesforce Developers Blog "Salesforce DX = UX For Developers"</h3>
+<section id="slide-orgheadline33">
+<h3 id="orgheadline33"><span class="section-number-3">8.2</span> Salesforce Developers Blog "Salesforce DX = UX For Developers"</h3>
+<div class="outline-text-3" id="text-8-2">
+</div></section>
+</section>
+<section>
+<section id="slide-orgheadline23">
+<h4 id="orgheadline23"><span class="section-number-4">8.2.1</span> 前説</h4>
 <p>
 I talked to Wade Wegner, VP of Product Management for Salesforce DX, to ask him a few questions about exciting new changes coming soon to the Salesforce developer experience.
 Salesforce DXのProduct Management VPであるところの Wade Wegnerと話して、もうすぐやってくるっちゅうSalesforce DXについていくつか質問してみたんや。
 </p>
 
+</section>
+</section>
+<section>
+<section id="slide-orgheadline24">
+<h4 id="orgheadline24"><span class="section-number-4">8.2.2</span> 位置づけ</h4>
 <p>
 Wade, tell me a little about Salesforce DX
 </p>
@@ -440,6 +434,11 @@ It’s a new approach that supports team collaboration with a focus on quality, 
 これは、チームの協調作業の品質、予測可能性に寄与し、Salesforce上での開発ライフサイクルの標準化の道を開いてくれる。
 </p>
 
+</section>
+</section>
+<section>
+<section id="slide-orgheadline25">
+<h4 id="orgheadline25"><span class="section-number-4">8.2.3</span> 詳細</h4>
 <p>
 A core theme of Salesforce DX is letting developers choose the tools they want.
 Salesforce DXの中心たるテーマは、開発者が使いたいツールを使えるようにすることや。
@@ -452,6 +451,11 @@ you can use the text editor or IDE of your choice, along with the CLI, to develo
 IDEでもテキストエディタでもあんたさんの好きなもんを、新しいCLIとよしなに組み合わせて開発したらええようになるんや。
 </p>
 
+</section>
+</section>
+<section>
+<section id="slide-orgheadline26">
+<h4 id="orgheadline26"><span class="section-number-4">8.2.4</span> CI</h4>
 <p>
 Another example is build automation and how you run tests.
 例えば自動テストを作って走らせる場合の話。
@@ -466,7 +470,11 @@ Salesforce DXを使えば、新しい Heroku CI(まだ private betaやけど)と
 </p>
 
 
-
+</section>
+</section>
+<section>
+<section id="slide-orgheadline27">
+<h4 id="orgheadline27"><span class="section-number-4">8.2.5</span> ソース管理</h4>
 <p>
 Besides being able to use my favorite tools, what’s new or different in Salesforce DX?
 お宅の好きなツールを使えるようになる、その他にSalesforce DXで何が変わるんか？
@@ -484,7 +492,11 @@ This standard source-driven development approach has been used by developers for
 近年では ソースドリブンな開発が一般的になっとるし、それこそがSalesforce devloper experienceの中核なんや。
 </p>
 
-
+</section>
+</section>
+<section>
+<section id="slide-orgheadline28">
+<h4 id="orgheadline28"><span class="section-number-4">8.2.6</span> scratch orgs</h4>
 <p>
 Another key innovation for Salesforce DX is something we call the scratch org.
 もひとつ、Salesforce DXのごっつい発明に scratch orgと呼んどるもんがある。
@@ -501,6 +513,11 @@ It’s ephemeral, built quickly from your source and metadata, and makes it easy
 これでチーム開発や自動テストが捗るで。
 </p>
 
+</section>
+</section>
+<section>
+<section id="slide-orgheadline29">
+<h4 id="orgheadline29"><span class="section-number-4">8.2.7</span> scratch orgsのsandboxとの違い</h4>
 <p>
 It’s worth noting that scratch orgs aren’t a replacement for sandboxes.
 scratch orgはsandboxを置き換えるもんとは違う。
@@ -531,6 +548,11 @@ Furthermore, the Salesforce Environment Manager makes it easy to attach your org
 さらに、 Salesforce Environment Managerは組織とHerokuを関連付けて、Heroku Pipelineに乗っかることができるようになる。
 </p>
 
+</section>
+</section>
+<section>
+<section id="slide-orgheadline30">
+<h4 id="orgheadline30"><span class="section-number-4">8.2.8</span> DXは誰が使うもの？</h4>
 <p>
 Is Salesforce DX only for coders? Or is Salesforce DX something admins and low-code developers would want to use, too?
 Salesforce DXはコーダーだけのためのものか？ アドミンやあまりコードを開かない開発者や、他のヒトも使いたくなるものなのか？
@@ -554,6 +576,11 @@ to make it easier for coders and non-coders to work together to build high-quali
 ハイクオリティなSalesforceアプリをコーダにもノンコーダもがごく簡単に一緒に開発ができるようにしていくんや。
 </p>
 
+</section>
+</section>
+<section>
+<section id="slide-orgheadline31">
+<h4 id="orgheadline31"><span class="section-number-4">8.2.9</span> Herokuアカウントいる？</h4>
 <p>
 Will developers need a Heroku account to use Salesforce DX?
 Salesforce DX使おうおもたらｌHerokuアカウントが必要になるんか？
@@ -579,6 +606,11 @@ However, if you’ve already invested in automation tools, you can use those jus
 でもまぁ、ジブンが既に自動化ツールの整備がしとるんやったら、Salesforceの組織とアカウントだけで切り盛りできるわ。
 </p>
 
+</section>
+</section>
+<section>
+<section id="slide-orgheadline32">
+<h4 id="orgheadline32"><span class="section-number-4">8.2.10</span> motto kwsk</h4>
 <p>
 How can developers learn more about Salesforce DX at Dreamforce ‘16?
 Dreamforce' 16で紹介された Salesforce DXの詳しい情報はどこにあるんや？
