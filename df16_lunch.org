@@ -30,7 +30,10 @@ file:./resource/dreamforce-logo-1.png
 
 * 最初に
 ** 今日話すこと
-- Dreamforce'16 で紹介された Salesforce DXなるものの概要
+- なぜ Salesforce DXなるものを生み出すのか
+	- これからSalesforceでの開発は、どう変わらなければならないのか
+	- 何が必要なのか
+- Salesforce DXとは
 #+BEGIN_NOTES
 - 紹介された内容そのもの
 - まだ触れない Limited Preview
@@ -51,8 +54,6 @@ file:./resource/dreamforce-logo-1.png
 	- アプリをもっと親切に、スマートに
 	- -> Einstein
 - *Build apps together*
-	- チームで開発できるように
-	- -> Salesforce DX
 #+BEGIN_NOTES
 - なぜ、Salesforce DXを作ったのか
 - Build aps faster
@@ -64,6 +65,11 @@ They won't use apps that aren't"
 - *Build apps together*
 "I am my best when I work together with my team and leverage the community."
 #+END_NOTES
+** Build Apps Together
+	- チームで協調して開発することは重要かつ必須
+	- 現状、Salesforce上での開発は、チームで開発し易いものといえるか？
+	-  "How you work together as a team?"「チーム開発、ツラミある」
+file:./resource/dx_build_apps_together.png
 
 ** チームで開発する際の辛み
 - 限られた数の組織(コードを走らせるためのRuntime) 上での開発
@@ -132,7 +138,7 @@ file:./resource/dx_pipelines.png
 
 **** PRの自動テストの実行
 - Heroku CI (Private Beta) により自動テスト実行が可能
-- DF中のデモでは、Apexテスト + Seleniumを実行
+- DF中のデモでは、Apexテスト + Seleniumテストを実行
 file:./resource/dx_heroku_ci.png
 
 *** その他機能
@@ -150,10 +156,9 @@ file:./resource/dx_heroku_ci.png
 - まだ Limited Developer Previewの段階
 
 * 最後に
-- Salesforce社は開発の痛みを受け止めようとしている
-- 世の開発プラクティスに追いつこうとしている
-- まだ詳細情報は明らかではないが、開発者が使える道具、取れる手段は増える見込み
-
+- Salesforce社 はチーム開発の痛みを認識し、対処しようとしている
+- まずは、世の開発プラクティスに追いつこうとしている
+	- 詳細情報は明らかではないが、開発フローの整備に使える道具/取れる手段は増えると見込める
 
 * おしまい
 :PROPERTIES:
@@ -172,6 +177,7 @@ file:./resource/dx_heroku_ci.png
 * 参考資料
 ** Dreamforce'16 Keynote/Session
 - DF16 Developers Keynote: [[https://www.salesforce.com/video/282548/][Salesforce for Developers Keynote]]
+	- DXの話は 31:30ぐらいから
 - DF16 Session: Building Force.com Apps from Source
 	- TerraSkyのレポート http://www.terrasky.co.jp/blog/2016/161007_001856.php
 ** Salesforce.com 公式Webサイト
