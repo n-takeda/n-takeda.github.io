@@ -43,7 +43,7 @@ file:./resource/dreamforce-logo-1.png
 :END:
 
 * なにを解決したいのか
-** 開発者に求められること
+** 開発者が求められていくこと
 - Build apps faster
 	- アプリの開発サイクルを早めて、素早い価値提供を継続的に
 	- -> Lightning
@@ -144,6 +144,7 @@ file:./resource/dx_heroku_ci.png
 	- packageing 2.0
 		- multiple package from a single namespace 
 
+* Salesforce DX
 * いつ変わるのか
 - 不明
 - まだ Limited Developer Previewの段階
@@ -169,10 +170,11 @@ file:./resource/dx_heroku_ci.png
 
 
 * 参考資料
-** Dreamforce 関連セッション
-- DF16 Developers Keynote: [[https://www.salesforce.com/video/183640/][Salesforce for Developers Keynote]]
+** Dreamforce'16 Keynote/Session
+- DF16 Developers Keynote: [[https://www.salesforce.com/video/282548/][Salesforce for Developers Keynote]]
 - DF16 Session: Building Force.com Apps from Source
 	- TerraSkyのレポート http://www.terrasky.co.jp/blog/2016/161007_001856.php
+** Salesforce.com 公式Webサイト
 - Web: [[https://www.salesforce.com/products/platform/products/salesforce-dx/][Adopt a continuous delivery model for your Salesforce apps]]
 	- 製品紹介ページ
 - Web: [[https://developer.salesforce.com/platform/dx][Salesforce Developers - Salesforce DX]]
