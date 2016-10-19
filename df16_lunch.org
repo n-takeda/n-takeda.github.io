@@ -210,7 +210,6 @@ file:./resource/dx_heroku_ci.png
 	- 製品紹介ページ
 - Web: [[https://developer.salesforce.com/platform/dx][Salesforce Developers - Salesforce DX]]
 - Web: [[https://developer.salesforce.com/blogs/developer-relations/2016/10/salesforce-dx-ux-developers.html][Salesforce Developers Blog "Salesforce DX = UX For Developers"]]
-
 ** Salesforce Developers Blog "Salesforce DX = UX For Developers"
 *** 前説
 I talked to Wade Wegner, VP of Product Management for Salesforce DX, to ask him a few questions about exciting new changes coming soon to the Salesforce developer experience.
@@ -332,3 +331,105 @@ I’d encourage everyone who didn’t attend the Developer Keynote to watch the 
 We also have a number of fantastic sessions you’ll want to attend, and a booth in the Developer Forest staffed with members of our engineering team. You don’t want to miss it!
 ファンタスティクなセッションがたくさんあるからな、Developer Forestにおるスタッフとか開発チームのおるブースもやで。
 見逃すなや。
+** Peter Knolle "Salesforce DX Quick Take"
+*** この記事について
+Salesforce DX was announced at Dreamforce 2016 as a new way to manage and develop Salesforce apps.
+Dreamforce 2016にて、Salesforceアプリを管理・開発するための新しい方法として、Salesforce DXがお披露目されたで。
+
+It is a new and much improved Salesforce Developer Experience.
+Salesforceでの開発者体験としちゃ、新しいしめっちゃ改善しとる。
+
+The rest of this article consists of my thoughts on platform development in the past, the future
+with Salesforce DX, and some of my hopes for Salesforce DX based on my experiences and what I saw at Dreamforce.
+この記事は今までのプラットフォーム上での開発の思うところとか、いずれくるSalesforce DXを使った場合のこととか、
+Dreamforceで見てみたり自分の経験と照らしあわせせてみたりしたところで「こうであって欲しい」と思うとことを書く
+
+*** 今まで
+The Past
+
+To be frank, trying to apply best practices and processes of traditional software development on the Salesforce platform has always
+taken a substantial amount of effort to set up. 
+雑な物言いなるけど、Salesforceプラットフォーム上でソフトウェア開発のベストプラクティスとか定番のプロセスを試そうとしよったら、
+その準備にかなり気合入れなあかん。
+
+Even after that initial investment of setting up a process
+and figuring out how to shoehorn in things like distributed development, version control, branching, merging, and CI,
+it has always been much more complicated to develop with than other tech stacks. 
+初期設定のプロセスに始まり、そこから 分散開発、バージョンコントロール、ブランチ、マージ、 CIといった諸々を
+どこに押し込めるか突き詰めていくと、
+他の技術スタックを使う時よりずっとややこしくなるもんや。
+
+Developers are used to working on tech stacks such as Java/Spring, .NET, node.js,
+that have had all of that figured out for a long time.
+Java/Springとか .NETとか node.jとか、その辺の技術スタック界隈では長い時間をかけて諸々を解決してきた。
+#+BEGIN_COMMENTS
+FIX ME
+#+END_COMMENTS
+
+*** これから
+Salesforce DX is the solution to those problems.
+Salesforce DXがこの問題への解になる。
+
+It will standardize a set of tools, APIs, and best practices for development on the Salesforce platform.
+開発のツール、API、ベストプラクティスを統一してくれるモンになるやろな。
+
+The goal, as I see it, 
+is to make it inexcusable to not use best practices we software developers have been using on other tech stacks for years.
+つまるところ「他の技術スタックで長年かけて培ったベストプラクティスが使えないって、それマジありえんくね」ってことやと思うねんな。
+
+This will have a positive side effect of attracting and keeping other talented developers on the platform.
+（せやからSalesforce DXが来たら？）イケてるエンジニアもSalesforce開発をやる（やめない）ようにできるやろな。
+
+*** オニューのCLI
+The new command line interface adds additional commands via the Heroku CLI (a.k.a. Heroku Toolbelt).
+新しいCLIは Heroku CLI (またの名を Heroku Toolbelt)から、いろんなコマンドを輸入しとる。
+
+This is core to the development experience.
+これがDXのメインどころや。
+
+It is used by the IDE.
+IDEからも使えるで。
+
+It can be added into any other automated processes such as continuous integration, automated build scripts, or deployments.
+CIとかビルドスクリプトとかデプロイなんかの処理もいろいろ入ってるで。
+
+I believe a solid command line is core to everything. 
+ワイはな、質実剛健なコマンドラインこそが物事の基礎やと思うんや。
+
+Give the developers a rich and complete set of basic commands
+and they’ll use them and come up with new, better, unexpected ways as well.
+ベースのマトモなコマンドさえ十分にあれば、開発者はそれをすぐ使いこなして新しくて、よりよい、びっくりするようなええ方法を考えつきよる。
+
+Of the existing functionality (i.e., have been able to do for a while by a different means),
+I am particularly interested in the data loading.
+既存機能の中で、ワイが特に興味があるんがデータロードやな。
+
+One of the best practices is to check in DML which can be used to share solid test data.
+ちゃんとしたテストデータとして使いまわせるようなDMLを使うんがひとつの近道や
+#+BEGIN_COMMENTS
+FIX ME
+#+END_COMMENTS
+
+I see this overlooked with Salesforce all of the time,
+perhaps because it can be a bit more difficult to automate with the data loader.
+Salesforce使うとき大概見落とされてるように思うんやけど、
+それはデータローダー使う処理を自動化するのがちっと難しいからやと思うんや。
+
+**** CLIのこうだったらええな
+
+- It will be easier to incorporate test data into development processes 
+  - 開発のプロセスの中で簡単にテストデータを突っ込めること
+- Other devs will add in commands that they’ve been using in their own orgs 
+  - みんながそれぞれの組織で使ったのと同じコマンドを、他の開発者が使えるようになること（？ cli使ったsnippet/scriptの共有）
+- Other devs will improve the existing commands 
+  - 開発者が既存のコマンドを改良していくこと
+- The CLI will be extendable, but grow only as needed 
+  -CLIが拡張可能で、必要な分だけ成長していけること
+
+
+
+
+これが
+
+
+参照元: http://peterknolle.com/
