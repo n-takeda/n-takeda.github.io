@@ -1,4 +1,4 @@
-#+TITLE: Dreamforce'16 報告 - Salesforce DX
+#+TITLE: Dreamforce'16 社内共有会 - Salesforce DX
 #+AUTHOR: 竹田 夏木
 #+Email: natsuki.takeda@flect.co.jp
 #+Date: 2016-10-20
@@ -10,7 +10,7 @@
 #+REVEAL_HLEVEL: 3
 #+LANGUAGE: ja
 #+OPTIONS: reveal_width:1600 reveal_height:1200
-#+OPTIONS: creator:nil LaTeX:t date:t toc:nil H:99 reveal_title_slide:"<h2>%t</h2><h4><div>%a</div><div>%e</div></h4>" reveal_slide_number:c/t
+#+OPTIONS: creator:nil LaTeX:t date:t toc:nil H:99 reveal_title_slide:"<h2>%t</h2><h3>2016/10/20</h3><h4><div>%a</div><div>%e</div></h4>" reveal_slide_number:c/t
 #+REVEAL_EXTRA_CSS: ./resource/reveal_custom.css
 #+BEGIN_HTML
 <script>
@@ -100,65 +100,90 @@ file:./resource/intro_dx.png
 file:./resource/scratch_org_create01.png
 
 *** Salesforce DX CLI
-	- scratch orgの作成、テストの実行、データインポートなどの実行
-#+ATTR_HTML: :style width: 60%;
-file:./resource/cli_01.png
+	- scratch orgの作成、orgへのソースpush、データインポート、テストの実行などが可能
+	- 開発一連の作業「開発環境作成 -> デプロイ -> データロード -> テスト」に必要なの道具立て
+#+BEGIN_SRC sh
+# ソースのチェックアウト
+$ git clone git@github.com:great_app.git
 
-#+ATTR_HTML: :style width: 40%;
-file:./resource/dx_data_import.png
+# featureブランチ作成
+$ git checkout -b great_feature
 
-これで、稼働環境の作成 -> テストデータセット -> テスト実行 が可能な道具が揃う。
+# scratch orgの作成
+$ sfdx force:org:create -f config/unlimited-multicurrency-scratch-def.json -w
+Successfully created workspace org: 00D4C00xx, username: workspaceorg0000@acmeorg.com
 
-さらに、この流れの実行をHeroku Flow上で実行可能に。
+# scratch orgへのソースチェックイン
+$ sfdx force:src:push -w
 
-*** Heroku Flow
+# scratch org内部へのアクセス権
+$ sfdx force:permset:assign -n greate_app
 
-**** Heroku Flow
+# サンプルデータをscratch org内にimport
+$ sfdx force:data:import --plan data/sample-data-plan.json
+
+# 開発
+## 編集
+$ emacs force-app/main//default/flexipages/Property_record_Page.flexipage-meta-data.xml
+## テスト実行（apexや seleniumテストのキック）
+$ force:test -c test/test-runner-config.json
+## commit
+$ git commit -a -m "Updated Something Greate Feature"
+## branch push
+$ git push origin great_feature
+## Pull Request
+$ git pull-request -m "Updated Something Greate Feature"
+#+END_SRC
+
+*** 開発フロー
+- 道具は揃えた
+- 次に道具を組み合わせての、開発〜リリースの流れを整え CDを行うワークローの確立が必要
+	- 機能開発 -> テスト -> 機能マージ-> 受け入れテスト -> 本番リリース
+**** 参考: Heroku Flow
+Salesforce製品の中で CDを行うためのワークフローといえば、Heroku Flow.
 file:./resource/dx_heroku_flow.png
 
-**** Heroku Pipelines
-- Heroku Flowを実施するための機能
-	- PRに対応したテスト環境用意 -> ステージング環境に自動デプロイ -> 本番環境に反映
-- PRに対応したテスト用環境
-- UAT用のステージング環境
-- 本番環境
+**** 参考: Heroku Pipelines
+- Heroku Flowを実施するためのデプロイパイプライン作成機能
+	- Pull Requestに反応して テスト環境作成
+	- master mergeに反応して ステージング環境に自動デプロイ
+	- ステージング環境の内容を本番環境に反映
 
 file:./resource/heroku_pipeline.png
 
-**** コードの改修
+**** Heroku Flow/Pipelinesを踏襲
 - ブランチ作成
 - 開発
 - Pull Request
 file:./resource/dx_hot_fix.png
 
 **** Heroku Pipelinesとの統合
-	- PRに対応したReview appsの立ち上げ
+	- Pull Requestに対応したReview appsの立ち上げ
 
 file:./resource/dx_pipelines.png
 
-**** PRの自動テストの実行
-- Heroku CI (Private Beta) により自動テスト実行が可能
-- DF中のデモでは、Apexテスト + Seleniumテストを実行
+**** Pull Requestの自動テストの実行
+- Heroku CI (Private Beta) により自動テスト実行キックが可能に
 file:./resource/dx_heroku_ci.png
 
 *** その他機能
 	- Force.com IDEの強化
 		- Salesforce DX CLIの統合
+		- Lighting App Builderを統合（scratch orgs上で動作）
 			#+ATTR_HTML: :style width: 60%;
-			file:./resource/dx_ide.png
+			file:./resource/dx_force_ide_builder.png
 		- "Code Completion, Refactoring機能の強化"
 	- packageing 2.0
-		- multiple package from a single namespace 
+		- multiple package from a single namespace
 
-* Salesforce DX
-* いつ変わるのか
+* いつ使えるようになるのか？
 - 不明
 - まだ Limited Developer Previewの段階
 
-* 最後に
-- Salesforce社 はチーム開発の痛みを認識し、対処しようとしている
-- まずは、世の開発プラクティスに追いつこうとしている
-	- 詳細情報は明らかではないが、開発フローの整備に使える道具/取れる手段は増えると見込める
+* つまり
+- チーム開発に痛みがあることは認識している
+- 世の開発プラクティスに追いつこうとしている
+	- 詳細情報は明らかではないが、チーム開発フローに使える道具/手段はきっと増える
 
 * おしまい
 :PROPERTIES:

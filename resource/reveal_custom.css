@@ -6,3 +6,7 @@
 
 /** Title Slide */
 .reveal #sec-title-slide h4 { text-align: right; margin-top: 150px; }
+
+/** BEGIN_SRC highlight */
+.reveal .org-src-container pre.src { font-size: 0.8em; }
+.reveal .org-src-container { background-color: #222; }
